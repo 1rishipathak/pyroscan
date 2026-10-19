@@ -18,13 +18,13 @@ geopandas
 pystac-client
 scikit-image
 
-# ml (install torch from the pytorch index for cuda, see readme)
+# install torch from the pytorch index for cuda
 torch
 
-# viz
+# viz part
 matplotlib
 pillow
 
-# api
+# apis
 fastapi
 uvicorn[standard]
