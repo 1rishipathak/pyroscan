@@ -12,8 +12,10 @@ PyroScan doesn't look for fire. it looks for what fire leaves behind, the black 
 
 <img src="docs/pyroscan_2025_timelapse.gif" width="420" alt="kharif 2025, pass by pass: orange = burnt, no satellite detected it" align="right">
 
-*kharif 2025, every sentinel-2 pass: orange = burnt and never detected, blue = a satellite saw it, green dots = fire detections. a 1080 × 1080 mp4 for social posts is in `docs/pyroscan_2025_timelapse.mp4` (`scripts/11_timelapse.py`).*
+*kharif 2025, every sentinel-2 pass: orange = burnt and never detected, blue = seen by satellite , green dots = fire detections.*
 ---
+
+
 
 ## Mermaid Diagram
 ```mermaid
