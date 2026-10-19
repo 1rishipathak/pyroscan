@@ -117,6 +117,11 @@ class node_s2,node_official,node_tinyfish_service,node_insat_service toneRose
 class node_researcher toneIndigo
 ```
 
+
+
+
+
+
 ## results (sangrur + barnala, 3 oct – 29 nov 2025)
 
 | | sangrur (incl. malerkotla) | barnala | **both** |
