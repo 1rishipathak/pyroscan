@@ -1,4 +1,4 @@
-// PyroScan dashboard. season data is static json in data/<season>/; the live panel talks to the api.
+// the PyroScan dashboard. season data is static json in data/<season>/, the live panel uses the api.
 const SEASON = new URLSearchParams(location.search).get("season") || "2025";
 const D = `data/${SEASON}`;
 const fmt = (n, d = 0) => (n == null || Number.isNaN(n) ? "–" : Number(n).toLocaleString("en-US", { maximumFractionDigits: d, minimumFractionDigits: d }));
@@ -20,7 +20,7 @@ async function j(url) {
 let S = {};
 const SEASONS = [...document.querySelectorAll(".season-tab")].map((a) => a.dataset.s);
 const LIVE_SEASON = document.querySelector(".season-tab .live-dot")?.closest(".season-tab")?.dataset.s;
-const INSAT_EVERY = 30;  // insat-3dr scans every 30 minutes; every_min in insat.json is how often we read a scan
+const INSAT_EVERY = 30;  // minutes between insat-3dr scans (every_min in insat.json is how often we read one)
 
 async function init() {
   const [summary, timeline, overlay, scars, firms, hours, districts, hotspots, punjab, ...insats] = await Promise.all([
@@ -45,7 +45,7 @@ async function init() {
   live();
 }
 
-// ------------------------------------------------------------------ header, status bar, key finding
+// header, status bar and key finding
 function header() {
   document.querySelectorAll(".season-tab").forEach((a) => a.classList.toggle("on", a.dataset.s === SEASON));
   const tick = () => { document.getElementById("utc").textContent = `UTC ${new Date().toISOString().slice(11, 19)}`; };
@@ -140,8 +140,9 @@ document.querySelectorAll(".seg-btn").forEach((b) =>
   })
 );
 
-// ------------------------------------------------------------------ map
-// where the two districts sit in punjab: a small inset, so nobody reads the map as the whole state
+// map
+
+// small inset showing where the two districts sit in punjab
 function locator(m) {
   if (!S.punjab) return;
   const W = 116, pad = 4;
@@ -235,7 +236,7 @@ function map() {
     }
   }
 
-  // isro insat-3dr fire pixels: hollow squares the size of the ~4 km pixel, up to the slider date
+  // insat-3dr fire pixels, drawn as ~4 km squares (the real pixel size)
   const il = L.layerGroup().addTo(m);
   const ipts = S.insat ? S.insat.rows.map(([lon, lat, t, bt]) => ({ lon, lat, t, bt })) : [];
   function drawInsat(until) {
@@ -249,7 +250,7 @@ function map() {
     }
   }
 
-  // 2 km hotspot grid: one hue (undetected), opacity carries magnitude
+  // 2 km hotspot grid, darker = more undetected burns
   let gridLayer = null;
   document.getElementById("t-grid").addEventListener("change", async (e) => {
     if (!e.target.checked) { if (gridLayer) m.removeLayer(gridLayer); return; }
@@ -326,11 +327,11 @@ function inspect(p, ll, m) {
   m.panTo(ll);
 }
 
-// ------------------------------------------------------------------ charts
+// charts
 const Y_AXIS_W = 48;  // fixed y-axis width so small multiples share one x-axis
 const fixW = { afterFit: (sc) => { sc.width = Y_AXIS_W; } };
 
-// direct labels at a line's last point (text in ink, never the series color)
+// labels each line at its last point
 const endLabels = {
   id: "endLabels",
   afterDatasetsDraw(chart) {
@@ -478,7 +479,7 @@ function charts() {
     yrs.map((k, i) => `<tr><td class="mono">${k}</td><td class="n">${fmt(cnt(k))}</td><td class="n">${fmt(offIdx[i], 1)}</td>
       <td class="n">${by[k] ? fmt(by[k].burnt_ha) : "–"}</td><td class="n">${burntIdx[i] != null ? fmt(burntIdx[i], 1) : "–"}</td></tr>`).join("") + "</tbody>";
 
-  // fig. 3: hour of day. a: the official-count satellites; b: isro insat-3dr, which never stops looking
+  // fig. 3: when the official-count satellites detect fires (a), and what insat-3dr flagged (b)
   const h = S.hours, I = S.insat;
   const hrs = h.hours.map((x) => String(x).padStart(2, "0"));
   const BLIND = I ? I.blind_from : 16;
@@ -496,7 +497,7 @@ function charts() {
     plugins: [band],
   });
   hourChart("ch-hours", h.detections, COL.detection, "detections", "no polar-orbiting pass", true);
-  // b: isro's own fire product, every season, against the official count
+  // b: insat-3dr's fire pixels for every season, next to the official count
   if (I) {
     const rows = SEASONS.filter((s) => S.insatAll[s]);
     document.getElementById("tv-insat").innerHTML = `<thead><tr><th>Season</th><th class="n">Scans read</th><th class="n">INSAT fire pixels, Punjab</th>
@@ -522,7 +523,7 @@ function charts() {
     h.hours.map((x, i) => `<tr><td class="mono">${hrs[i]}:00</td><td class="n">${fmt(h.detections[i])}</td>${I ? `<td class="n">${fmt(I.punjab.by_hour[i])}</td>` : ""}</tr>`).join("") + "</tbody>";
 }
 
-// ------------------------------------------------------------------ data provenance
+// sources table
 function provenance() {
   const p = [...(S.summary.provenance || [])];
   if (S.insat) p.push({ numbers: "INSAT-3DR fire pixels (Fig. 3, map)", source: `MOSDAC ${S.insat.dataset} (SAC/ISRO)`, url: "https://www.mosdac.gov.in/",
@@ -534,7 +535,7 @@ function provenance() {
       <td>${via(r.via)}${r.at ? `<br><span class="mono" style="color:var(--muted);font-size:11px">${r.at.replace("T", " ").slice(0, 16)} UTC</span>` : ""}</td></tr>`).join("") + "</tbody>";
 }
 
-// ------------------------------------------------------------------ priority villages
+// priority villages
 function teams() {
   const h = S.hotspots;
   const sec = document.getElementById("teams");
@@ -554,7 +555,7 @@ function teams() {
   }));
 }
 
-// ------------------------------------------------------------------ enforcement records (tinyfish search + web agent)
+// enforcement news (tinyfish search + web agent)
 const rs = (n) => (n >= 1e7 ? `₹${fmt(n / 1e7, 2)} cr` : n >= 1e5 ? `₹${fmt(n / 1e5, 2)} lakh` : `₹${fmt(n)}`);
 
 async function response() {
@@ -577,7 +578,7 @@ async function response() {
     <div class="meta">${(x.tags || []).map((t) => `<span class="ntag">${t}</span>`).join("")}${x.source || ""}</div></div>`).join("");
 }
 
-// ------------------------------------------------------------------ live feeds (tinyfish)
+// live feeds (tinyfish)
 const AQI_COL = { Good: "#55a84f", Satisfactory: "#a3c853", Moderate: "#fff833", Poor: "#f29c33", "Very Poor": "#e93f33", Severe: "#af2d24" };
 
 function renderLive(d) {

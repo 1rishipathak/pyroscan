@@ -1,9 +1,7 @@
-"""walk through a season scene by scene, pairing each clear pixel with its last clear look.
+"""steps through a season scene by scene.
 
-sentinel-2 passes every 2-5 days here, and each pass is partly cloudy or only covers
-part of the tile. so "before" is not one image: for every pixel it is the most recent
-earlier date when that pixel was clear. a burn is then dated to the window
-(last clear look, this look].
+sentinel-2 passes every few days and is often cloudy, so for each pixel "before" is its last clear
+look, and a burn is dated to the window between that look and this one.
 """
 from __future__ import annotations
 
@@ -22,8 +20,8 @@ SCL_CLOUD = (8, 9, 10)  # medium, high probability, thin cirrus
 
 
 def clear_mask(scl: np.ndarray, refl: np.ndarray) -> np.ndarray:
-    """usable pixels. burnt fields are very dark, and sen2cor sometimes files them as
-    'dark area' or even 'cloud shadow', so shadows only count as bad near real clouds."""
+    """usable pixels. sen2cor sometimes calls a burnt field 'dark area' or 'cloud shadow',
+    so a shadow only counts as bad when it's near a real cloud."""
     cloud = np.isin(scl, SCL_CLOUD)
     cloud_big = ndimage.binary_dilation(cloud, iterations=3)
     near_cloud = ndimage.binary_dilation(cloud, structure=np.ones((3, 3)), iterations=60)  # ~1.2 km
@@ -36,11 +34,11 @@ class Step:
     i: int
     key: str
     datetime: str
-    post: np.ndarray  # [5,h,w] this look
-    pre: np.ndarray  # [5,h,w] last clear look per pixel (nan if none)
-    pre_idx: np.ndarray  # [h,w] scene index of that look, -1 if none
-    clear: np.ndarray  # [h,w] this look is clear
-    valid: np.ndarray  # [h,w] clear now and seen clear before
+    post: np.ndarray  # [5, h, w] this look
+    pre: np.ndarray  # [5, h, w] each pixel's last clear look (nan if none)
+    pre_idx: np.ndarray  # [h, w] scene index of that look, -1 if none
+    clear: np.ndarray  # [h, w] clear now
+    valid: np.ndarray  # [h, w] clear now and seen clear before
 
 
 def scene_files(season: str) -> list[tuple[str, str, Path]]:

@@ -1,11 +1,5 @@
-"""rebuild the season burn map at several u-net thresholds from saved probabilities, then score each.
-
-no network run needed: 05_infer.py --save-prob already stored every date's probabilities.
-for each threshold this writes data/interim/sweep/<stem>_t<thr>/ and runs the firms matching,
-so area and 'satellite-seen fires that land on a scar' can be compared side by side.
-
-run: .venv/Scripts/python.exe scripts/sweep_threshold.py --stem unet_2025_v2 --thr 0.5 0.6 0.7 0.8
-"""
+"""rebuilds the burn map at several u-net thresholds from saved probabilities and scores each, to
+pick the threshold the model runs at."""
 import argparse
 import json
 import shutil

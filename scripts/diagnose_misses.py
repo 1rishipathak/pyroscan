@@ -1,19 +1,7 @@
-"""why do some official-satellite fire detections not land on a PyroScan burn scar?
-
-for every firms detection on cropland in the study districts that missed, look at what the
-burn map and the u-net saw around it, and put it in one bucket (first match wins):
-
-  timing      a kept scar is inside the footprint, but dated to a window that does not contain
-              the detection (e.g. the field was already char at the morning pass and still
-              smouldering at the 1:30 pm pass)
-  too_small   burnt pixels nearby, but only in blobs under the 0.4 ha minimum
-  gated       the u-net said burnt (p > 0.5) at the next clear look, but the physics check said no
-  weak        the u-net was unsure (0.2 < p < 0.5) at the next clear look
-  no_look     no clear sentinel-2 look within 10 days after the detection
-  nothing     a clear look happened and nothing char-like was there (small, short or ploughed-in fire)
-
-run: .venv/Scripts/python.exe scripts/diagnose_misses.py --season 2025 [--ckpt-stem unet_2025_v1]
-"""
+"""why do some satellite fire detections not land on a burn scar? each miss goes into the first
+bucket that fits: timing (scar dated to a different window), too_small (under 0.4 ha), gated
+(the u-net said burnt, the physics check said no), weak (u-net unsure), no_look (no clear
+image within 10 days) or nothing (no char at the next clear look)."""
 import argparse
 import json
 import sys

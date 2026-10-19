@@ -1,9 +1,6 @@
-"""enforcement and court news for the study districts, found and read with tinyfish.
+"""stubble-burning enforcement news, found with tinyfish search and read by the tinyfish web agent.
 
-satellites give a count, the state gives a response: firs, fines, 'red entries' in land
-records, notices to officials. none of that is published as data, so PyroScan finds it in the
-news with tinyfish search, and has the tinyfish web agent read the enforcement articles and
-pull the numbers out as structured json.
+firs, fines and red entries are never published as data, so the news is the only place to find them.
 """
 from __future__ import annotations
 
@@ -21,7 +18,7 @@ TAGS = {
     "air": r"\bAQI\b|air quality|smog|pollution|PM ?2\.5",
 }
 
-# the web agent's output schema (tinyfish accepts type / properties / required)
+# the agent only accepts type, properties and required in a schema
 FACTS_SCHEMA = {
     "type": "object",
     "properties": {
@@ -64,13 +61,13 @@ def queries(districts=config.DISTRICTS) -> list[str]:
 
 
 def search_news(after: date, before: date, districts=config.DISTRICTS, max_age_s: float | None = 6 * 3600) -> list[dict]:
-    """tinyfish search (news) over a date range, de-duplicated, only stubble-burning stories."""
+    """stubble-burning stories between two dates, without duplicates."""
     seen: dict[str, dict] = {}
     for q in queries(districts):
         try:
             res = tf.search(q, domain_type="news", location="IN", language="en",
                             after_date=after.isoformat(), before_date=before.isoformat(), max_age_s=max_age_s)
-        except Exception as e:  # one bad query should not kill the feed
+        except Exception as e:  # one bad query shouldn't kill the whole feed
             print("search failed:", q, e)
             continue
         for r in res:
@@ -85,13 +82,13 @@ def search_news(after: date, before: date, districts=config.DISTRICTS, max_age_s
                 districts=[d for d in districts if d.lower() in text.lower()],
             )
     items = list(seen.values())
-    # stories naming our districts first, then enforcement, then the rest
+    # stories that name our districts first, then enforcement, then the rest
     items.sort(key=lambda x: (-len(x["districts"]), "enforcement" not in x["tags"], x["title"]))
     return items
 
 
 def extract_facts(items: list[dict], max_items: int = 10) -> list[dict]:
-    """tinyfish web agent reads the enforcement stories and returns structured numbers."""
+    """the web agent reads each enforcement story and returns its numbers."""
     todo = [x for x in items if "enforcement" in x["tags"]][:max_items]
     for x in todo:
         try:

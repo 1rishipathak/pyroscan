@@ -1,13 +1,5 @@
-"""step 7: pull the official numbers through tinyfish.
-
-  official_<season>.json  creams bulletin: district totals 2020-<season>, daily punjab counts
-  aqi_<season>.json       delhi aqi for every day of the season (cpcb 4 pm bulletin)
-  news_<season>.json      enforcement / court news found with tinyfish search
-  live.json               (--live) today's creams bulletin, today's delhi aqi, this week's news
-
-run: .venv/Scripts/python.exe scripts/07_sources.py --season 2025
-     .venv/Scripts/python.exe scripts/07_sources.py --live
-"""
+"""step 7: the official numbers through tinyfish: the creams bulletin (the official count), delhi's
+daily aqi and enforcement news. with --live, today's versions for the dashboard's live panel."""
 import argparse
 import json
 import sys

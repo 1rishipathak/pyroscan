@@ -1,10 +1,5 @@
-"""step 4: train the burn-scar u-net on the rule labels.
-
-the split is spatial: 20% of the 5 km blocks are never seen in training, on any date.
-reports/train_<season>.json gets the curve and the held-out scores.
-
-run: .venv/Scripts/python.exe scripts/04_train.py --season 2025 --epochs 30
-"""
+"""step 4: train the u-net on the rule labels. a fifth of the 5 km blocks never take part in
+training, so the scores in reports/ come from places the model hasn't seen."""
 import argparse
 import json
 import sys
@@ -37,7 +32,7 @@ def band_stats(X: np.ndarray, idx: np.ndarray, n: int = 300) -> tuple[np.ndarray
 
 
 def normalise(xq: np.ndarray, mean: np.ndarray = None, std: np.ndarray = None) -> np.ndarray:
-    """uint16 patch [11,h,w] (x10000 reflectance + validity) -> float32 network input."""
+    """uint16 patch (reflectance x 10000, plus validity) -> network input."""
     mean = MEAN if mean is None else mean
     std = STD if std is None else std
     x = xq.astype(np.float32)

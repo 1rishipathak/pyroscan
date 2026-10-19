@@ -1,7 +1,4 @@
-"""step 1: study window, district raster, cropland mask, scene list.
-
-run: .venv/Scripts/python.exe scripts/01_prepare_aoi.py --season 2025
-"""
+"""step 1: the study window, district raster, cropland mask and scene list for a season."""
 import argparse
 import json
 import sys

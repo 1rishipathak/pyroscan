@@ -1,10 +1,5 @@
-"""step 9: contact sheet of random 'never detected' scars for a human check.
-
-the model was trained on automatic labels only. this sheet is how we check, by eye, that
-the scars nobody counted really are burnt fields: before / after, 10 m true colour.
-
-run: .venv/Scripts/python.exe scripts/09_qa_sheet.py --season 2025 --n 48 --seed 1
-"""
+"""step 9: a sheet of random never-detected scars, before and after in 10 m true colour, to check
+by eye that they really are burnt fields."""
 import argparse
 import json
 import sys

@@ -1,8 +1,5 @@
-"""sentinel-2 l2a access: stac search on earth search, then windowed reads of the cogs.
-
-we only ever read the pixels inside our study window, straight over http, so a
-full season for two districts is a few gb instead of hundreds.
-"""
+"""sentinel-2 l2a from earth search: find the scenes, then read only our study window straight from the
+cloud-optimised geotiffs, which keeps a season to a few gb instead of hundreds."""
 from __future__ import annotations
 
 import json
@@ -41,9 +38,8 @@ class Scene:
     nodata: float
     hrefs: dict  # asset name -> url
     scale: dict  # asset name -> (scale, offset)
-    # earth search already subtracted the 2022+ boa offset from the pixel values when true.
-    # the raster:bands offset (-0.1) must then NOT be applied again (checked: canal water
-    # comes out negative if you do).
+    # when true, earth search has already removed the 2022+ boa offset. applying it again
+    # turns canal water negative, so it must be skipped.
     boa_applied: bool = True
 
     @property
@@ -52,12 +48,12 @@ class Scene:
 
     @property
     def key(self) -> str:
-        # one file per acquisition. two satellites can pass on the same day.
+        # two satellites can pass on the same day
         return f"{self.date}_{self.platform[-2:].upper()}"
 
 
 def search(start: str, end: str, tile: str = config.MGRS_TILE) -> list[Scene]:
-    """all l2a scenes for one mgrs tile, newest processing version only."""
+    """every l2a scene of one tile, keeping only the newest processing run."""
     cat = Client.open(config.STAC_URL)
     res = cat.search(
         collections=[config.S2_COLLECTION],
@@ -97,13 +93,13 @@ def search(start: str, end: str, tile: str = config.MGRS_TILE) -> list[Scene]:
 
 
 def tile_grid(scene: Scene) -> tuple[rasterio.Affine, int, int]:
-    """20 m transform and shape of the whole tile, from the native 20 m band."""
+    """the 20 m grid of the whole tile."""
     with rasterio.Env(**GDAL_ENV), rasterio.open(scene.hrefs["nir08"]) as src:
         return src.transform, src.height, src.width
 
 
 def _read(href: str, win20: Window, native_res: int, resampling) -> np.ndarray:
-    """read one band for the 20 m window. 10 m bands are averaged down via overviews."""
+    """one band for the 20 m window. 10 m bands are averaged down."""
     with rasterio.Env(**GDAL_ENV), rasterio.open(href) as src:
         if native_res == 10:
             win = Window(win20.col_off * 2, win20.row_off * 2, win20.width * 2, win20.height * 2)
@@ -115,7 +111,7 @@ NATIVE_RES = {"green": 10, "red": 10, "nir08": 20, "swir16": 20, "swir22": 20, "
 
 
 def download_scene(scene: Scene, win20: Window, transform20, out_dir: Path, pool: ThreadPoolExecutor) -> Path:
-    """save one scene's study window as a 5-band uint16 geotiff + scl band."""
+    """saves one scene's study window: the 5 bands plus scl."""
     out = out_dir / f"{scene.key}.tif"
     if out.exists():
         return out
@@ -163,17 +159,17 @@ def download_all(scenes: list[Scene], win20: Window, transform20, out_dir: Path,
                 p = fu.result()
                 mb = p.stat().st_size / 1e6
                 print(f"[{i}/{len(scenes)}] {s.key} {mb:.0f} MB  ({time.time() - t0:.0f}s)", flush=True)
-            except Exception as e:  # keep going, rerun picks up missing scenes
+            except Exception as e:  # keep going; a rerun picks up whatever failed
                 print(f"[{i}/{len(scenes)}] {s.key} FAILED: {e}", flush=True)
 
 
 def load_scene(path: Path) -> tuple[np.ndarray, np.ndarray, dict]:
-    """returns (reflectance float32 [5,h,w] with nan for nodata, scl uint8 [h,w], tags)."""
+    """(reflectance [5, h, w] with nan for nodata, scl [h, w], tags)."""
     with rasterio.open(path) as src:
         stack = src.read()
         tags = src.tags()
     scale = json.loads(tags["scale"])
-    boa_applied = tags.get("boa_applied", "True") == "True"  # files from before the flag: verified applied
+    boa_applied = tags.get("boa_applied", "True") == "True"  # older files have no flag, and all had it applied
     dn = stack[:5].astype(np.float32)
     refl = np.empty_like(dn)
     for i, name in enumerate(config.BANDS):

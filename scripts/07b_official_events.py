@@ -1,11 +1,6 @@
-"""step 7b: the official fire count as a list of points.
-
-every daily creams bulletin lists each punjab fire event it counted: satellite, gps, time.
-read all bulletins of a season (through tinyfish fetch) and stack them into one table.
-06_scars.py --detections official then matches burn scars against the official list itself.
-
-run: .venv/Scripts/python.exe scripts/07b_official_events.py --season 2025
-"""
+"""step 7b: the official fire count as points. every daily creams bulletin lists each punjab fire it
+counted (satellite, gps, time); this stacks a season into one table so 06_scars.py can match
+scars against the official list itself."""
 import argparse
 import sys
 from concurrent.futures import ThreadPoolExecutor

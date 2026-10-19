@@ -1,12 +1,5 @@
-"""compare two burn maps where it matters: the fields they disagree on.
-
-pixels both models call burnt (or not) say nothing about which model is better. so this
-takes the disagreements, "burnt only in a" and "burnt only in b", cuts them into scars of
-at least one killa, samples them area-weighted and makes before/after true-colour sheets to
-judge by eye. it also prints the areas.
-
-run: .venv/Scripts/python.exe scripts/compare_models.py --a data/interim/v1 --b data/processed/2025 --n 24
-"""
+"""compares two burn maps where it matters, on the fields they disagree about: samples those scars
+by area and makes before/after sheets to judge by eye."""
 import argparse
 import json
 import sys

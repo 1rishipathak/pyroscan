@@ -1,17 +1,8 @@
-"""invisible smoke: fine particles (pm2.5) from the burnt area, and from the part nobody counted.
+"""pm2.5 from burnt farmland: hectares x straw per hectare x share that burns x pm2.5 per kg burnt.
 
-an order-of-magnitude estimate, deliberately conservative in the central case:
-
-  pm2.5 = burnt area x straw left per hectare x share of it the fire consumes x pm2.5 per kg burnt
-
-  straw per hectare   6.5 t   punjab pollution control board planning factor for non-basmati paddy
-                              (report to the ngt, oa 632/2023: 31.67 lakh ha -> 20.08 mt of straw). pau
-                              breeders quote 8.5-9.5 t for common varieties.
-  share consumed      0.80    ipcc 2006 guidelines, vol. 4, default combustion factor for rice residue
-  pm2.5 per kg        8.3 g   kim oanh et al. (2011), atmospheric environment: open-field rice straw burns,
-                              residual mass method (8.3 +- 2.7 g/kg). other field studies report 13-34 g/kg.
-
-low / high use 5.5 t, 0.70, 5 g/kg and 8.5 t, 0.90, 13 g/kg.
+mid case: 6.5 t of straw per ha (punjab pollution control board planning figure), 80% of it burnt
+(ipcc 2006 default for rice residue) and 8.3 g of pm2.5 per kg (kim oanh et al. 2011, open-field rice
+straw). the low and high cases bracket the published range.
 """
 from __future__ import annotations
 
@@ -25,5 +16,4 @@ def pm25_kg_per_ha(case: str = "mid") -> float:
 
 
 def pm25_tonnes(ha: float) -> dict:
-    """{'mid': t, 'low': t, 'high': t} of pm2.5 for a burnt area in hectares."""
     return {c: round(ha * pm25_kg_per_ha(c) / 1000, 0) for c in ("low", "mid", "high")}

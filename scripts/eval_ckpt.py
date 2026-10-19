@@ -1,10 +1,5 @@
-"""score several checkpoints on the same held-out patches (agreement with the automatic labels).
-
-held-out = the 20% of 5 km blocks no model trained on. scores are split by season part,
-because late november (wheat sowing) is where false burns came from.
-
-run: .venv/Scripts/python.exe scripts/eval_ckpt.py --tag _v2 checkpoints/unet_2025_v1.pt checkpoints/unet_2025_v2.pt
-"""
+"""scores several checkpoints on the same held-out patches (agreement with the automatic labels),
+split by part of the season."""
 import argparse
 import importlib.util
 import json

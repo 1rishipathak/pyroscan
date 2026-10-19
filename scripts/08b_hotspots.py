@@ -1,17 +1,5 @@
-"""step 8b: where to send field teams.
-
-2 km blocks over the study districts, ranked by burnt farmland that no official-count satellite
-detected, each named after its nearest village (openstreetmap). this is the list a pollution
-board's field teams would work through.
-
-  web/data/<season>/hotspots.json   top villages by burnt land no satellite detected (each burnt pixel goes
-                                    to its nearest village), with district, hectares and detections
-  web/data/<season>/hotspots.csv    every village with burns, ranked
-  web/data/<season>/grid.geojson    blocks as polygons for the map layer
-
-run: .venv/Scripts/python.exe scripts/08b_hotspots.py --season 2025 [--detections official]
-village names: data/raw/osm/places.json (openstreetmap contributors, odbl), fetched once from overpass.
-"""
+"""step 8b: where to send field teams. ranks villages and 2 km blocks by burnt farmland that no
+satellite detected; every burnt pixel goes to its nearest village (openstreetmap)."""
 import argparse
 import csv
 import json

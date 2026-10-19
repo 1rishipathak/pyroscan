@@ -1,7 +1,6 @@
-"""a small u-net for burn-scar change segmentation.
+"""a small u-net that finds fields that burnt between two sentinel-2 images.
 
-input: before + after sentinel-2 bands (5 + 5) and a validity channel = 11 channels at 20 m.
-output: one logit per pixel, "this field burned between the two dates".
+input: 11 channels at 20 m (5 bands before, 5 after, and a validity mask). output: one logit per pixel.
 """
 from __future__ import annotations
 
@@ -60,7 +59,7 @@ class UNet(nn.Module):
 
 
 def masked_loss(logits: torch.Tensor, target: torch.Tensor, ignore: int = 255) -> torch.Tensor:
-    """bce + soft dice, both only on labelled pixels."""
+    """bce + soft dice, on labelled pixels only."""
     logits = logits.squeeze(1)
     m = target != ignore
     if m.sum() == 0:

@@ -1,4 +1,4 @@
-"""paths and study settings shared by every script."""
+"""paths and settings shared by every script."""
 from datetime import date
 from pathlib import Path
 
@@ -9,16 +9,16 @@ INTERIM = DATA / "interim"
 PROCESSED = DATA / "processed"
 CHECKPOINTS = ROOT / "checkpoints"
 
-# sentinel-2 level-2a cogs on aws (element84 earth search), no login needed
+# sentinel-2 l2a on aws (element84 earth search), no login needed
 STAC_URL = "https://earth-search.aws.element84.com/v1"
 S2_COLLECTION = "sentinel-2-l2a"
 
-# one sentinel-2 tile (110 x 110 km) covers both study districts
+# one tile covers both districts
 MGRS_TILE = "43REP"
-CRS = "EPSG:32643"  # utm 43n, the tile's native grid
-RES = 20  # metres. swir bands are native 20 m, so we work on the 20 m grid
+CRS = "EPSG:32643"  # utm 43n
+RES = 20  # metres, the native resolution of the swir bands
 
-# earth search asset name -> sentinel-2 band name. order = channel order everywhere.
+# earth search asset -> band. this order is the channel order everywhere
 BANDS = {
     "green": "B03",
     "red": "B04",
@@ -29,20 +29,18 @@ BANDS = {
 BAND_NAMES = list(BANDS.values())
 
 SEASONS = {
-    "2021": ("2021-10-01", "2021-11-30"),  # control year: before the shift to late-afternoon burning
+    "2021": ("2021-10-01", "2021-11-30"),  # control year, before burning moved to the afternoon
     "2025": ("2025-10-01", "2025-11-30"),
-    "2026": ("2026-10-01", min(date.today(), date(2026, 11, 30)).isoformat()),  # live season: up to today
+    "2026": ("2026-10-01", min(date.today(), date(2026, 11, 30)).isoformat()),  # live season, up to today
 }
 
-# geoboundaries adm2 names. note: geoboundaries still has pre-2021 sangrur,
-# which includes what is now malerkotla district.
+# geoboundaries still has the pre-2021 sangrur, which includes malerkotla
 DISTRICTS = ["Sangrur", "Barnala"]
-# all of punjab in the same file: 22 districts (malerkotla sits inside sangrur), for the state outline
 PUNJAB_DISTRICTS = ["Amritsar", "Barnala", "Bathinda", "Faridkot", "Fatehgarh Sahib", "Fazilka", "Firozpur", "Gurdaspur",
                     "Hoshiarpur", "Jalandhar", "Kapurthala", "Ludhiana", "Mansa", "Moga", "Muktsar", "Pathankot", "Patiala",
                     "Rupnagar", "Sahibzada Ajit Singh Nagar", "Sangrur", "Shahid Bhagat Singh Nagar", "Tarn Taran"]
 
-# esa worldcover 2021, 10 m land cover. class 40 = cropland
+# esa worldcover 2021, class 40 = cropland
 WORLDCOVER_URL = (
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/"
     "ESA_WorldCover_10m_2021_v200_{tile}_Map.tif"

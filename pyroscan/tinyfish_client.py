@@ -1,12 +1,5 @@
-"""thin wrapper over the official tinyfish sdk: on-disk cache + a call log.
-
-tinyfish is how PyroScan reads the government web. none of the sources we need has an
-api: the official fire bulletins are pdfs behind a wordpress page, the air-quality
-bulletins hide behind base64 links, enforcement action only exists as news.
-
-every call is logged to data/processed/tinyfish_log.jsonl, so the dashboard can show
-what tinyfish fetched, when, and how long it took.
-"""
+"""a thin wrapper around the tinyfish sdk, with an on-disk cache and a call log
+(data/processed/tinyfish_log.jsonl) that the dashboard's live panel shows."""
 from __future__ import annotations
 
 import hashlib
@@ -40,7 +33,7 @@ def client():
 
 
 def available() -> bool:
-    load_dotenv(config.ROOT / ".env", override=True)  # a key added while the server runs must win over an empty one
+    load_dotenv(config.ROOT / ".env", override=True)  # picks up a key added while the server is running
     return bool(os.environ.get("TINYFISH_API_KEY", "").strip())
 
 
@@ -82,10 +75,7 @@ def _log(kind: str, what: str, ok: bool, ms: float, note: str = "") -> None:
 
 def fetch(urls: list[str], *, format: str = "markdown", links: bool = False, purpose: str | None = None,
           max_age_s: float | None = 6 * 3600, timeout_ms: int = 90_000) -> list[dict]:
-    """tinyfish fetch api: renders each url in a real browser, returns clean text.
-
-    returns one dict per url: {url, final_url, title, text, links, error}.
-    """
+    """tinyfish fetch: renders each url in a real browser and returns its text, one dict per url."""
     payload = dict(urls=urls, format=format, links=links)
     hit = _cached("fetch", payload, max_age_s)
     if hit is not None:
@@ -116,7 +106,7 @@ def fetch(urls: list[str], *, format: str = "markdown", links: bool = False, pur
 
 
 def search(query: str, *, max_age_s: float | None = 6 * 3600, **params) -> list[dict]:
-    """tinyfish search api: ranked live web/news results."""
+    """tinyfish search: live web or news results."""
     payload = dict(query=query, **params)
     hit = _cached("search", payload, max_age_s)
     if hit is not None:
@@ -134,7 +124,7 @@ def search(query: str, *, max_age_s: float | None = 6 * 3600, **params) -> list[
 
 
 def agent(url: str, goal: str, output_schema: dict | None = None, *, max_age_s: float | None = 24 * 3600) -> dict:
-    """tinyfish web agent: a browser agent that follows a natural-language goal on a live site."""
+    """tinyfish web agent: a browser agent that works through a plain-language goal on a live page."""
     payload = dict(url=url, goal=goal, schema=output_schema)
     hit = _cached("agent", payload, max_age_s)
     if hit is not None:

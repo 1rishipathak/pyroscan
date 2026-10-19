@@ -1,15 +1,8 @@
-"""step 12: isro's insat-3dr fire product (mosdac) over punjab: when do fires burn?
+"""step 12: isro's insat-3dr fire pixels over punjab, from mosdac.
 
-the polar satellites behind the official count pass at about 10:30 and 13:30. insat-3dr scans
-every 30 minutes, day and night, so its fire pixels show the hours the official count never sees.
-
-  download (one login, needs MOSDAC_CREDS_FILE; mosdac allows 5000 files a day):
-    .venv/Scripts/python.exe scripts/12_insat_fires.py download --plan 2025:30 2026:30 2021:60
-  extract fire pixels inside punjab and write the dashboard file:
-    .venv/Scripts/python.exe scripts/12_insat_fires.py extract --season 2025
-
---plan season:minutes. 30 keeps every scan, 60 keeps one scan an hour (the :15 utc scan).
-"""
+  download   python scripts/12_insat_fires.py download --plan 2025:30 2021:60
+             (season:minutes between scans read; needs a mosdac login)
+  extract    python scripts/12_insat_fires.py extract --season 2025"""
 import argparse
 import json
 import sys
@@ -28,8 +21,7 @@ from pyroscan import config, geo, mosdac  # noqa: E402
 
 DATASET = mosdac.FIRE_3DR
 IST = pd.Timedelta(hours=5, minutes=30)
-# the polar satellites' blind window starts here (ist hour). in no season did viirs or modis detect
-# a fire over the study area between 16:00 and midnight (web/data/*/hours.json); next pass ~01:30.
+# no polar satellite passes over punjab between 16:00 ist and ~01:30
 BLIND_FROM = 16
 
 
@@ -38,7 +30,7 @@ def raw_dir(season: str) -> Path:
 
 
 def season_entries(season: str, every: int) -> list[dict]:
-    """catalogue entries whose scan falls on a season day (ist), thinned to one per `every` minutes."""
+    """catalogue entries for a season's days, thinned to one scan every `every` minutes."""
     start, end = (date.fromisoformat(d) for d in config.SEASONS[season])
     found = mosdac.search(DATASET, (start - timedelta(days=1)).isoformat(), (end + timedelta(days=1)).isoformat())
     keep = []
@@ -126,8 +118,8 @@ def ist(t: pd.Series) -> pd.Series:
 
 
 def by_hour(df: pd.DataFrame) -> dict:
-    """fire-pixel detections per ist hour, and how many fell in the polar satellites' blind window.
-    a fire that burns for an hour is caught by two scans, so these count detections, not fires."""
+    """fire-pixel detections per ist hour, and how many came after the polar satellites' last pass.
+    a fire that burns for an hour shows up in two scans, so these are detections, not fires."""
     h = ist(df.t_utc).dt.hour.to_numpy()
     n = np.bincount(h, minlength=24).astype(int)
     blind = int((h >= BLIND_FROM).sum())

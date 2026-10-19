@@ -1,16 +1,5 @@
-"""step 8: everything the dashboard needs, small enough to commit to git.
-
-  web/data/<season>/overlay_<k>.png   burn map up to scene k, web mercator, transparent
-  web/data/<season>/overlay.json      image bounds + scene dates
-  web/data/<season>/summary.json      headline numbers, per district, official counts
-  web/data/<season>/timeline.json     daily: official count, firms, burnt ha, unseen ha, delhi aqi
-  web/data/<season>/scars.geojson     the largest scars (seen and unseen) with before/after chips
-  web/data/<season>/firms.geojson     official-satellite detections in the study area
-  web/data/<season>/hours.json        when the official satellites see fires (hour of day, ist)
-  web/data/districts.geojson
-
-run: .venv/Scripts/python.exe scripts/08_web_assets.py --season 2025 [--chips 160]
-"""
+"""step 8: everything the dashboard needs, small enough to commit: map overlays, headline numbers,
+the daily timeline, scars with before/after chips, and the rasters behind the field check."""
 import argparse
 import json
 import shutil
@@ -75,7 +64,8 @@ def overlays(season: str, out: Path, suffix: str = "") -> dict:
 
 
 def spread_daily(scars: pd.DataFrame, start: date, end: date) -> pd.DataFrame:
-    """a scar first seen on date b, last clear look a, burned somewhere in (a, b]. spread its area evenly."""
+    """a scar burnt somewhere between its last clear look and the look that caught it, so its
+    area is spread evenly over those days."""
     days = pd.date_range(start, end, freq="D")
     burnt = pd.Series(0.0, index=days)
     unseen = pd.Series(0.0, index=days)
@@ -124,7 +114,7 @@ def chips(season: str, scars: pd.DataFrame, out: Path) -> list[str]:
 
 
 def write_punjab_outline() -> None:
-    """the state outline for the dashboard's locator map: simplified, coordinates to 0.001 deg (a few kb)."""
+    """punjab's outline for the locator map, simplified to a few kb."""
     from shapely import set_precision
     from shapely.geometry import mapping
 
@@ -145,7 +135,7 @@ def main(season: str, n_chips: int, detections: str = "firms") -> None:
     write_punjab_outline()
     if (config.PROCESSED / f"news_{season}.json").exists():  # tinyfish search + agent results
         shutil.copy(config.PROCESSED / f"news_{season}.json", out / "news.json")
-    else:  # no news run for this season (the 2021 control year): an empty file keeps the browser console clean
+    else:  # no news for the 2021 control year; an empty file saves the browser a 404
         (out / "news.json").write_text(json.dumps({"season": season, "items": []}), encoding="utf-8")
 
     meta = overlays(season, out, sfx)
@@ -255,8 +245,7 @@ def main(season: str, n_chips: int, detections: str = "firms") -> None:
     summary["smoke"] = dict(study_area=smoke(summary["study_area"]),
                             districts={d: smoke(summary["districts"][d]) for d in config.DISTRICTS},
                             kg_per_ha={c: round(emissions.pm25_kg_per_ha(c), 1) for c in ("low", "mid", "high")})
-    # PyroScan's measured burnt area for every finished season, so the years chart can put the
-    # official count next to what actually burnt (live season excluded: still running)
+    # burnt area for every finished season, for the years chart (the live season is still running)
     burnt_by_year = {}
     for yy in config.SEASONS:
         f = config.PROCESSED / yy / "stats.json"

@@ -1,6 +1,5 @@
-/* PyroScan: light theme, IMD typeface (Noto Sans). palette validated with the dataviz checker on white:
-   detected #2a78d6, undetected #eb6834, detection #1baf7a (all-pairs cvd >= 9.2; detection is 2.8:1 on white,
-   so every figure also ships a data table) */
+/* PyroScan: white theme in imd's typeface (noto sans). the three data colours are colour-blind safe as a set;
+   the green is light on white, so every figure also has a data table. */
 :root {
   color-scheme: light;
   --page: #ffffff;
@@ -36,7 +35,7 @@ b { font-weight: 600; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 [hidden] { display: none !important; }
 
-/* ---------------------------------------------------------------- app bar + status bar */
+/* app bar and status bar */
 .appbar {
   position: sticky; top: 0; z-index: 1000;
   display: flex; align-items: center; gap: 24px;
@@ -68,7 +67,7 @@ b { font-weight: 600; }
 
 main { max-width: 1480px; margin: 0 auto; padding: 16px var(--gutter) 40px; display: flex; flex-direction: column; gap: 16px; }
 
-/* ---------------------------------------------------------------- key finding + stat tiles */
+/* key finding and stat tiles */
 .finding {
   display: flex; gap: 14px; align-items: flex-start;
   padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--undetected); border-radius: var(--r);
@@ -86,7 +85,7 @@ main { max-width: 1480px; margin: 0 auto; padding: 16px var(--gutter) 40px; disp
 .kpi .k-sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
 .kpi .k-sub.via { color: var(--ink-2); }
 
-/* ---------------------------------------------------------------- panels */
+/* panels */
 .row { display: grid; gap: 16px; }
 .row.map-row { grid-template-columns: minmax(0, 1fr) 360px; }
 .row.two { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
@@ -101,7 +100,7 @@ main { max-width: 1480px; margin: 0 auto; padding: 16px var(--gutter) 40px; disp
 .caption { font-size: 12px; color: var(--ink-2); padding: 0 16px; margin: 10px 0 0; }
 .sub-title { font-size: 13px; font-weight: 600; margin: 18px 16px 8px; }
 
-/* ---------------------------------------------------------------- map */
+/* map */
 .map-panel { padding-bottom: 0; display: flex; flex-direction: column; }
 .map-panel .panel-head { margin-bottom: 0; }
 .map-body { position: relative; }
@@ -150,7 +149,7 @@ main { max-width: 1480px; margin: 0 auto; padding: 16px var(--gutter) 40px; disp
 .tb-date .mono { display: block; font-size: 14px; color: var(--ink); }
 .tb-sub { display: block; font-size: 11px; color: var(--muted); }
 
-/* ---------------------------------------------------------------- side panel */
+/* side panel */
 .side { display: flex; flex-direction: column; padding-bottom: 16px; }
 .seg { display: flex; border: 1px solid var(--line-2); border-radius: var(--r); overflow: hidden; }
 .seg-btn { background: transparent; color: var(--ink-2); border: 0; border-right: 1px solid var(--line-2); padding: 4px 10px; font: inherit; font-size: 12px; cursor: pointer; }
@@ -178,7 +177,7 @@ main { max-width: 1480px; margin: 0 auto; padding: 16px var(--gutter) 40px; disp
 .btn:disabled { opacity: 0.6; cursor: progress; }
 .side .btn { margin: 14px 16px 0; }
 
-/* ---------------------------------------------------------------- figures */
+/* figures */
 .legend-row { display: flex; flex-wrap: wrap; gap: 6px 18px; padding: 0 16px 8px; font-size: 12px; color: var(--ink-2); }
 .legend-row span { display: inline-flex; align-items: center; gap: 7px; }
 .sm { padding: 0 16px; }
@@ -193,7 +192,7 @@ main { max-width: 1480px; margin: 0 auto; padding: 16px var(--gutter) 40px; disp
 .table-view summary { cursor: pointer; color: var(--accent); width: fit-content; }
 .tv-wrap { max-height: 280px; overflow: auto; margin-top: 8px; border: 1px solid var(--line); }
 
-/* ---------------------------------------------------------------- tables */
+/* tables */
 .t-wrap { margin: 0 16px; overflow-x: auto; border: 1px solid var(--line); border-radius: var(--r); }
 .t-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
 .t-table th { position: sticky; top: 0; background: var(--surface-2); text-align: left; font-size: 11px; font-weight: 600; letter-spacing: 0.05em;
@@ -212,7 +211,7 @@ main { max-width: 1480px; margin: 0 auto; padding: 16px var(--gutter) 40px; disp
 .t-table.prov a { color: var(--ink); }
 .t-table .tf { color: var(--ink); font-weight: 500; }
 
-/* ---------------------------------------------------------------- enforcement records */
+/* enforcement news */
 .resp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; padding: 0 16px; }
 .rcard { border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px; font-size: 13px; background: var(--surface-2); min-width: 0; }
 .rcard a { color: var(--ink); font-weight: 500; }
@@ -228,7 +227,7 @@ main { max-width: 1480px; margin: 0 auto; padding: 16px var(--gutter) 40px; disp
 .news-item .meta { color: var(--muted); font-size: 11.5px; margin-top: 2px; }
 .ntag { font-size: 10.5px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-2); border: 1px solid var(--line-2); border-radius: 3px; padding: 0 5px; margin-right: 5px; }
 
-/* ---------------------------------------------------------------- live feeds */
+/* live feeds */
 .live-actions { display: flex; align-items: center; gap: 12px; }
 .status { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; color: var(--ink-2); }
 .status i { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
@@ -251,7 +250,7 @@ main { max-width: 1480px; margin: 0 auto; padding: 16px var(--gutter) 40px; disp
 .log-row .bad { color: var(--critical); }
 .hint { color: var(--muted); font-size: 12px; margin: 0; }
 
-/* ---------------------------------------------------------------- methodology */
+/* methodology */
 .method-grid { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 24px; padding: 0 16px; }
 .steps { margin: 0; padding-left: 20px; color: var(--ink-2); font-size: 13px; }
 .steps li { margin: 0 0 8px; }
@@ -263,7 +262,7 @@ main { max-width: 1480px; margin: 0 auto; padding: 16px var(--gutter) 40px; disp
 .footer { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; max-width: 1480px; margin: 0 auto; padding: 16px var(--gutter) 28px;
   font-size: 11.5px; color: var(--dim); border-top: 1px solid var(--line); }
 
-/* ---------------------------------------------------------------- responsive */
+/* small screens */
 @media (max-width: 1200px) {
   .kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .row.map-row { grid-template-columns: 1fr; }

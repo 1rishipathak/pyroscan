@@ -1,14 +1,7 @@
-"""spectral indices and the rule-based burn labels that train the u-net.
+"""burn indices, and the rule-based labels the u-net learns from.
 
-band order everywhere: B03 green, B04 red, B8A nir, B11 swir1, B12 swir2 (reflectance 0-1).
-
-why these indices
-- nbr  = (nir - swir2) / (nir + swir2). the standard burn index (key & benson).
-  healthy crop is high, charred fields are near zero or negative.
-- dnbr = nbr_before - nbr_after. the standard burn-severity change index.
-- nbr2 = (swir1 - swir2) / (swir1 + swir2). separates char (flat swir, low nbr2)
-  from wet soil after irrigation (water eats swir2, high nbr2), its main look-alike.
-- swir1 brightness: dry straw and dry soil are bright, char is dark.
+bands are always in the order B03, B04, B8A, B11, B12 (reflectance 0-1). nbr drops when a field
+burns. nbr2 tells char (flat swir) apart from wet soil, its main look-alike.
 """
 from __future__ import annotations
 
@@ -32,25 +25,22 @@ def nbr2(x: np.ndarray) -> np.ndarray:
     return _nd(x[SW1], x[SW2])
 
 
-# thresholds come from docs/calibration: spectra next to firms fires vs random cropland,
-# and 10 m true-colour chips where fresh char is black (see docs/labels.md).
-# note the textbook rule (dnbr > 0.1) flags 20-50% of the area per week here, because
-# harvest itself drops nbr. so the char signature does the work, dnbr only confirms change.
+# set from pixels next to firms fires and checked on 10 m true-colour images (docs/labels.md).
+# the textbook dnbr > 0.1 rule alone also flags freshly harvested fields, so the char test
+# does the real work and dnbr only confirms that something changed.
 T = dict(
-    dnbr_min=0.10,  # the burn lowered nbr ...
-    dsw1_min=0.06,  # ... or darkened swir1 (straw left after harvest already has low nbr)
-    sw1_max=0.17,  # fresh char is dark in swir1 (dry straw/soil 0.25-0.40)
-    red_max=0.08,  # and black in visible light (tilled or moist soil stays above ~0.09)
-    nir_min=0.04,  # below this it is water or deep shadow
-    nbr_max=0.05,  # wet soil and regrowth stay above this
-    nbr2_max=0.08,  # wet soil has high nbr2 (water eats swir2), char is flat
-    # "maybe" zone: darker than usual but not clearly char. left unlabelled.
-    maybe_sw1=0.20,
+    dnbr_min=0.10,  # nbr dropped...
+    dsw1_min=0.06,  # ...or swir1 got darker
+    sw1_max=0.17,  # char is dark in swir1 (straw and dry soil sit at 0.25-0.40)
+    red_max=0.08,  # and black in visible light
+    nir_min=0.04,  # anything darker is water or shadow
+    nbr_max=0.05,
+    nbr2_max=0.08,  # wet soil has a high nbr2
+    maybe_sw1=0.20,  # darker than usual but not clearly char: left unlabelled
     maybe_red=0.10,
-    # confident "not burnt"
-    neg_sw1_min=0.21,  # bright straw / dry soil
+    neg_sw1_min=0.21,  # clearly not burnt: bright straw or soil...
     neg_red_min=0.11,
-    neg_nbr_min=0.30,  # green crop
+    neg_nbr_min=0.30,  # ...or green crop
 )
 
 
@@ -64,25 +54,21 @@ def char_like(x: np.ndarray, t: dict = T, sw1=None, red=None) -> np.ndarray:
 
 
 def plausible_burn(pre: np.ndarray, post: np.ndarray, t: dict = T) -> np.ndarray:
-    """loose physics check applied to every u-net detection: at least char-ish now
-    (the 'maybe' zone) and changed since the last look. the u-net proposes, physics disposes.
-    this is what keeps dark tilled or irrigated soil at wheat sowing (late nov) out."""
+    """the loose check every u-net detection has to pass: roughly char-like now, and changed since
+    the last look. it keeps dark, freshly irrigated wheat fields (late november) out."""
     changed = ((nbr(pre) - nbr(post)) > t["dnbr_min"]) | ((pre[SW1] - post[SW1]) > t["dsw1_min"])
     return char_like(post, t, sw1=t["maybe_sw1"], red=t["maybe_red"]) & changed
 
 
 def burn_labels(pre: np.ndarray, post: np.ndarray, valid: np.ndarray, t: dict = T) -> np.ndarray:
-    """1 = new burn between the two dates, 0 = clearly not burnt, IGNORE = unsure / invalid.
-
-    pre, post: [5, h, w] reflectance. valid: bool [h, w], both dates clear and cropland.
-    """
+    """1 = new burn, 0 = clearly not burnt, IGNORE = unsure. valid = clear cropland on both dates."""
     nbr_post = nbr(post)
     dnbr = nbr(pre) - nbr_post
     dsw1 = pre[SW1] - post[SW1]
     changed = (dnbr > t["dnbr_min"]) | (dsw1 > t["dsw1_min"])
 
     pos = char_like(post, t) & changed
-    # already char at the last look = an older burn, not a new one
+    # already char at the last look means an older burn
     pos &= ~char_like(pre, t, sw1=t["maybe_sw1"], red=t["maybe_red"])
     maybe = char_like(post, t, sw1=t["maybe_sw1"], red=t["maybe_red"]) & ~pos
 

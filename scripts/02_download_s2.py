@@ -1,8 +1,5 @@
-"""step 2: download the study window for every scene of the season.
-
-run: .venv/Scripts/python.exe scripts/02_download_s2.py --season 2025
-safe to rerun: finished scenes are skipped.
-"""
+"""step 2: download the study window of every scene in the season. finished scenes are
+skipped, so it's safe to rerun."""
 import argparse
 import json
 import sys

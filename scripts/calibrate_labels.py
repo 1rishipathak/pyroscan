@@ -1,11 +1,5 @@
-"""check the label rules against reality before trusting them.
-
-for one before/after pair: false-colour quicklooks, the rule labels on top, and the
-spectra of pixels next to firms fire points vs random cropland.
-outputs go to docs/calibration/.
-
-run: .venv/Scripts/python.exe scripts/calibrate_labels.py --pre 2025-11-02_2B --post 2025-11-07_2C
-"""
+"""checks the label rules against real fires: false-colour quicklooks with the labels on top, and
+the spectra of pixels next to firms fires vs random cropland. writes to docs/calibration/."""
 import argparse
 import json
 import sys

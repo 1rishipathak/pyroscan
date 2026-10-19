@@ -1,9 +1,5 @@
-"""step 2b: firms fire points for punjab + haryana, tagged with district, for each season.
-
-also checks that firms reproduces the official creams count for our districts.
-
-run: .venv/Scripts/python.exe scripts/02b_firms.py
-"""
+"""step 2b: firms fire detections for punjab and haryana by district, and a check that
+they add up to the official count."""
 import json
 import sys
 from pathlib import Path

@@ -1,10 +1,4 @@
-"""PyroScan api + dashboard server.
-
-  uvicorn api.main:app --port 8000      then open http://localhost:8000
-
-the season analysis is precomputed into web/data (committed to git), so the dashboard
-works straight after cloning. the live panel calls tinyfish on demand.
-"""
+"""the dashboard and its api. run `python -m uvicorn api.main:app --port 8000` and open http://localhost:8000."""
 from __future__ import annotations
 
 import json
@@ -50,7 +44,7 @@ def live():
 
 @app.post("/api/live/refresh")
 def live_refresh():
-    """pull today's official fire bulletin, delhi aqi and news through tinyfish."""
+    """today's fire bulletin, delhi's aqi and the news, fetched through tinyfish."""
     if not tf.available():
         raise HTTPException(400, "no TINYFISH_API_KEY in .env, see readme")
     with _lock:
@@ -93,7 +87,7 @@ _rasters: dict = {}
 
 
 def _season_rasters(season: str):
-    """burn map for point lookups, opened once."""
+    """the season's burn map, loaded once for point lookups."""
     if season not in _rasters:
         import numpy as np
         import rasterio
@@ -116,7 +110,7 @@ def _season_rasters(season: str):
 
 @app.get("/api/check")
 def check(lat: float, lon: float, season: str = "2025"):
-    """did the field at (lat, lon) burn this season? the question an insurer or a no-burn scheme asks."""
+    """did the field at (lat, lon) burn this season, and when?"""
     from pyproj import Transformer
 
     r = _season_rasters(season)
@@ -126,7 +120,7 @@ def check(lat: float, lon: float, season: str = "2025"):
     h, w = r["bidx"].shape
     if not (0 <= row < h and 0 <= col < w):
         return {"inside": False}
-    # look at the 3x3 neighbourhood so a click on a field edge still finds it
+    # check the 3x3 neighbourhood so a click on a field's edge still counts
     win = (slice(max(row - 1, 0), row + 2), slice(max(col - 1, 0), col + 2))
     np = r["np"]
     b = r["bidx"][win]
@@ -146,7 +140,7 @@ def check(lat: float, lon: float, season: str = "2025"):
 
 @app.get("/api/export/{season}/unseen.csv")
 def export_unseen(season: str):
-    """every burnt field the official count never saw: the evidence list."""
+    """every burnt field the official count missed, as csv."""
     p = WEB / "data" / season / "unseen_scars.csv"
     if not p.exists():
         raise HTTPException(404, "not built")

@@ -1,9 +1,5 @@
-"""refresh the live season end to end: new sentinel-2 passes, new official bulletins, new burn map,
-and isro's insat-3dr fire pixels (when MOSDAC_CREDS_FILE is set, in the shell or in .env).
-
-uses the u-net trained on 2025 (no retraining). run it before a demo:
-  .venv/Scripts/python.exe scripts/10_live_update.py
-"""
+"""refresh the live season in one go: new sentinel-2 passes, new bulletins, the burn map, and the
+insat fire pixels when MOSDAC_CREDS_FILE is set. it reuses the 2025 model, no retraining."""
 import os
 import subprocess
 import sys
@@ -15,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(ROOT / ".env")
 PY = sys.executable
 SEASON = "2026"
-# isro's insat-3dr fire product needs a mosdac login; skipped (with a note) when no credentials are set
+# needs a mosdac login, so it's skipped without one
 INSAT = [["12_insat_fires.py", "download", "--plan", f"{SEASON}:30"], ["12_insat_fires.py", "extract", "--season", SEASON]]
 
 STEPS = [

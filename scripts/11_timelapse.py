@@ -1,15 +1,5 @@
-"""step 11: the season as a square timelapse, for social posts and the demo video.
-
-burns appear pass by pass (orange = no satellite detected it, blue = one did), fire detections
-pop in as green dots, and the counters run: burnt so far, detections so far, share never detected.
-ends on the 2021 vs 2025 comparison. colours and type follow the dashboard (white, web/style.css).
-
-  docs/pyroscan_<season>_timelapse.mp4   1080 x 1080, h.264
-  docs/pyroscan_<season>_timelapse.gif   540 x 540, for the readme
-
-run: .venv/Scripts/python.exe scripts/11_timelapse.py --season 2025
-needs ffmpeg on the path.
-"""
+"""step 11: the season as a square timelapse for social posts. burns appear pass by pass, the
+counters run, and it ends on 2021 vs 2025. writes an mp4 and a gif to docs/ (needs ffmpeg)."""
 import argparse
 import json
 import shutil
@@ -117,7 +107,7 @@ def main(season: str) -> None:
         fig.text(0.05, 0.94, "PyroScan", color=INK, fontsize=34, fontweight="bold")
         fig.text(0.05, 0.905, f"sangrur + barnala, punjab · kharif {season} · every sentinel-2 pass", color=MUTED, fontsize=15)
         fig.text(0.95, 0.94, dates[k].strftime("%d %b %Y").lower(), color=INK, fontsize=26, ha="right", fontweight="bold")
-        # numbers in ink; a swatch beside the label carries identity (never coloured text)
+        # numbers in ink, with a colour swatch by each label
         for x, big, lab, sw in ((0.05, f"{burnt:,.0f} ha", "farmland burnt so far", None),
                                 (0.38, f"{len(upto):,}", "satellite fire detections", DETECTION),
                                 (0.70, f"{unseen / burnt:.0%}" if burnt else "–", "burnt, never detected", UNDETECTED)):

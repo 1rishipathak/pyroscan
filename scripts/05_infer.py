@@ -1,17 +1,7 @@
-"""step 5: run the u-net over every date of the season and build the season burn map.
+"""step 5: run the u-net over every date of the season and build the burn map.
 
-a pixel is counted once: the first date it is detected as newly burnt. we keep the
-window it burned in: (last clear look before, this look].
-
-outputs (data/processed/<season>/)
-  burn_idx.tif      0 = not burnt, k = burnt, first seen on scene k (1-based)
-  burn_pre_idx.tif  scene index (1-based) of the last clear look before the burn
-  burn_prob.tif     u-net probability at detection, 0-255
-  rule_idx.tif      same as burn_idx but from the plain index rules (the baseline)
-  scenes.json       scene keys and times, index k-1
-
-run: .venv/Scripts/python.exe scripts/05_infer.py --season 2025
-"""
+each pixel counts once, on the first date it shows up newly burnt, together with the window it
+burnt in (its last clear look before, this look)."""
 import argparse
 import importlib.util
 import json
@@ -35,7 +25,7 @@ TILE, OV = 1024, 64
 
 @torch.no_grad()
 def _forward(model, tt, tta: bool):
-    """sigmoid output, optionally averaged over 4 flips (burn scars have no preferred orientation)."""
+    """sigmoid output, averaged over 4 flips when tta is on."""
     with torch.autocast("cuda", dtype=torch.float16):
         if not tta:
             return torch.sigmoid(model(tt).float())
@@ -49,7 +39,7 @@ def _forward(model, tt, tta: bool):
 
 @torch.no_grad()
 def predict(model, pre, post, valid, mean, std, device="cuda", tta: bool = False) -> np.ndarray:
-    """probability map [h,w] for one date pair, tiled with overlap."""
+    """probability map for one date pair, tiled with overlap."""
     h, w = valid.shape
     x = np.concatenate([pre, post], 0)
     x = np.where(np.isfinite(x) & valid[None], x, 0.0)
@@ -136,8 +126,8 @@ def main(season: str, thr: float, model_season: str = "2025", ckpt: str | None =
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--season", default="2025")
-    # v2 operating point: the strictest threshold that keeps 'satellite-seen fires on a scar' within
-    # half a point of its best (scripts/sweep_threshold.py, reports/sweep_unet_2025_v2.json)
+    # the strictest threshold that still matches nearly as many satellite-seen fires as the best one
+    # (scripts/sweep_threshold.py)
     ap.add_argument("--thr", type=float, default=0.7)
     ap.add_argument("--model", default="2025", help="season whose trained u-net to use")
     ap.add_argument("--ckpt", default=None, help="explicit checkpoint path (overrides --model)")

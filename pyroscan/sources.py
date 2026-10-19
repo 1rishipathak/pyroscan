@@ -1,12 +1,6 @@
-"""the official numbers PyroScan checks itself against, read through tinyfish.
-
-- creams (icar-iari): the government's daily paddy-residue fire bulletin. this *is* the
-  official fire count. pdfs listed on a wordpress page.
-- cpcb: the daily 4 pm air quality bulletin, per city. pdfs behind base64 links.
-
-tinyfish fetch renders the listing pages and the pdfs. if a pdf cannot be read that way
-we download it and read it locally, and record which path was used.
-"""
+"""the official numbers, read with tinyfish fetch: the creams (icar-iari) daily fire bulletins, which are the
+official count, and cpcb's daily air quality bulletins. if tinyfish can't read a pdf, we download it and
+read it locally instead."""
 from __future__ import annotations
 
 import base64
@@ -30,7 +24,7 @@ def _norm(text: str) -> str:
 
 
 def _pdf_text_local(url: str) -> str:
-    """fallback: download the pdf ourselves and extract the text locally."""
+    """fallback when tinyfish isn't available."""
     PDF_CACHE.mkdir(parents=True, exist_ok=True)
     name = re.sub(r"[^A-Za-z0-9._-]", "_", url.split("/")[-1].split("?id=")[-1])[-120:]
     p = PDF_CACHE / name
@@ -38,7 +32,7 @@ def _pdf_text_local(url: str) -> str:
         r = httpx.get(url, timeout=90, follow_redirects=True)
         r.raise_for_status()
         p.write_bytes(r.content)
-    try:  # pymupdf is ~50x faster than pypdf on these chart-heavy bulletins
+    try:  # pymupdf is far faster than pypdf on these chart-heavy bulletins
         import pymupdf
 
         with pymupdf.open(p) as doc:
@@ -51,7 +45,7 @@ def _pdf_text_local(url: str) -> str:
 
 
 def page_text(url: str, prefer_tinyfish: bool = True, max_age_s: float | None = None) -> tuple[str, str]:
-    """(text, via) where via is 'tinyfish' or 'local-pdf'."""
+    """(text, 'tinyfish' or 'local-pdf')."""
     if prefer_tinyfish and tf.available():
         try:
             r = tf.fetch([url], max_age_s=max_age_s)[0]
@@ -62,13 +56,11 @@ def page_text(url: str, prefer_tinyfish: bool = True, max_age_s: float | None = 
     return _pdf_text_local(url), "local-pdf"
 
 
-# ---------------------------------------------------------------- creams bulletins
-
 _BULLETIN_RE = re.compile(r"RiceResidueFireBulletin_(\d{1,2})([A-Za-z]{3})_(\d{4})", re.I)
 
 
 def _links(url: str, purpose: str, max_age_s: float | None) -> tuple[set[str], str]:
-    """all links on a page, via tinyfish fetch (falls back to a plain http get without a key)."""
+    """every link on a page, through tinyfish (or a plain http get without a key)."""
     if tf.available():
         r = tf.fetch([url], links=True, max_age_s=max_age_s, purpose=purpose)[0]
         if r["error"] is None:
@@ -78,7 +70,7 @@ def _links(url: str, purpose: str, max_age_s: float | None) -> tuple[set[str], s
 
 
 def creams_bulletins(max_age_s: float | None = 3 * 3600) -> list[dict]:
-    """every rice-residue bulletin pdf on the creams page: [{date, year, url}], newest first."""
+    """every bulletin pdf on the creams page, newest first."""
     hrefs, _ = _links(CREAMS_PAGE, "list the daily paddy residue burning bulletin pdfs", max_age_s)
     out = {}
     for h in hrefs:
@@ -92,7 +84,7 @@ def creams_bulletins(max_age_s: float | None = 3 * 3600) -> list[dict]:
 
 
 def parse_creams(text: str) -> dict:
-    """pull the numbers out of one bulletin."""
+    """the numbers in one bulletin."""
     t = _norm(text)
     res: dict = {}
     m = re.search(r"events detected on (\d{1,2}-[A-Za-z]{3}-\d{4}) were (\d+) in Punjab, (\d+) in Haryana", t)
@@ -104,13 +96,13 @@ def parse_creams(text: str) -> dict:
     if m:
         nums = [int(x) for x in re.findall(r"\d+", m.group(4))]
         res["season_punjab"], res["season_haryana"] = nums[0], nums[1]
-    # district-wise cumulative table, all years. pick the table that lists sangrur (punjab's):
-    # its position varies between years. 2021 bulletins compare two years and use an odd dash.
+    # the district table moves around between years, so look for the one that lists sangrur.
+    # 2021 bulletins compare only two years and use an odd dash.
     hdr_rx = re.compile(r"District 15[ -]?Sep\W+\d{1,2}[ -]?[A-Za-z]{3} ((?:20\d\d ){1,7}20\d\d)", re.I)
     for hdr in hdr_rx.finditer(t):
         years = [int(y) for y in hdr.group(1).split()]
         sub = t[hdr.end(): hdr.end() + 3000]
-        nxt = hdr_rx.search(sub)  # stop at the next state's table
+        nxt = hdr_rx.search(sub)  # stop at the next state
         if nxt:
             sub = sub[: nxt.start()]
         if not re.search(r"\bSangrur\b", sub, re.I):
@@ -126,7 +118,7 @@ def parse_creams(text: str) -> dict:
         res["district_cumulative"] = dist
         res["years"] = years
         break
-    # event list for punjab: satellite, lat, lon, time
+    # every punjab event of the day, with satellite, position and time
     ev = []
     blk = re.search(r"Details of (?:(?:paddy|rice) )?residue burning events in Punjab on (\S+)(.*?)"
                     r"(?:Details of |The study used)", t, re.I)
@@ -141,14 +133,14 @@ def parse_creams(text: str) -> dict:
 
 
 def parse_creams_daily(text: str) -> dict:
-    """the 'state-wise and date-wise' table: {iso date: {punjab, haryana}} for the bulletin's own year."""
+    """the day-by-day table for the bulletin's own year: {date: {punjab, haryana}}."""
     t = _norm(text)
     hdr = re.search(r"Date ((?:20\d\d ){3,23}20\d\d)", t)
     if not hdr:
         return {}
     years = [int(y) for y in hdr.group(1).split()]
-    per_state = len(set(years))  # one column per year, repeated per state (punjab first, then haryana)
-    yr = max(years)  # the bulletin's own year is the last column of each block
+    per_state = len(set(years))  # one column per year for punjab, then the same for haryana
+    yr = max(years)
     out = {}
     end = re.search(r"Total(?: \d+){%d}" % len(years), t[hdr.end():])
     body = t[hdr.end(): hdr.end() + (end.start() if end else 20000)]
@@ -159,14 +151,12 @@ def parse_creams_daily(text: str) -> dict:
     return out
 
 
-# ---------------------------------------------------------------- cpcb aqi bulletin
-
 def cpcb_url(d: date) -> str:
     rel = f"Downloads/AQI_Bulletin_{d:%Y%m%d}.pdf"
     return "https://cpcb.gov.in/displaypdf.php?id=" + base64.b64encode(rel.encode()).decode()
 
 
-# stations read "39/39" from 2022 on, a single count before that
+# stations read "39/39" from 2022 on, a single number before that
 _AQI_RE = re.compile(r"\bDelhi (Good|Satisfactory|Moderate|Poor|Very Poor|Severe) (\d{2,3}) ([A-Z0-9., ]+?) (\d+(?:/\d+)?)\b")
 
 
@@ -178,7 +168,7 @@ def parse_cpcb_delhi(text: str) -> dict | None:
 
 
 def cpcb_latest(max_age_s: float | None = 3 * 3600) -> list[dict]:
-    """latest bulletins listed on the cpcb page: [{date, url}]."""
+    """the bulletins listed on the cpcb page, newest first."""
     hrefs, _ = _links(CPCB_PAGE, "list the daily aqi bulletin pdfs", max_age_s)
     out = []
     for h in hrefs:

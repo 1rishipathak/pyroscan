@@ -1,15 +1,7 @@
-"""step 6: burn map -> individual burn scars, each checked against the official satellites.
+"""step 6: turn the burn map into burn scars and check each one against the official satellites.
 
-a scar is "seen" if at least one firms detection from the satellites the official count
-uses (viirs s-npp, viirs noaa-20, modis terra/aqua) falls close enough to it while it was
-burning. close enough = inside that detection's own pixel footprint (firms gives the
-footprint size per point as scan x track) plus 150 m for geolocation error. this is
-generous on purpose, so the share we call unseen is a floor, not a ceiling.
-
-outputs (data/processed/<season>/): scars.parquet, stats.json, firms_matched.parquet
-
-run: .venv/Scripts/python.exe scripts/06_scars.py --season 2025 [--source rule]
-"""
+a scar counts as seen if a firms detection lands inside that detection's own pixel footprint
+(plus 150 m) while the field was burning. that's generous on purpose, so the unseen share is a floor."""
 import argparse
 import json
 import sys
@@ -26,13 +18,12 @@ from skimage.measure import label
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from pyroscan import config, firms  # noqa: E402
 
-MIN_PX = 10  # 0.4 ha = one killa (acre), the usual punjab field unit. smaller blobs were mostly doubtful in the qa check
+MIN_PX = 10  # 0.4 ha, one killa. smaller blobs were mostly doubtful in the visual check
 PX_HA = config.RES**2 / 1e4
 GEO_ERR_M = 150
 T_BEFORE = pd.Timedelta(hours=12)  # a fire can start a little before the 'before' look
-# a field already char at the 11:15 sentinel-2 pass can still be burning at the ~13:30 viirs/aqua
-# pass the same day. that fire *was* seen by the official satellites, so allow the same afternoon.
-# (scripts/diagnose_misses.py: 38% of the 'detected after the window' misses were within 3 h.)
+# a field already charred at the 11:15 sentinel-2 pass can still be burning at the 13:30 satellite
+# pass, and that fire was seen, so the window runs into the same afternoon
 T_AFTER = pd.Timedelta(hours=6)
 
 

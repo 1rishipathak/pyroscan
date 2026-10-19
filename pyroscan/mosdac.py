@@ -1,14 +1,7 @@
-"""isro's insat-3dr / insat-3ds active-fire product from mosdac (sac/isro).
+"""isro's insat-3dr fire product from mosdac: one kml of ~4 km fire pixels for every 30-minute scan.
 
-the geostationary insat imagers scan india every 30 minutes each, day and night, so unlike the
-polar satellites behind the official count they also see the afternoon. mosdac publishes a fire
-product from every scan (3RIMG_L2P_FIR, 3SIMG_L2P_FIR): one kml of fire pixels, flagged from the
-mir (3.9 um) and tir1 (10.8 um) brightness temperatures. pixels are about 4 km across.
-
-the catalogue search is public. downloads need a mosdac account: point MOSDAC_CREDS_FILE at a
-text file with username=... and password=... lines (kept outside the repo). we log in once per
-run and never retry a failed login, because three failures in a row lock the account for an hour.
-access tokens last about five minutes and are renewed with the refresh token (no password).
+searching the catalogue is public, downloading needs a free mosdac account (MOSDAC_CREDS_FILE).
+we log in once per run and never retry a failed login, since three failures lock the account for an hour.
 """
 from __future__ import annotations
 
@@ -30,17 +23,17 @@ REFRESH_URL = "https://mosdac.gov.in/download_api/refresh-token"
 DOWNLOAD_URL = "https://mosdac.gov.in/download_api/download"
 LOGOUT_URL = "https://mosdac.gov.in/download_api/logout"
 
-FIRE_3DR = "3RIMG_L2P_FIR"  # insat-3dr (74 e), scans at :15 and :45 utc, archive back to 2016
-FIRE_3DS = "3SIMG_L2P_FIR"  # insat-3ds (82 e), scans at :00 and :30 utc, from 2024
-DAILY_FILE_CAP = 5000  # mosdac's per-user download limits: 5000 files a day, 300 a minute
-PER_MINUTE = 240  # stay under the per-minute limit
+FIRE_3DR = "3RIMG_L2P_FIR"  # insat-3dr, scans at :15 and :45 utc
+FIRE_3DS = "3SIMG_L2P_FIR"  # insat-3ds, scans at :00 and :30 utc
+DAILY_FILE_CAP = 5000  # mosdac allows 5000 downloads a day and 300 a minute
+PER_MINUTE = 240
 
 _NAME_TIME = re.compile(r"_(\d{2}[A-Z]{3}\d{4})_(\d{4})_")
 
 
 def granule_time(identifier: str) -> datetime:
-    """scan time (utc) from a name like 3RIMG_19OCT2026_0345_L2P_FIR_V01R00.kml.
-    the catalogue's own dcDate is unreliable (12-hour clock), the file name is not."""
+    """utc scan time from a name like 3RIMG_19OCT2026_0345_L2P_FIR_V01R00.kml (the catalogue's
+    own timestamps use a 12-hour clock, so we don't trust them)."""
     m = _NAME_TIME.search(identifier)
     if not m:
         raise ValueError(f"no scan time in {identifier}")
@@ -48,8 +41,7 @@ def granule_time(identifier: str) -> datetime:
 
 
 def search(dataset: str, start: str, end: str, client: httpx.Client | None = None) -> list[dict]:
-    """every catalogue entry for dataset between two utc dates (yyyy-mm-dd), oldest first.
-    no login needed. the endpoint returns at most 100 entries per request."""
+    """every catalogue entry between two utc dates, oldest first. no login needed."""
     own = client is None
     client = client or httpx.Client(timeout=90)
     entries, seen, start_index = [], set(), 1
@@ -57,7 +49,7 @@ def search(dataset: str, start: str, end: str, client: httpx.Client | None = Non
         while True:
             r = client.get(SEARCH_URL, params={"datasetId": dataset, "startTime": start, "endTime": end,
                                                "startIndex": start_index, "count": 100})
-            if r.status_code != 200:  # "data unavailable" comes back as a 500
+            if r.status_code != 200:  # "no data" comes back as a 500
                 if entries:
                     break
                 raise RuntimeError(f"mosdac search {dataset} {start}..{end}: {r.status_code} {r.text[:200]}")
@@ -77,9 +69,9 @@ def search(dataset: str, start: str, end: str, client: httpx.Client | None = Non
 
 
 def read_creds(path: str | os.PathLike | None = None) -> tuple[str, str]:
-    """(username, password) from a key=value file. never print what this returns."""
+    """(username, password) from a key=value file. don't print these."""
     if not path:
-        load_dotenv(Path(__file__).resolve().parents[1] / ".env")  # MOSDAC_CREDS_FILE may live in .env
+        load_dotenv(Path(__file__).resolve().parents[1] / ".env")
         path = os.environ.get("MOSDAC_CREDS_FILE", "")
     path = Path(path)
     if not path.is_file():
@@ -89,7 +81,7 @@ def read_creds(path: str | os.PathLike | None = None) -> tuple[str, str]:
         line = line.strip()
         if not line or line.startswith("#"):
             continue
-        cut = [i for i in (line.find("="), line.find(":")) if i > 0]  # the first separator wins
+        cut = [i for i in (line.find("="), line.find(":")) if i > 0]  # whichever separator comes first
         if cut:
             k, v = line[:min(cut)], line[min(cut) + 1:]
             kv[k.strip().lower()] = v.strip().strip("'\"")
@@ -104,15 +96,14 @@ class QuotaExceeded(RuntimeError):
 
 
 class Session:
-    """one authenticated mosdac session. use as a context manager so it always logs out.
-    download() is safe to call from several threads."""
+    """a logged-in session; use it with `with` so it always logs out. download() is thread-safe."""
 
     def __init__(self, creds_file: str | os.PathLike | None = None):
         self._creds_file = creds_file
         self._http = httpx.Client(timeout=120)
         self._lock = threading.Lock()
         self._pace_lock = threading.Lock()
-        self._recent = deque()  # start times of the last minute's downloads
+        self._recent = deque()  # when the last minute's downloads started
         self._user = self._access = self._refresh = None
 
     def __enter__(self) -> "Session":
@@ -130,12 +121,12 @@ class Session:
         try:
             self._http.post(LOGOUT_URL, json={"username": self._user}, timeout=15)
         except httpx.HTTPError:
-            pass  # the session times out on its own
+            pass  # it times out on its own anyway
         self._http.close()
 
     def _renew(self, stale: str) -> None:
         with self._lock:
-            if self._access != stale:  # another thread already renewed it
+            if self._access != stale:  # another thread got there first
                 return
             if not self._refresh:
                 raise RuntimeError("mosdac token expired and there is no refresh token")
@@ -146,7 +137,7 @@ class Session:
             self._access, self._refresh = body["access_token"], body.get("refresh_token", self._refresh)
 
     def _pace(self) -> None:
-        with self._pace_lock:  # sliding one-minute window shared by all threads
+        with self._pace_lock:  # at most PER_MINUTE downloads in any minute, across threads
             while len(self._recent) >= PER_MINUTE:
                 wait = 60 - (time.monotonic() - self._recent[0])
                 if wait > 0:
@@ -155,7 +146,7 @@ class Session:
             self._recent.append(time.monotonic())
 
     def download(self, entry: dict, out_dir: Path) -> Path | None:
-        """fetch one granule into out_dir. returns None if it was already there."""
+        """downloads one file into out_dir, or returns None if it's already there."""
         dest = out_dir / entry["identifier"]
         if dest.exists() and dest.stat().st_size > 0:
             return None
@@ -182,7 +173,7 @@ class Session:
             if r.status_code == 401 and "TOKEN" in msg.upper():
                 self._renew(token)
                 continue
-            if "per minute" in msg.lower() and throttled < 10:  # the 300-a-minute limit: wait it out
+            if "per minute" in msg.lower() and throttled < 10:  # hit the per-minute limit, wait it out
                 throttled += 1
                 attempt -= 1
                 time.sleep(30)
@@ -207,12 +198,10 @@ def _message(r: httpx.Response) -> str:
 
 
 def parse_fire_kml(source: str | os.PathLike | bytes) -> list[dict]:
-    """fire pixels in one product file: lon, lat, the pixel's own scan time (utc) and its tir1 and
-    mir brightness temperatures (kelvin).
+    """fire pixels in one file: position, scan time and the two brightness temperatures (kelvin).
 
-    the temperatures sit in <address> as "tir1, tir1mir", but mosdac's generator never clears that
-    string: each placemark carries every earlier placemark's values in front of its own. we keep
-    the running prefix and peel off only what is new."""
+    the temperatures sit in <address> as "tir1, tir1mir", but mosdac never resets that string, so each
+    placemark repeats all the earlier values first. we strip off what we've already seen."""
     if isinstance(source, (str, os.PathLike)) and not str(source).lstrip().startswith("<"):
         root = ET.parse(source).getroot()
     else:
@@ -233,7 +222,7 @@ def parse_fire_kml(source: str | os.PathLike | bytes) -> list[dict]:
                 pass
         a, _, b = text.get("address", "").partition(",")
         a, b = a.strip(), b.strip()
-        if b.startswith(a) and a.startswith(prev):  # the run-on form
+        if b.startswith(a) and a.startswith(prev):  # repeated earlier values in front
             tir1, mir, prev = a[len(prev):], b[len(a):], b
         else:
             tir1, mir = a, b

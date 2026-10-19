@@ -1,15 +1,6 @@
-"""step 3: rule-based burn labels for every date pair + training patches for the u-net.
+"""step 3: rule-based burn labels for every pair of dates, cut into 256 x 256 training patches.
 
-no hand labelling: labels come from dnbr + char rules (pyroscan/indices.py), and only
-confident pixels are labelled. everything unsure is 255 and ignored in training.
-
-outputs
-  data/interim/labels/<season>/<key>.tif   full-window labels per date (0/1/255)
-  data/interim/patches_<season><tag>_x.npy  256x256 patches, x uint16 [n,11,256,256] (memory-mapped in training)
-  data/interim/patches_<season><tag>.npz    labels y uint8 [n,256,256] and meta [n,4]
-
-run: .venv/Scripts/python.exe scripts/03_make_labels.py --season 2025
-"""
+only pixels the rule is sure about get a label; the rest (255) are ignored in training."""
 import argparse
 import json
 import sys
@@ -26,15 +17,14 @@ VAL_FRAC = 0.2
 
 
 def block_split(nby: int, nbx: int, seed: int = 7) -> np.ndarray:
-    """fixed spatial split: True = validation block. same blocks for every date."""
+    """a fixed spatial split, the same blocks for every date. True = held out."""
     rng = np.random.default_rng(seed)
     return rng.random((nby, nbx)) < VAL_FRAC
 
 
 def pseudo_labels(lab: np.ndarray, valid: np.ndarray, st, prob_file: Path, hi: float = 0.9, lo: float = 0.1) -> np.ndarray:
-    """self-training: fill the rule's 'unsure' pixels with a previous model's confident calls.
-    a confident burn only counts where physics allows one (char-ish and changed); anything that is
-    not char-ish or did not change cannot be a new burn, so it becomes 'not burnt'."""
+    """self-training: fill the rule's unsure pixels with a previous model's confident calls.
+    a burn only counts where the physics allows one; anything else becomes 'not burnt'."""
     if not prob_file.exists():
         return lab
     with rasterio.open(prob_file) as src:

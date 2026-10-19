@@ -1,6 +1,6 @@
-"""nasa firms active-fire points: the same polar-orbiting satellites the official count uses.
+"""nasa firms fire detections (viirs and modis), the same satellites the official count uses.
 
-files are the public yearly country csvs from firms.modaps.eosdis.nasa.gov/country (no key needed).
+reads the free yearly country csvs from firms.modaps.eosdis.nasa.gov/country.
 """
 from __future__ import annotations
 
@@ -21,7 +21,7 @@ COLS = ["latitude", "longitude", "acq_date", "acq_time", "satellite", "instrumen
 
 
 def load_year(year: int, bbox: tuple[float, float, float, float], sources=SOURCES) -> pd.DataFrame:
-    """all fire points inside bbox (lon_min, lat_min, lon_max, lat_max) for one year."""
+    """one year of detections inside bbox (lon_min, lat_min, lon_max, lat_max)."""
     frames = []
     for key, label in sources.items():
         f = config.FIRMS_DIR / f"{key}_{year}_India.csv"
@@ -34,7 +34,7 @@ def load_year(year: int, bbox: tuple[float, float, float, float], sources=SOURCE
         df["source"] = label
         frames.append(df)
     df = pd.concat(frames, ignore_index=True)
-    # type 0 = presumed vegetation fire. drop static industrial hot spots etc.
+    # type 0 is a vegetation fire; the rest are industrial hot spots and the like
     if "type" in df:
         df = df[df["type"].fillna(0) == 0]
     t = df.acq_time.str.zfill(4)
