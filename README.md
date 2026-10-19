@@ -121,9 +121,9 @@ class node_researcher toneIndigo
 
 | | sangrur (incl. malerkotla) | barnala | **both** |
 |---|---:|---:|---:|
-| fire events in the official count (creams, 15 sep – 30 nov) | 787 | 105 | **892** |
-| farmland that burnt (PyroScan u-net, sentinel-2) | 39,936 ha | 15,638 ha | **55,574 ha** |
-| strict-rule floor (no u-net, char only) | 23,004 ha | 8,786 ha | 31,790 ha |
+| fire events in the official count (CREAMS, 15 sep – 30 nov) | 787 | 105 | **892** |
+| farmland that burnt (PyroScan U-net using sentinel-2 imagery) | 39,936 ha | 15,638 ha | **55,574 ha** |
+| strict-rule floor (no u-net, charring signatures only) | 23,004 ha | 8,786 ha | 31,790 ha |
 | burnt area no official-count satellite detected at all | 75% | 89% | **79%** |
 | burnt area with no event in the official gps list | 86% | 95% | **89%** |
 | hectares burnt per fire in the official count | 51 | 149 | **62** |
