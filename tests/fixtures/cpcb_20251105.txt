@@ -1,0 +1,1723 @@
+Air Quality Index on Nov 05, 2025 @ 4 PM 
+ (Average of past 24 hours)
+S.No
+ City
+ Air Quality
+ Index
+Value
+Prominent Pollutant
+ No. of Stations
+ Participated/
+Total Stations
+ 1
+ Agartala
+ Good
+ 40
+ PM10
+ 1/2
+ 2
+ Agra
+ Moderate
+ 117
+ PM10, PM2.5
+ 6/6
+ 3
+ Ahmedabad
+ Moderate
+ 103
+ PM10
+ 8/9
+ 4
+ Ahmednagar
+ Good
+ 42
+ PM10
+ 1/1
+ 5
+ Ajmer
+ Moderate
+ 114
+ PM10
+ 1/1
+ 6
+ Alwar
+ Satisfactory
+ 77
+ PM10
+ 1/1
+ 7
+ Amaravati
+ Satisfactory
+ 67
+ PM10
+ 1/1
+ 8
+ Ambala
+ Poor
+ 205
+ PM2.5
+ 1/1
+ 9
+ Amravati
+ Satisfactory
+ 64
+ PM10
+ 2/2
+ 10
+ Amritsar
+ Moderate
+ 148
+ PM2.5
+ 1/1
+ 11
+ Angul
+ Moderate
+ 146
+ PM2.5
+ 1/1
+ 12
+ Ankleshwar
+ Satisfactory
+ 71
+ PM10
+ 1/1
+ 13
+ Araria
+ Satisfactory
+ 82
+ PM2.5
+ 1/1
+ 14
+ Ariyalur
+ Satisfactory
+ 56
+ PM10
+ 1/1
+ 15
+ Arrah
+ Satisfactory
+ 53
+ CO
+ 1/1
+ 16
+ Asansol
+ Moderate
+ 179
+ PM2.5
+ 4/4
+ 17
+ Aurangabad (Bihar)
+ Moderate
+ 102
+ PM2.5
+ 1/1
+ 18
+ Aurangabad
+(Maharashtra)
+ Satisfactory
+ 63
+ O3, PM2.5
+ 2/3
+ 19
+ Baddi
+ Moderate
+ 191
+ PM2.5
+ 1/1
+ 20
+ Badlapur
+ Satisfactory
+ 96
+ PM10
+ 1/1
+Page 1 of 14
+
+Air Quality Index on Nov 05, 2025 @ 4 PM 
+ (Average of past 24 hours)
+S.No
+ City
+ Air Quality
+ Index
+Value
+Prominent Pollutant
+ No. of Stations
+ Participated/
+Total Stations
+ 21
+ Baghpat
+ Moderate
+ 140
+ PM10
+ 1/2
+ 22
+ Bahadurgarh
+ Good
+ 48
+ CO
+ 1/1
+ 23
+ Balasore
+ Moderate
+ 194
+ PM2.5
+ 1/1
+ 24
+ Ballabgarh
+ Moderate
+ 191
+ PM2.5
+ 1/1
+ 25
+ Banswara
+ Moderate
+ 101
+ PM10
+ 1/1
+ 26
+ Baran
+ Satisfactory
+ 77
+ PM10
+ 1/1
+ 27
+ Barbil
+ Poor
+ 211
+ PM2.5
+ 1/1
+ 28
+ Bareilly
+ Moderate
+ 104
+ PM10
+ 2/2
+ 29
+ Baripada
+ Moderate
+ 147
+ PM2.5
+ 1/1
+ 30
+ Barmer
+ Moderate
+ 125
+ PM10
+ 1/1
+ 31
+ Barrackpore
+ Poor
+ 248
+ PM2.5
+ 1/1
+ 32
+ Bathinda
+ Satisfactory
+ 78
+ CO
+ 1/1
+ 33
+ Begusarai
+ Moderate
+ 183
+ PM2.5
+ 1/1
+ 34
+ Belapur
+ Satisfactory
+ 77
+ PM10
+ 1/1
+ 35
+ Belgaum
+ Satisfactory
+ 61
+ PM10
+ 1/1
+ 36
+ Bengaluru
+ Satisfactory
+ 69
+ CO, PM10
+ 13/14
+ 37
+ Bettiah
+ Satisfactory
+ 90
+ PM10
+ 1/1
+ 38
+ Bhagalpur
+ Poor
+ 201
+ PM10
+ 1/2
+ 39
+ Bharatpur
+ Satisfactory
+ 63
+ PM10
+ 1/1
+ 40
+ Bhilai
+ Satisfactory
+ 72
+ O3, PM10
+ 2/3
+Page 2 of 14
+
+Air Quality Index on Nov 05, 2025 @ 4 PM 
+ (Average of past 24 hours)
+S.No
+ City
+ Air Quality
+ Index
+Value
+Prominent Pollutant
+ No. of Stations
+ Participated/
+Total Stations
+ 41
+ Bhilwara
+ Moderate
+ 114
+ PM10
+ 1/1
+ 42
+ Bhiwadi
+ Satisfactory
+ 93
+ PM10
+ 2/2
+ 43
+ Bhiwandi
+ Satisfactory
+ 80
+ PM10
+ 1/1
+ 44
+ Bhiwani
+ Poor
+ 248
+ PM2.5
+ 1/1
+ 45
+ Bhopal
+ Satisfactory
+ 84
+ PM10
+ 3/3
+ 46
+ Bhubaneswar
+ Poor
+ 228
+ O3
+ 1/2
+ 47
+ Bidar
+ Good
+ 28
+ PM10
+ 1/1
+ 48
+ Bikaner
+ Moderate
+ 184
+ PM10
+ 1/1
+ 49
+ Bilaspur
+ Satisfactory
+ 69
+ PM10
+ 1/1
+ 50
+ Bileipada
+ Moderate
+ 135
+ PM10
+ 1/1
+ 51
+ Boisar
+ Moderate
+ 114
+ PM10
+ 1/1
+ 52
+ Brajrajnagar
+ Moderate
+ 113
+ PM10
+ 1/1
+ 53
+ Bulandshahr
+ Poor
+ 207
+ PM2.5
+ 1/1
+ 54
+ Bundi
+ Moderate
+ 107
+ PM10
+ 1/1
+ 55
+ Buxar
+ Moderate
+ 117
+ PM2.5
+ 1/1
+ 56
+ Byasanagar
+ Moderate
+ 170
+ PM2.5
+ 1/1
+ 57
+ Chamarajanagar
+ Good
+ 39
+ PM10
+ 1/1
+ 58
+ Chandigarh
+ Moderate
+ 152
+ PM2.5
+ 2/3
+ 59
+ Chandrapur
+ Moderate
+ 120
+ PM10
+ 2/2
+ 60
+ Charkhi Dadri
+ Moderate
+ 177
+ PM2.5
+ 1/1
+Page 3 of 14
+
+Air Quality Index on Nov 05, 2025 @ 4 PM 
+ (Average of past 24 hours)
+S.No
+ City
+ Air Quality
+ Index
+Value
+Prominent Pollutant
+ No. of Stations
+ Participated/
+Total Stations
+ 61
+ Chengalpattu
+ Good
+ 42
+ PM10
+ 1/1
+ 62
+ Chennai
+ Satisfactory
+ 95
+ PM10
+ 7/9
+ 63
+ Chhal
+ Satisfactory
+ 89
+ O3
+ 1/1
+ 64
+ Chhapra
+ Good
+ 40
+ PM10
+ 1/1
+ 65
+ Chikkamagaluru
+ Satisfactory
+ 56
+ PM10
+ 1/1
+ 66
+ Chittoor
+ Satisfactory
+ 67
+ PM2.5
+ 1/1
+ 67
+ Chittorgarh
+ Satisfactory
+ 95
+ PM10
+ 1/1
+ 68
+ Churu
+ Moderate
+ 106
+ PM10
+ 1/1
+ 69
+ Coimbatore
+ Satisfactory
+ 51
+ PM10, PM2.5
+ 2/2
+ 70
+ Cuddalore
+ Moderate
+ 110
+ PM10, PM2.5
+ 2/2
+ 71
+ Cuttack
+ Moderate
+ 157
+ PM2.5
+ 1/1
+ 72
+ Dausa
+ Satisfactory
+ 88
+ PM10
+ 1/1
+ 73
+ Davanagere
+ Good
+ 36
+ CO
+ 1/1
+ 74
+ Dehradun
+ Moderate
+ 150
+ PM2.5
+ 1/1
+ 75
+ Delhi
+ Poor
+ 202
+ O3, PM2.5
+ 39/39
+ 76
+ Dewas
+ Satisfactory
+ 99
+ PM10
+ 1/1
+ 77
+ Dhanbad
+ Moderate
+ 113
+ PM10
+ 1/2
+ 78
+ Dharwad
+ Satisfactory
+ 74
+ PM10
+ 1/1
+ 79
+ Dholpur
+ Satisfactory
+ 93
+ PM10
+ 1/1
+ 80
+ Dhule
+ Satisfactory
+ 57
+ PM10
+ 1/1
+Page 4 of 14
+
+Air Quality Index on Nov 05, 2025 @ 4 PM 
+ (Average of past 24 hours)
+S.No
+ City
+ Air Quality
+ Index
+Value
+Prominent Pollutant
+ No. of Stations
+ Participated/
+Total Stations
+ 81
+ Dindigul
+ Satisfactory
+ 56
+ PM10
+ 1/1
+ 82
+ Dungarpur
+ Moderate
+ 101
+ PM10
+ 1/1
+ 83
+ Durgapur
+ Moderate
+ 138
+ PM10, PM2.5
+ 3/3
+ 84
+ Eloor
+ Satisfactory
+ 90
+ CO
+ 1/1
+ 85
+ Faridabad
+ Moderate
+ 171
+ PM2.5
+ 3/4
+ 86
+ Fatehabad
+ Satisfactory
+ 81
+ PM10
+ 1/1
+ 87
+ Firozabad
+ Moderate
+ 123
+ PM10, PM2.5
+ 2/2
+ 88
+ Gadag
+ Good
+ 35
+ O3
+ 1/1
+ 89
+ Gandhinagar
+ Moderate
+ 112
+ PM10
+ 3/3
+ 90
+ Gangtok
+ Satisfactory
+ 71
+ O3
+ 1/1
+ 91
+ Gaya
+ Moderate
+ 175
+ PM10, PM2.5
+ 3/3
+ 92
+ Ghaziabad
+ Poor
+ 207
+ PM2.5
+ 4/4
+ 93
+ Gorakhpur
+ Satisfactory
+ 60
+ PM10
+ 1/1
+ 94
+ Greater Noida
+ Moderate
+ 187
+ PM2.5
+ 2/2
+ 95
+ Gummidipoondi
+ Moderate
+ 194
+ PM2.5
+ 1/1
+ 96
+ Gurugram
+ Poor
+ 225
+ PM2.5
+ 3/4
+ 97
+ Guwahati
+ Satisfactory
+ 57
+ PM10, PM2.5, SO2
+ 4/4
+ 98
+ Gwalior
+ Satisfactory
+ 82
+ PM10
+ 3/4
+ 99
+ Hajipur
+ Poor
+ 224
+ PM2.5
+ 1/1
+ 100
+ Haldia
+ Poor
+ 252
+ PM2.5
+ 1/1
+Page 5 of 14
+
+Air Quality Index on Nov 05, 2025 @ 4 PM 
+ (Average of past 24 hours)
+S.No
+ City
+ Air Quality
+ Index
+Value
+Prominent Pollutant
+ No. of Stations
+ Participated/
+Total Stations
+ 101
+ Hanumangarh
+ Satisfactory
+ 89
+ CO
+ 1/1
+ 102
+ Hapur
+ Poor
+ 205
+ PM2.5
+ 1/1
+ 103
+ Haveri
+ Satisfactory
+ 51
+ PM10
+ 1/1
+ 104
+ Hisar
+ Moderate
+ 103
+ PM10
+ 1/1
+ 105
+ Howrah
+ Poor
+ 239
+ PM2.5
+ 5/5
+ 106
+ Hubballi
+ Satisfactory
+ 58
+ PM10
+ 1/2
+ 107
+ Hyderabad
+ Satisfactory
+ 68
+ PM10, PM2.5
+ 13/14
+ 108
+ Indore
+ Satisfactory
+ 57
+ PM10, NO2
+ 5/6
+ 109
+ Jabalpur
+ Moderate
+ 147
+ O3, PM2.5
+ 4/4
+ 110
+ Jaipur
+ Satisfactory
+ 91
+ PM10
+ 6/6
+ 111
+ Jaisalmer
+ Poor
+ 211
+ PM10
+ 1/1
+ 112
+ Jalandhar
+ Moderate
+ 162
+ PM2.5
+ 1/1
+ 113
+ Jalgaon
+ Satisfactory
+ 83
+ PM10
+ 1/1
+ 114
+ Jalna
+ Satisfactory
+ 85
+ PM10
+ 1/1
+ 115
+ Jalore
+ Moderate
+ 122
+ PM10
+ 1/1
+ 116
+ Jhalawar
+ Satisfactory
+ 90
+ PM10
+ 1/1
+ 117
+ Jhansi
+ Good
+ 46
+ PM10
+ 1/1
+ 118
+ Jhunjhunu
+ Satisfactory
+ 83
+ PM10
+ 1/1
+ 119
+ Jind
+ Very Poor
+ 301
+ PM2.5
+ 1/1
+ 120
+ Jodhpur
+ Satisfactory
+ 99
+ PM10
+ 5/5
+Page 6 of 14
+
+Air Quality Index on Nov 05, 2025 @ 4 PM 
+ (Average of past 24 hours)
+S.No
+ City
+ Air Quality
+ Index
+Value
+Prominent Pollutant
+ No. of Stations
+ Participated/
+Total Stations
+ 121
+ Kadapa
+ Satisfactory
+ 56
+ PM10
+ 1/1
+ 122
+ Kaithal
+ Satisfactory
+ 97
+ PM10
+ 1/1
+ 123
+ Kalaburagi
+ Satisfactory
+ 55
+ PM10, SO2
+ 2/2
+ 124
+ Kalyan
+ Moderate
+ 103
+ PM2.5
+ 1/2
+ 125
+ Kanchipuram
+ Satisfactory
+ 62
+ PM2.5
+ 1/1
+ 126
+ Kannur
+ Satisfactory
+ 58
+ PM10
+ 1/1
+ 127
+ Kanpur
+ Moderate
+ 184
+ PM2.5
+ 3/4
+ 128
+ Karauli
+ Satisfactory
+ 74
+ PM10
+ 1/1
+ 129
+ Karnal
+ Poor
+ 216
+ PM2.5
+ 1/1
+ 130
+ Karur
+ Good
+ 38
+ PM2.5
+ 1/1
+ 131
+ Kashipur
+ Poor
+ 224
+ PM2.5
+ 1/1
+ 132
+ Katihar
+ Satisfactory
+ 78
+ CO
+ 1/1
+ 133
+ Katni
+ Satisfactory
+ 97
+ PM10
+ 1/1
+ 134
+ Keonjhar
+ Moderate
+ 141
+ PM10
+ 1/1
+ 135
+ Khanna
+ Moderate
+ 145
+ PM2.5
+ 1/1
+ 136
+ Khurja
+ Moderate
+ 189
+ PM2.5
+ 1/1
+ 137
+ Kishanganj
+ Satisfactory
+ 94
+ PM2.5
+ 1/1
+ 138
+ Kohima
+ Satisfactory
+ 72
+ SO2
+ 1/1
+ 139
+ Kolhapur
+ Good
+ 46
+ PM10
+ 2/2
+ 140
+ Kolkata
+ Poor
+ 219
+ PM2.5
+ 6/7
+Page 7 of 14
+
+Air Quality Index on Nov 05, 2025 @ 4 PM 
+ (Average of past 24 hours)
+S.No
+ City
+ Air Quality
+ Index
+Value
+Prominent Pollutant
+ No. of Stations
+ Participated/
+Total Stations
+ 141
+ Kollam
+ Satisfactory
+ 55
+ PM10
+ 1/1
+ 142
+ Koppal
+ Good
+ 29
+ SO2
+ 1/1
+ 143
+ Korba
+ Satisfactory
+ 68
+ PM10, PM2.5
+ 2/2
+ 144
+ Kota
+ Satisfactory
+ 97
+ PM10, PM2.5
+ 3/3
+ 145
+ Kunjemura
+ Good
+ 45
+ PM10
+ 1/1
+ 146
+ Kurukshetra
+ Moderate
+ 142
+ PM2.5
+ 1/1
+ 147
+ Latur
+ Good
+ 44
+ PM2.5
+ 1/1
+ 148
+ Lucknow
+ Poor
+ 254
+ PM10, PM2.5
+ 6/6
+ 149
+ Ludhiana
+ Moderate
+ 143
+ PM2.5
+ 1/1
+ 150
+ Madikeri
+ Good
+ 14
+ PM2.5
+ 1/1
+ 151
+ Madurai
+ Satisfactory
+ 58
+ PM10
+ 1/1
+ 152
+ Mahad
+ Satisfactory
+ 90
+ PM10
+ 1/1
+ 153
+ Maihar
+ Satisfactory
+ 65
+ NO2
+ 1/1
+ 154
+ Malegaon
+ Satisfactory
+ 64
+ PM10
+ 1/1
+ 155
+ Mandi Gobindgarh
+ Moderate
+ 102
+ PM10
+ 1/1
+ 156
+ Mandideep
+ Moderate
+ 102
+ PM10
+ 1/1
+ 157
+ Manesar
+ Poor
+ 269
+ PM2.5
+ 1/1
+ 158
+ Mangalore
+ Satisfactory
+ 57
+ PM10
+ 1/1
+ 159
+ Manguraha
+ Moderate
+ 101
+ PM10
+ 1/1
+ 160
+ Meerut
+ Moderate
+ 152
+ PM10, PM2.5
+ 2/3
+Page 8 of 14
+
+Air Quality Index on Nov 05, 2025 @ 4 PM 
+ (Average of past 24 hours)
+S.No
+ City
+ Air Quality
+ Index
+Value
+Prominent Pollutant
+ No. of Stations
+ Participated/
+Total Stations
+ 161
+ Milupara
+ Satisfactory
+ 57
+ O3
+ 1/1
+ 162
+ Moradabad
+ Moderate
+ 178
+ PM2.5
+ 6/7
+ 163
+ Motihari
+ Satisfactory
+ 79
+ PM10
+ 1/1
+ 164
+ Mumbai
+ Satisfactory
+ 68
+ PM10
+ 28/30
+ 165
+ Munger
+ Moderate
+ 133
+ PM2.5
+ 1/1
+ 166
+ Muzaffarnagar
+ Moderate
+ 160
+ PM2.5
+ 1/1
+ 167
+ Muzaffarpur
+ Moderate
+ 132
+ PM2.5
+ 3/3
+ 168
+ Mysuru
+ Good
+ 49
+ PM10
+ 1/1
+ 169
+ Nagaon
+ Satisfactory
+ 61
+ PM10
+ 1/1
+ 170
+ Nagapattinam
+ Satisfactory
+ 54
+ PM2.5
+ 1/1
+ 171
+ Nagaur
+ Moderate
+ 117
+ PM10
+ 1/1
+ 172
+ Nagpur
+ Satisfactory
+ 72
+ PM10, PM2.5
+ 4/4
+ 173
+ Naharlagun
+ Satisfactory
+ 76
+ PM2.5
+ 1/1
+ 174
+ Nalbari
+ Moderate
+ 180
+ O3
+ 1/1
+ 175
+ Namakkal
+ Satisfactory
+ 52
+ PM10
+ 1/1
+ 176
+ Nanded
+ Satisfactory
+ 75
+ PM10
+ 1/1
+ 177
+ Narnaul
+ Poor
+ 216
+ PM2.5
+ 1/1
+ 178
+ Nashik
+ Good
+ 50
+ PM10
+ 4/4
+ 179
+ Navi Mumbai
+ Satisfactory
+ 77
+ PM10, PM2.5
+ 6/8
+ 180
+ Nayagarh
+ Satisfactory
+ 77
+ PM10
+ 1/1
+Page 9 of 14
+
+Air Quality Index on Nov 05, 2025 @ 4 PM 
+ (Average of past 24 hours)
+S.No
+ City
+ Air Quality
+ Index
+Value
+Prominent Pollutant
+ No. of Stations
+ Participated/
+Total Stations
+ 181
+ Noida
+ Poor
+ 215
+ PM10, PM2.5
+ 4/4
+ 182
+ Ooty
+ Satisfactory
+ 59
+ PM10
+ 1/1
+ 183
+ Pali
+ Satisfactory
+ 87
+ PM10
+ 1/1
+ 184
+ Palkalaiperur
+ Good
+ 29
+ PM10
+ 1/1
+ 185
+ Panchgaon
+ Good
+ 48
+ PM10
+ 1/1
+ 186
+ Panchkula
+ Poor
+ 245
+ PM2.5
+ 1/1
+ 187
+ Panipat
+ Very Poor
+ 302
+ PM2.5
+ 1/1
+ 188
+ Parbhani
+ Satisfactory
+ 64
+ PM10
+ 1/1
+ 189
+ Patiala
+ Moderate
+ 102
+ PM10
+ 1/1
+ 190
+ Patna
+ Poor
+ 202
+ PM2.5
+ 6/6
+ 191
+ Perundurai
+ Good
+ 43
+ PM2.5
+ 1/1
+ 192
+ Pimpri-Chinchwad
+ Satisfactory
+ 69
+ CO, PM10
+ 4/4
+ 193
+ Pithampur
+ Moderate
+ 122
+ PM2.5
+ 1/1
+ 194
+ Pratapgarh
+ Moderate
+ 103
+ PM10
+ 1/1
+ 195
+ Prayagraj
+ Moderate
+ 192
+ O3, PM2.5
+ 3/3
+ 196
+ Puducherry
+ Satisfactory
+ 89
+ PM2.5
+ 1/1
+ 197
+ Pudukottai
+ Satisfactory
+ 64
+ PM10
+ 1/1
+ 198
+ Pune
+ Satisfactory
+ 71
+ O3, PM10
+ 4/13
+ 199
+ Purnia
+ Satisfactory
+ 68
+ PM2.5
+ 1/1
+ 200
+ Raipur
+ Satisfactory
+ 92
+ PM10
+ 4/4
+Page 10 of 14
+
+Air Quality Index on Nov 05, 2025 @ 4 PM 
+ (Average of past 24 hours)
+S.No
+ City
+ Air Quality
+ Index
+Value
+Prominent Pollutant
+ No. of Stations
+ Participated/
+Total Stations
+ 201
+ Rairangpur
+ Satisfactory
+ 94
+ PM10
+ 1/1
+ 202
+Rajamahendravaram
+ Good
+ 50
+ PM10
+ 1/1
+ 203
+ Rajsamand
+ Satisfactory
+ 86
+ PM10
+ 1/1
+ 204
+ Ramanathapuram
+ Good
+ 41
+ PM10
+ 1/1
+ 205
+ Ratlam
+ Satisfactory
+ 88
+ PM10
+ 1/1
+ 206
+ Rishikesh
+ Satisfactory
+ 80
+ PM10
+ 1/1
+ 207
+ Rohtak
+ Poor
+ 244
+ PM2.5
+ 1/1
+ 208
+ Rupnagar
+ Satisfactory
+ 74
+ PM10
+ 1/1
+ 209
+ Sagar
+ Satisfactory
+ 99
+ PM2.5
+ 1/2
+ 210
+ Saharsa
+ Satisfactory
+ 66
+ PM2.5
+ 1/1
+ 211
+ Sangli
+ Satisfactory
+ 72
+ PM10
+ 1/1
+ 212
+ Sasaram
+ Satisfactory
+ 60
+ CO
+ 1/1
+ 213
+ Satna
+ Satisfactory
+ 64
+ PM10
+ 1/1
+ 214
+ Sawai Madhopur
+ Satisfactory
+ 69
+ PM10
+ 1/1
+ 215
+ Shillong
+ Good
+ 12
+ CO, PM10
+ 2/2
+ 216
+ Shivamogga
+ Good
+ 38
+ O3
+ 1/1
+ 217
+ Sikar
+ Moderate
+ 108
+ PM10
+ 1/1
+ 218
+ Silchar
+ Satisfactory
+ 52
+ PM10
+ 1/1
+ 219
+ Siliguri
+ Satisfactory
+ 61
+ PM10
+ 1/1
+ 220
+ Singrauli
+ Moderate
+ 197
+ PM2.5
+ 1/1
+Page 11 of 14
+
+Air Quality Index on Nov 05, 2025 @ 4 PM 
+ (Average of past 24 hours)
+S.No
+ City
+ Air Quality
+ Index
+Value
+Prominent Pollutant
+ No. of Stations
+ Participated/
+Total Stations
+ 221
+ Sirohi
+ Moderate
+ 107
+ PM10
+ 1/1
+ 222
+ Sirsa
+ Satisfactory
+ 66
+ PM2.5
+ 1/1
+ 223
+ Sivasagar
+ Good
+ 49
+ PM10
+ 1/1
+ 224
+ Solapur
+ Satisfactory
+ 68
+ PM10
+ 2/3
+ 225
+ Sonipat
+ Very Poor
+ 313
+ PM2.5
+ 1/1
+ 226
+ Sri Ganganagar
+ Moderate
+ 126
+ PM10
+ 1/1
+ 227
+ Surat
+ Satisfactory
+ 55
+ PM10
+ 1/1
+ 228
+ Talcher
+ Moderate
+ 142
+ PM2.5
+ 1/1
+ 229
+ Tensa
+ Satisfactory
+ 96
+ PM10
+ 1/1
+ 230
+ Thane
+ Satisfactory
+ 54
+ O3, PM10
+ 2/2
+ 231
+ Thanjavur
+ Satisfactory
+ 51
+ PM10
+ 1/1
+ 232
+ Thiruvananthapuram
+ Satisfactory
+ 52
+ PM10, NO2
+ 2/2
+ 233
+ Thoothukudi
+ Satisfactory
+ 84
+ PM10
+ 1/1
+ 234
+ Thrissur
+ Satisfactory
+ 54
+ PM2.5
+ 1/1
+ 235
+ Tirumala
+ Good
+ 42
+ PM2.5
+ 1/1
+ 236
+ Tirunelveli
+ Good
+ 36
+ CO
+ 1/1
+ 237
+ Tirupur
+ Good
+ 50
+ PM10
+ 1/1
+ 238
+ Tonk
+ Moderate
+ 126
+ PM10
+ 1/1
+ 239
+ Tumidih
+ Satisfactory
+ 78
+ PM10
+ 1/1
+ 240
+ Udaipur
+ Moderate
+ 107
+ PM10
+ 1/1
+Page 12 of 14
+
+Air Quality Index on Nov 05, 2025 @ 4 PM 
+ (Average of past 24 hours)
+S.No
+ City
+ Air Quality
+ Index
+Value
+Prominent Pollutant
+ No. of Stations
+ Participated/
+Total Stations
+ 241
+ Udupi
+ Good
+ 14
+ PM10
+ 1/1
+ 242
+ Ulhasnagar
+ Satisfactory
+ 99
+ PM10
+ 1/1
+ 243
+ Vapi
+ Satisfactory
+ 95
+ PM10
+ 1/1
+ 244
+ Varanasi
+ Moderate
+ 102
+ PM10
+ 4/4
+ 245
+ Vellore
+ Good
+ 50
+ PM2.5
+ 1/1
+ 246
+ Vijayawada
+ Satisfactory
+ 70
+ O3, PM2.5
+ 3/4
+ 247
+ Virar
+ Satisfactory
+ 65
+ PM10
+ 1/1
+ 248
+ Virudhunagar
+ Satisfactory
+ 73
+ PM10
+ 1/1
+ 249
+ Visakhapatnam
+ Moderate
+ 114
+ PM10
+ 1/1
+ 250
+ Vrindavan
+ Satisfactory
+ 96
+ PM10
+ 1/1
+ 251
+ Yadgir
+ Good
+ 47
+ CO
+ 1/1
+ 252
+ Yamuna Nagar
+ Poor
+ 274
+ PM2.5
+ 1/1
+Page 13 of 14
+
+Air Quality Index on Nov 05, 2025 @ 4 PM 
+ (Average of past 24 hours)
+Cities absent in AQI Bulletin due to insufficient data:
+1) Aizawl, 2) Akola, 3) Anantapur, 4) Bagalkot, 5) Bihar sharif, 6) Byrnihat, 7) Chikkaballapur, 8)
+Damoh, 9) Darbhanga, 10) Dharuhera, 11) Ernakulam, 12) Hassan, 13) Hosur, 14) Imphal, 15)
+Jorapokhar, 16) Karwar, 17) Kochi, 18) Kolar, 19) Kozhikode, 20) Mandikhera, 21) Mira-bhayandar,
+22) Nandesari, 23) Palwal, 24) Pathardih, 25) Raichur, 26) Rajgir, 27) Ramanagara, 28) Ranipet,
+29) Rourkela, 30) Salem, 31) Samastipur, 32) Siwan, 33) Sri vijaya puram, 34) Srinagar, 35)
+Suakati, 36) Tiruchirappalli, 37) Tirupati, 38) Tumakuru, 39) Ujjain, 40) Vatva, 41) Vijayapura.
+Note:
+* In case of a city with multiple monitoring locations, average value is used to indicate air quality.
+Air quality may show variations across locations, and averaging is not a scientifically sound
+approach. However, for the sake of simplicity this method is being followed. For AQI of monitoring
+locations, website (http://cpcb.gov.in) website may be referred.
+* The data available at the portal is provided by different agencies. Any use of this data in research
+publication or any other form of publication shall duly acknowledge the contribution of respective
+agencies in generating the data.
+ Health Statements for AQI Categories
+AQI
+Category
+Color Code
+Possible Health Impacts
+0-50
+Good
+Minimal Impact
+51-100
+Satisfactory
+Minor breathing discomfort to sensitive people
+101-200
+Moderate
+Breathing discomfort to the people with lungs, asthma and heart diseases
+201-300
+Poor
+Breathing discomfort to most people on prolonged exposure
+301-400
+Very Poor
+Respiratory illness on prolonged exposure
+401-500
+Severe
+Affects healthy people and seriously impacts those with existing diseases
+Page 14 of 14

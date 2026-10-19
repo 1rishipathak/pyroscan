@@ -1,0 +1,417 @@
+{
+ "source": "CREAMS, ICAR-IARI daily paddy residue burning bulletin",
+ "bulletin": {
+  "date": "2025-11-30",
+  "year": 2025,
+  "url": "https://creams.iari.res.in/Creams_website_bulletin/Fire_bulletin_2025/Fire_bulletin_2025r/77.RiceResidueFireBulletin_30Nov_2025_ICAR.pdf"
+ },
+ "via": "tinyfish",
+ "n_bulletins": 77,
+ "date": "2025-11-30",
+ "day_punjab": 2,
+ "day_haryana": 3,
+ "season_punjab": 5114,
+ "season_haryana": 662,
+ "district_cumulative": {
+  "Sangrur": {
+   "2020": 11727,
+   "2021": 9389,
+   "2022": 5916,
+   "2023": 5618,
+   "2024": 1725,
+   "2025": 695
+  },
+  "Barnala": {
+   "2020": 5342,
+   "2021": 4326,
+   "2022": 2910,
+   "2023": 2316,
+   "2024": 262,
+   "2025": 105
+  },
+  "Malerkotla": {
+   "2020": 0,
+   "2021": 0,
+   "2022": 0,
+   "2023": 413,
+   "2024": 203,
+   "2025": 92
+  },
+  "Patiala": {
+   "2020": 6433,
+   "2021": 5426,
+   "2022": 3395,
+   "2023": 1878,
+   "2024": 542,
+   "2025": 235
+  },
+  "Mansa": {
+   "2020": 3786,
+   "2021": 3217,
+   "2022": 2815,
+   "2023": 2268,
+   "2024": 618,
+   "2025": 306
+  },
+  "Bathinda": {
+   "2020": 5239,
+   "2021": 4481,
+   "2022": 4592,
+   "2023": 2972,
+   "2024": 750,
+   "2025": 369
+  },
+  "Ludhiana": {
+   "2020": 5065,
+   "2021": 5817,
+   "2022": 2682,
+   "2023": 1801,
+   "2024": 332,
+   "2025": 219
+  },
+  "Punjab total": {
+   "2020": 83002,
+   "2021": 71304,
+   "2022": 49922,
+   "2023": 36663,
+   "2024": 10909,
+   "2025": 5114
+  }
+ },
+ "years": [
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "punjab_events": [
+  {
+   "place": "FAZILKA ABOHAR",
+   "satellite": "S-NPP",
+   "lat": 30.16814,
+   "lon": 74.22233,
+   "time_ist": "14:10:46",
+   "daynight": "D"
+  },
+  {
+   "place": "FAZILKA ABOHAR",
+   "satellite": "S-NPP",
+   "lat": 30.16914,
+   "lon": 74.21934,
+   "time_ist": "14:10:46",
+   "daynight": "D"
+  }
+ ],
+ "daily": {
+  "2025-09-15": {
+   "punjab": 5,
+   "haryana": 1
+  },
+  "2025-09-16": {
+   "punjab": 18,
+   "haryana": 0
+  },
+  "2025-09-17": {
+   "punjab": 11,
+   "haryana": 0
+  },
+  "2025-09-18": {
+   "punjab": 12,
+   "haryana": 1
+  },
+  "2025-09-19": {
+   "punjab": 1,
+   "haryana": 1
+  },
+  "2025-09-20": {
+   "punjab": 1,
+   "haryana": 0
+  },
+  "2025-09-21": {
+   "punjab": 8,
+   "haryana": 0
+  },
+  "2025-09-22": {
+   "punjab": 6,
+   "haryana": 0
+  },
+  "2025-09-23": {
+   "punjab": 8,
+   "haryana": 0
+  },
+  "2025-09-24": {
+   "punjab": 5,
+   "haryana": 1
+  },
+  "2025-09-25": {
+   "punjab": 4,
+   "haryana": 1
+  },
+  "2025-09-26": {
+   "punjab": 1,
+   "haryana": 0
+  },
+  "2025-09-27": {
+   "punjab": 2,
+   "haryana": 1
+  },
+  "2025-09-28": {
+   "punjab": 8,
+   "haryana": 0
+  },
+  "2025-09-29": {
+   "punjab": 5,
+   "haryana": 1
+  },
+  "2025-09-30": {
+   "punjab": 0,
+   "haryana": 0
+  },
+  "2025-10-01": {
+   "punjab": 0,
+   "haryana": 0
+  },
+  "2025-10-02": {
+   "punjab": 0,
+   "haryana": 0
+  },
+  "2025-10-03": {
+   "punjab": 0,
+   "haryana": 0
+  },
+  "2025-10-04": {
+   "punjab": 0,
+   "haryana": 0
+  },
+  "2025-10-05": {
+   "punjab": 0,
+   "haryana": 0
+  },
+  "2025-10-06": {
+   "punjab": 0,
+   "haryana": 0
+  },
+  "2025-10-07": {
+   "punjab": 0,
+   "haryana": 0
+  },
+  "2025-10-08": {
+   "punjab": 0,
+   "haryana": 0
+  },
+  "2025-10-09": {
+   "punjab": 1,
+   "haryana": 1
+  },
+  "2025-10-10": {
+   "punjab": 6,
+   "haryana": 2
+  },
+  "2025-10-11": {
+   "punjab": 14,
+   "haryana": 1
+  },
+  "2025-10-12": {
+   "punjab": 10,
+   "haryana": 4
+  },
+  "2025-10-13": {
+   "punjab": 8,
+   "haryana": 1
+  },
+  "2025-10-14": {
+   "punjab": 31,
+   "haryana": 2
+  },
+  "2025-10-15": {
+   "punjab": 11,
+   "haryana": 7
+  },
+  "2025-10-16": {
+   "punjab": 12,
+   "haryana": 3
+  },
+  "2025-10-17": {
+   "punjab": 20,
+   "haryana": 2
+  },
+  "2025-10-18": {
+   "punjab": 33,
+   "haryana": 1
+  },
+  "2025-10-19": {
+   "punjab": 67,
+   "haryana": 7
+  },
+  "2025-10-20": {
+   "punjab": 45,
+   "haryana": 13
+  },
+  "2025-10-21": {
+   "punjab": 62,
+   "haryana": 4
+  },
+  "2025-10-22": {
+   "punjab": 69,
+   "haryana": 3
+  },
+  "2025-10-23": {
+   "punjab": 28,
+   "haryana": 0
+  },
+  "2025-10-24": {
+   "punjab": 49,
+   "haryana": 3
+  },
+  "2025-10-25": {
+   "punjab": 60,
+   "haryana": 2
+  },
+  "2025-10-26": {
+   "punjab": 122,
+   "haryana": 8
+  },
+  "2025-10-27": {
+   "punjab": 147,
+   "haryana": 7
+  },
+  "2025-10-28": {
+   "punjab": 43,
+   "haryana": 1
+  },
+  "2025-10-29": {
+   "punjab": 283,
+   "haryana": 10
+  },
+  "2025-10-30": {
+   "punjab": 202,
+   "haryana": 4
+  },
+  "2025-10-31": {
+   "punjab": 224,
+   "haryana": 6
+  },
+  "2025-11-01": {
+   "punjab": 442,
+   "haryana": 19
+  },
+  "2025-11-02": {
+   "punjab": 178,
+   "haryana": 4
+  },
+  "2025-11-03": {
+   "punjab": 256,
+   "haryana": 23
+  },
+  "2025-11-04": {
+   "punjab": 321,
+   "haryana": 13
+  },
+  "2025-11-05": {
+   "punjab": 94,
+   "haryana": 13
+  },
+  "2025-11-06": {
+   "punjab": 351,
+   "haryana": 35
+  },
+  "2025-11-07": {
+   "punjab": 100,
+   "haryana": 18
+  },
+  "2025-11-08": {
+   "punjab": 238,
+   "haryana": 42
+  },
+  "2025-11-09": {
+   "punjab": 440,
+   "haryana": 67
+  },
+  "2025-11-10": {
+   "punjab": 133,
+   "haryana": 30
+  },
+  "2025-11-11": {
+   "punjab": 312,
+   "haryana": 72
+  },
+  "2025-11-12": {
+   "punjab": 155,
+   "haryana": 29
+  },
+  "2025-11-13": {
+   "punjab": 72,
+   "haryana": 15
+  },
+  "2025-11-14": {
+   "punjab": 104,
+   "haryana": 24
+  },
+  "2025-11-15": {
+   "punjab": 39,
+   "haryana": 13
+  },
+  "2025-11-16": {
+   "punjab": 95,
+   "haryana": 47
+  },
+  "2025-11-17": {
+   "punjab": 31,
+   "haryana": 10
+  },
+  "2025-11-18": {
+   "punjab": 15,
+   "haryana": 6
+  },
+  "2025-11-19": {
+   "punjab": 16,
+   "haryana": 11
+  },
+  "2025-11-20": {
+   "punjab": 12,
+   "haryana": 2
+  },
+  "2025-11-21": {
+   "punjab": 30,
+   "haryana": 11
+  },
+  "2025-11-22": {
+   "punjab": 9,
+   "haryana": 13
+  },
+  "2025-11-23": {
+   "punjab": 3,
+   "haryana": 1
+  },
+  "2025-11-24": {
+   "punjab": 4,
+   "haryana": 6
+  },
+  "2025-11-25": {
+   "punjab": 3,
+   "haryana": 8
+  },
+  "2025-11-26": {
+   "punjab": 6,
+   "haryana": 11
+  },
+  "2025-11-27": {
+   "punjab": 5,
+   "haryana": 10
+  },
+  "2025-11-28": {
+   "punjab": 2,
+   "haryana": 3
+  },
+  "2025-11-29": {
+   "punjab": 4,
+   "haryana": 4
+  },
+  "2025-11-30": {
+   "punjab": 2,
+   "haryana": 3
+  }
+ }
+}

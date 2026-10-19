@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+*.log
+.ipynb_checkpoints/
+
+# big or rebuildable: imagery, labels, patches, caches
+data/raw/
+data/interim/
+data/cache/
+data/processed/*/
+!data/processed/*.json
+!data/processed/*.geojson
+
+# keep the trained model (31 mb), nothing else from training
+checkpoints/*
+!checkpoints/unet_2025.pt
+
+# stale chip folder from an earlier build (the dashboard uses fields/)
+web/data/*/chips/
+.claude/
+web/data/*/fields/

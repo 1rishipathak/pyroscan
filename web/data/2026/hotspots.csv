@@ -1,0 +1,195 @@
+rank,village,kind,district,unseen_ha,burnt_ha,unseen_share,detections,lat,lon
+1,Akhar pur Channa,village,Sangrur,14.2,14.2,1.0,0,30.65711,75.85231
+2,Kanganwal,village,Sangrur,12.6,12.6,1.0,0,30.6151,75.81178
+3,Bathan,village,Sangrur,12.1,12.1,1.0,0,30.51229,76.0114
+4,Khurd,village,Sangrur,11.5,11.5,1.0,0,30.55196,75.75409
+5,Bhogiwal,village,Sangrur,11.0,11.0,1.0,0,30.58862,75.88126
+6,Kup Kalan,village,Sangrur,9.7,9.7,1.0,0,30.61098,75.87023
+7,Bhurthala Mandher,village,Sangrur,9.3,9.3,1.0,0,30.57309,76.03801
+8,Jhal,village,Sangrur,8.6,8.6,1.0,0,30.48286,76.00629
+9,Daulatpur,village,Sangrur,8.4,8.4,1.0,0,30.39923,75.85579
+10,Bhindar,village,Sangrur,8.3,8.3,1.0,0,30.4071,75.99874
+11,Nathu Majra,village,Sangrur,7.9,7.9,1.0,0,30.65009,75.88312
+12,Malerkotla,city,Sangrur,7.7,7.7,1.0,0,30.53313,75.88076
+13,Phaguwala,village,Sangrur,7.6,7.6,1.0,0,30.25625,76.00265
+14,Phallewal,village,Sangrur,7.0,7.0,1.0,0,30.6397,75.8675
+15,Lasoi,village,Sangrur,7.0,7.0,1.0,0,30.58532,76.01037
+16,Chhiniwal Kalan,village,Barnala,6.8,6.8,1.0,0,30.51988,75.50763
+17,Jaghera,village,Sangrur,6.6,6.6,1.0,0,30.67774,75.85618
+18,Kaheru,village,Sangrur,6.1,6.1,1.0,0,30.39168,75.83141
+19,Lohar Mazra,village,Sangrur,6.1,6.1,1.0,0,30.42307,75.94759
+20,Chaunda,village,Sangrur,5.8,5.8,1.0,0,30.51131,76.05335
+21,Uppoki,village,Sangrur,5.5,5.5,1.0,0,30.49535,75.92763
+22,Bhatian Kalan,village,Sangrur,5.2,5.2,1.0,0,30.39823,76.01501
+23,Harbanspura,hamlet,Barnala,4.9,4.9,1.0,0,30.37057,75.62074
+24,Nanakwali Chhanna,village,Sangrur,4.8,4.8,1.0,0,30.29657,76.00659
+25,Burj Bhaghel Singh,village,Sangrur,4.8,4.8,1.0,0,30.49435,75.99325
+26,Bhullarheri,village,Sangrur,4.7,4.7,1.0,0,30.35488,75.94527
+27,Abhaipur,village,Sangrur,4.6,4.6,1.0,0,30.42914,76.05771
+28,Pharwai,village,Barnala,4.2,4.2,1.0,0,30.3374,75.5771
+29,Raisar,village,Barnala,4.1,4.1,1.0,0,30.47595,75.4939
+30,Bhatiwal Khurd,village,Sangrur,3.9,3.9,1.0,0,30.20516,76.05577
+31,Mahsampur,village,Sangrur,3.9,3.9,1.0,0,30.34518,75.98179
+32,Ghillan,village,Sangrur,3.8,3.8,1.0,0,30.31628,75.99041
+33,Kakra,village,Sangrur,3.7,3.7,1.0,0,30.28746,76.02891
+34,Dhaula,town,Barnala,3.7,3.7,1.0,0,30.28647,75.46045
+35,Roshanwala,village,Sangrur,3.6,3.6,1.0,0,30.2577,75.98771
+36,Amargarh,town,Sangrur,3.5,3.5,1.0,0,30.46341,76.01156
+37,Dehleez Khurd,village,Sangrur,3.5,3.5,1.0,0,30.64523,75.80277
+38,Daulatpur,village,Sangrur,3.4,3.4,1.0,0,30.41548,76.01445
+39,Bhari Mansaian,village,Sangrur,3.3,3.3,1.0,0,30.39207,75.99342
+40,Rajpura,village,Sangrur,3.2,3.2,1.0,0,30.26685,76.12942
+41,Fatehgarh Bhadsaun,village,Sangrur,3.2,3.2,1.0,0,30.32695,76.03166
+42,Dhanaula Khurd,village,Barnala,3.2,3.2,1.0,0,30.32286,75.51364
+43,Kul Kalan,village,Sangrur,3.1,3.1,1.0,0,30.61858,75.8762
+44,Balal,village,Sangrur,3.1,3.1,1.0,0,30.23293,76.04809
+45,Kulhar,village,Sangrur,3.0,3.0,1.0,0,30.68663,75.87834
+46,Khudi Khurd,village,Barnala,3.0,3.0,1.0,0,30.32807,75.45431
+47,Masani,village,Sangrur,2.9,2.9,1.0,0,30.25747,76.13637
+48,Maherna Khurd,village,Sangrur,2.8,2.8,1.0,0,30.64512,75.78509
+49,Kheri Chanduh,village,Sangrur,2.8,2.8,1.0,0,30.30958,75.9684
+50,Samandgarh,village,Sangrur,2.6,2.6,1.0,0,30.36814,75.99887
+51,Daraj,village,Barnala,2.5,2.5,1.0,0,30.31011,75.34431
+52,Gehal,village,Barnala,2.4,2.4,1.0,0,30.54831,75.44533
+53,Moom,village,Barnala,2.4,2.4,1.0,0,30.55408,75.49265
+54,Bararwal,village,Sangrur,2.4,2.4,1.0,0,30.3979,75.88823
+55,Kahneke,village,Barnala,2.4,2.4,1.0,0,30.25607,75.48167
+56,Maholi Kalan,village,Sangrur,2.3,2.3,1.0,0,30.62452,75.75607
+57,Jargari,village,Sangrur,2.2,2.2,1.0,0,30.63688,76.04427
+58,Bhatian Kalan,village,Sangrur,2.2,2.2,1.0,0,30.39864,76.02792
+59,Ghanaur Kalan,village,Sangrur,2.2,2.2,1.0,0,30.42566,75.79515
+60,Dalelgarh,village,Sangrur,2.2,2.2,1.0,0,30.45454,75.8509
+61,Hardaspura,village,Barnala,2.1,2.1,1.0,0,30.57496,75.64503
+62,Mehal Kalan,village,Barnala,2.1,2.1,1.0,0,30.52939,75.56539
+63,Gurthari,village,Sangrur,2.1,2.1,1.0,0,30.26493,76.10667
+64,Salimpur,village,Sangrur,2.1,2.1,1.0,0,30.4638,76.07599
+65,Ghunas,village,Barnala,2.1,2.1,1.0,0,30.31298,75.42118
+66,Gagewal,village,Barnala,2.0,2.0,1.0,0,30.59137,75.48413
+67,Bhojowali,village,Sangrur,2.0,2.0,1.0,0,30.34458,75.92379
+68,Sadowal,village,Barnala,1.9,1.9,1.0,0,30.59309,75.46738
+69,Rohira,village,Sangrur,1.9,1.9,1.0,0,30.63665,75.84934
+70,Bhalwan,village,Sangrur,1.9,1.9,1.0,0,30.32292,75.94419
+71,Isra,village,Sangrur,1.9,1.9,1.0,0,30.43754,75.94248
+72,Kular Khurd,village,Sangrur,1.8,1.8,1.0,0,30.16569,75.85534
+73,Jharon,village,Sangrur,1.8,1.8,1.0,0,30.13191,75.6516
+74,Panuan,village,Sangrur,1.8,1.8,1.0,0,30.31273,76.03376
+75,Banganwali,village,Sangrur,1.8,1.8,1.0,0,30.40989,75.91604
+76,Dhandra,village,Sangrur,1.8,1.8,1.0,0,30.3982,75.91261
+77,Bazidka Kalan,village,Barnala,1.8,1.8,1.0,0,30.45844,75.57126
+78,Hathan,village,Sangrur,1.8,1.8,1.0,0,30.45134,75.82146
+79,Katron,village,Sangrur,1.7,1.7,1.0,0,30.44869,75.74529
+80,Rangian,village,Sangrur,1.7,1.7,1.0,0,30.36192,75.68859
+81,Kheri Sodian,village,Sangrur,1.7,1.7,1.0,0,30.45385,76.06828
+82,Ahnon,village,Sangrur,1.7,1.7,1.0,0,30.49509,75.84094
+83,Seda Singh,village,Sangrur,1.6,1.6,1.0,0,30.41404,75.9799
+84,Nandgarh,village,Sangrur,1.6,1.6,1.0,0,30.32834,75.97741
+85,Chima,village,Sangrur,1.6,1.6,1.0,0,30.39764,75.984
+86,Hamidi,village,Barnala,1.6,1.6,1.0,0,30.46687,75.60722
+87,Kheri Chahlan,village,Sangrur,1.6,1.6,1.0,0,30.43373,75.68293
+88,Adamwal,village,Sangrur,1.6,1.6,1.0,0,30.48496,75.87536
+89,Mauran Nabha,village,Barnala,1.6,1.6,1.0,0,30.36976,75.38271
+90,Kuthala,village,Sangrur,1.5,1.5,1.0,0,30.5242,75.75519
+91,Sekha,village,Barnala,1.5,1.5,1.0,0,30.35851,75.6455
+92,Bimari,village,Sangrur,1.5,1.5,1.0,0,30.30591,76.1295
+93,Nilowali,village,Sangrur,1.4,1.4,1.0,0,30.07716,75.80403
+94,Dhanauri,village,Sangrur,1.4,1.4,1.0,0,30.40638,76.04007
+95,Dhandiwal,village,Sangrur,1.4,1.4,1.0,0,30.3434,75.71889
+96,Bugra,village,Sangrur,1.4,1.4,1.0,1,30.35651,75.78481
+97,Turi,village,Sangrur,1.4,1.4,1.0,0,30.27794,76.08971
+98,Narengarh Sohian,village,Barnala,1.3,1.3,1.0,0,30.55775,75.42847
+99,Kanjhla,village,Sangrur,1.3,1.3,1.0,0,30.30858,75.77262
+100,Kandhargarh,village,Sangrur,1.3,1.3,1.0,0,30.37595,75.98458
+101,Gurdaspura,village,Sangrur,1.3,1.3,1.0,0,30.25091,75.94248
+102,Dhuri,town,Sangrur,1.2,1.2,1.0,0,30.37083,75.86474
+103,Kaloudi,village,Sangrur,1.2,1.2,1.0,0,30.2376,75.93381
+104,Chaunke Khurd,village,Barnala,1.2,1.2,1.0,0,30.47167,75.53291
+105,Chhiniwal Khurd,village,Barnala,1.2,1.2,1.0,0,30.58047,75.44769
+106,Dehleez Kalan,village,Sangrur,1.2,1.2,1.0,0,30.65357,75.80869
+107,Khuddi Kalan,village,Barnala,1.2,1.2,1.0,0,30.34664,75.49118
+108,Jaulia,village,Sangrur,1.2,1.2,1.0,0,30.32573,76.04972
+109,Vidhate,village,Barnala,1.2,1.2,1.0,0,30.4657,75.38222
+110,Ramgarh Sardaran,village,Sangrur,1.1,1.1,1.0,0,30.64076,75.90458
+111,Bhotna,village,Barnala,1.1,1.1,1.0,0,30.47369,75.4279
+112,Kalal Majra,village,Barnala,1.1,1.1,1.0,0,30.56494,75.55262
+113,Atar Singhwala,village,Barnala,1.1,1.1,1.0,0,30.24454,75.59763
+114,Manja,village,Sangrur,1.1,1.1,1.0,0,30.29306,76.09529
+115,Bimwar,village,Sangrur,1.1,1.1,1.0,0,30.30124,76.11663
+116,Rajo Mazra,village,Sangrur,1.1,1.1,1.0,0,30.37258,75.79708
+117,Maradkheda,village,Sangrur,1.0,1.0,1.0,0,30.15269,75.86579
+118,Phumanwal,village,Sangrur,1.0,1.0,1.0,0,30.28333,76.12855
+119,Bazidka Khurd,village,Barnala,1.0,1.0,1.0,0,30.46673,75.57572
+120,Faizgarh,village,Sangrur,1.0,1.0,1.0,0,30.44647,75.85841
+121,Maholi Khurd,village,Sangrur,0.9,0.9,1.0,0,30.61336,75.73126
+122,Handiaya,village,Barnala,0.9,0.9,1.0,0,30.32664,75.50275
+123,Manji,village,Sangrur,0.9,0.9,1.0,0,30.28914,76.09514
+124,Alipur Khalsa,village,Sangrur,0.9,0.9,1.0,0,30.49461,75.75777
+125,Nadampur,village,Sangrur,0.8,0.8,1.0,0,30.25367,76.11759
+126,Diwana,village,Barnala,0.8,0.8,1.0,0,30.57457,75.42174
+127,Tolewal,village,Sangrur,0.8,0.8,1.0,0,30.48152,75.97831
+128,Kunran,village,Barnala,0.8,0.8,1.0,0,30.24628,75.71391
+129,Mahorana,village,Sangrur,0.8,0.8,1.0,0,30.48694,75.95829
+130,Kharak Singh Wala,village,Barnala,0.8,0.8,1.0,0,30.50912,75.31895
+131,Lohgarh,village,Sangrur,0.7,0.7,1.0,0,30.57847,75.6733
+132,Malaudh,village,Sangrur,0.7,0.7,1.0,0,30.63352,75.93598
+133,Dan Singhwala,village,Barnala,0.7,0.7,1.0,0,30.29969,75.60036
+134,Bamal,village,Sangrur,0.7,0.7,1.0,0,30.41978,75.82493
+135,Faridpur Kalan,village,Sangrur,0.7,0.7,1.0,0,30.48587,75.81935
+136,Mehta,village,Barnala,0.7,0.7,1.0,0,30.28811,75.4078
+137,Upli,village,Sangrur,0.6,0.6,1.0,0,30.21165,75.82207
+138,Jandali Kalan,village,Sangrur,0.6,0.6,1.0,0,30.66228,75.83966
+139,Sanghera,village,Barnala,0.6,0.6,1.0,0,30.39922,75.56282
+140,Kalala,village,Barnala,0.6,0.6,1.0,0,30.49607,75.52259
+141,Sehna,village,Barnala,0.6,0.6,1.0,0,30.4282,75.38072
+142,Majoke,village,Barnala,0.6,0.6,1.0,0,30.50478,75.3608
+143,Rampura,village,Sangrur,0.6,0.6,1.0,0,30.07362,75.83141
+144,Bakhu Pir,village,Sangrur,0.6,0.6,1.0,0,30.30498,76.06474
+145,Kaulsaheri,village,Sangrur,0.6,0.6,1.0,0,30.36969,75.94439
+146,Chung,village,Sangrur,0.6,0.6,1.0,0,30.47472,75.81717
+147,Karamgarh,village,Barnala,0.6,0.6,1.0,0,30.41382,75.6092
+148,Kheri Jattan,village,Sangrur,0.6,0.6,1.0,0,30.42977,75.96402
+149,Sangala,village,Sangrur,0.6,0.6,1.0,0,30.46432,75.88656
+150,Laddi,village,Sangrur,0.6,0.6,1.0,0,30.28994,75.93394
+151,Bhulran,village,Sangrur,0.6,0.6,1.0,0,30.47353,75.94756
+152,Saddopur,village,Sangrur,0.6,0.6,1.0,0,30.46717,75.86145
+153,Jandali Khurd,village,Sangrur,0.5,0.5,1.0,0,30.66914,75.84148
+154,Sheron,village,Sangrur,0.5,0.5,1.0,0,30.15863,75.7176
+155,Kubba,village,Barnala,0.5,0.5,1.0,0,30.23226,75.60632
+156,Ugrahan,village,Sangrur,0.5,0.5,1.0,0,30.05045,75.76627
+157,Gaggarpur,village,Sangrur,0.5,0.5,1.0,0,30.19503,75.91003
+158,Kala Jhar,village,Sangrur,0.5,0.5,1.0,0,30.27093,76.15156
+159,Mimsa,village,Sangrur,0.5,0.5,1.0,0,30.39479,75.96016
+160,Dittupur,village,Sangrur,0.5,0.5,1.0,0,30.33369,75.99393
+161,Rampur Chhanna,village,Sangrur,0.5,0.5,1.0,0,30.45787,76.05073
+162,Lidran,village,Sangrur,0.5,0.5,1.0,0,30.28775,75.77846
+163,Jahangir,village,Sangrur,0.5,0.5,1.0,0,30.39116,75.81811
+164,Niamatpur,village,Sangrur,0.5,0.5,1.0,0,30.45798,75.97954
+165,Babbanpur,village,Sangrur,0.5,0.5,1.0,0,30.41855,75.87158
+166,Badru Khan,village,Sangrur,0.5,0.5,1.0,0,30.25202,75.79064
+167,Rurka,village,Sangrur,0.5,0.5,1.0,0,30.50023,75.82991
+168,Lachcha Baddi,village,Sangrur,0.5,0.5,1.0,0,30.45532,75.86528
+169,Ramgarh Sandhwan,village,Sangrur,0.5,0.5,1.0,0,29.95701,75.84669
+170,Phulad,village,Sangrur,0.5,0.5,1.0,0,29.78135,75.93479
+171,Fatehghar,village,Sangrur,0.5,0.5,1.0,0,30.52237,75.70505
+172,Ahmedgarh,town,Sangrur,0.4,0.4,1.0,0,30.67721,75.82581
+173,Chhapa,village,Barnala,0.4,0.4,1.0,0,30.55271,75.65347
+174,Manal,village,Barnala,0.4,0.4,1.0,0,30.50679,75.66554
+175,Khiali,village,Barnala,0.4,0.4,1.0,0,30.51314,75.60932
+176,Dhaner,village,Barnala,0.4,0.4,1.0,0,30.56779,75.51134
+177,Karail,village,Sangrur,0.4,0.4,1.0,0,30.05515,76.02676
+178,Khurana,village,Sangrur,0.4,0.4,1.0,0,30.24468,75.90651
+179,Galwati,village,Sangrur,0.4,0.4,1.0,0,30.41791,76.05803
+180,Todarwal,village,Sangrur,0.4,0.4,1.0,0,30.4648,76.08526
+181,Kumbarwal,village,Barnala,0.4,0.4,1.0,0,30.33177,75.68027
+182,Bhaini Mahraj,village,Sangrur,0.4,0.4,1.0,0,30.2819,75.68275
+183,Naudharani,village,Sangrur,0.4,0.4,1.0,0,30.4884,75.85836
+184,Muhammadgarh,village,Sangrur,0.4,0.4,1.0,0,30.46225,75.87394
+185,Pindi Manna,village,Barnala,0.4,0.4,1.0,0,30.30836,75.56878
+186,Kothe Rajinderpura,hamlet,Barnala,0.4,0.4,1.0,0,30.30665,75.58349
+187,Isapur,village,Sangrur,0.3,0.3,1.0,0,30.49158,75.7873
+188,Najwala,hamlet,Sangrur,0.3,0.3,1.0,0,30.26078,75.90042
+189,Bugran,village,Barnala,0.3,0.3,1.0,0,30.31248,75.30992
+190,jakhlan,village,Sangrur,0.2,0.2,1.0,0,30.38028,75.94059
+191,Ghanaur Khurd,village,Sangrur,0.2,0.2,1.0,0,30.42011,75.81287
+192,Kapur Garh,village,Sangrur,0.1,0.1,1.0,0,30.56476,76.11621
+193,Palasaur,village,Sangrur,0.1,0.1,1.0,0,30.32893,75.93381
+194,Kutba,village,Barnala,0.0,0.0,1.0,0,30.57851,75.62709

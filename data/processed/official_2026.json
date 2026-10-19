@@ -1,0 +1,466 @@
+{
+ "source": "CREAMS, ICAR-IARI daily paddy residue burning bulletin",
+ "bulletin": {
+  "date": "2026-10-17",
+  "year": 2026,
+  "url": "https://creams.iari.res.in/Creams_website_bulletin/Fire_bulletin_2026/Fire_bulletin_2026r/33.RiceResidueFireBulletin_17Oct_2026_ICAR.pdf"
+ },
+ "via": "tinyfish",
+ "n_bulletins": 33,
+ "date": "2026-10-17",
+ "day_punjab": 29,
+ "day_haryana": 0,
+ "season_punjab": 220,
+ "season_haryana": 8,
+ "district_cumulative": {
+  "Sangrur": {
+   "2020": 142,
+   "2021": 36,
+   "2022": 34,
+   "2023": 78,
+   "2024": 116,
+   "2025": 7,
+   "2026": 3
+  },
+  "Barnala": {
+   "2020": 22,
+   "2021": 13,
+   "2022": 10,
+   "2023": 7,
+   "2024": 6,
+   "2025": 5,
+   "2026": 0
+  },
+  "Malerkotla": {
+   "2020": 5,
+   "2021": 9,
+   "2022": 7,
+   "2023": 3,
+   "2024": 23,
+   "2025": 4,
+   "2026": 0
+  },
+  "Patiala": {
+   "2020": 549,
+   "2021": 252,
+   "2022": 67,
+   "2023": 145,
+   "2024": 142,
+   "2025": 11,
+   "2026": 3
+  },
+  "Mansa": {
+   "2020": 51,
+   "2021": 2,
+   "2022": 9,
+   "2023": 29,
+   "2024": 21,
+   "2025": 1,
+   "2026": 0
+  },
+  "Bathinda": {
+   "2020": 69,
+   "2021": 8,
+   "2022": 3,
+   "2023": 2,
+   "2024": 5,
+   "2025": 2,
+   "2026": 0
+  },
+  "Ludhiana": {
+   "2020": 158,
+   "2021": 148,
+   "2022": 38,
+   "2023": 24,
+   "2024": 25,
+   "2025": 2,
+   "2026": 1
+  },
+  "Punjab total": {
+   "2020": 6491,
+   "2021": 2389,
+   "2022": 1847,
+   "2023": 1389,
+   "2024": 1289,
+   "2025": 208,
+   "2026": 220
+  }
+ },
+ "years": [
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025,
+  2026
+ ],
+ "punjab_events": [
+  {
+   "place": "AMRITSAR ATTARI",
+   "satellite": "S-NPP",
+   "lat": 31.57367,
+   "lon": 74.68921,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "AMRITSAR MAJITHA",
+   "satellite": "S-NPP",
+   "lat": 31.73535,
+   "lon": 75.08764,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "AMRITSAR TARSIKKA",
+   "satellite": "S-NPP",
+   "lat": 31.6626,
+   "lon": 75.1833,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "FIROZPUR FIROZPUR",
+   "satellite": "S-NPP",
+   "lat": 31.00721,
+   "lon": 74.56339,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "LUDHIANA JAGRAON",
+   "satellite": "S-NPP",
+   "lat": 30.76353,
+   "lon": 75.44992,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "SAS NAGAR KHARAR",
+   "satellite": "S-NPP",
+   "lat": 30.57348,
+   "lon": 76.69672,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN BHIKHIWIND",
+   "satellite": "S-NPP",
+   "lat": 31.32878,
+   "lon": 74.73764,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN BHIKHIWIND",
+   "satellite": "S-NPP",
+   "lat": 31.37732,
+   "lon": 74.68552,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN CHOHLA SAHIB",
+   "satellite": "S-NPP",
+   "lat": 31.281,
+   "lon": 75.00485,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN CHOHLA SAHIB",
+   "satellite": "S-NPP",
+   "lat": 31.28113,
+   "lon": 75.00294,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN CHOHLA SAHIB",
+   "satellite": "S-NPP",
+   "lat": 31.32981,
+   "lon": 75.09152,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN GANDIWIND TATLA",
+   "satellite": "S-NPP",
+   "lat": 31.42351,
+   "lon": 74.72461,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN GANDIWIND TATLA",
+   "satellite": "S-NPP",
+   "lat": 31.48631,
+   "lon": 74.73214,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN KHADUR SAHIB",
+   "satellite": "S-NPP",
+   "lat": 31.45005,
+   "lon": 75.06979,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN KHADUR SAHIB",
+   "satellite": "S-NPP",
+   "lat": 31.45698,
+   "lon": 75.0957,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN KHADUR SAHIB",
+   "satellite": "AQUA",
+   "lat": 31.457,
+   "lon": 75.185,
+   "time_ist": "15:08:09",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN NAUSHERA PANNUAN",
+   "satellite": "S-NPP",
+   "lat": 31.405,
+   "lon": 75.01254,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN NAUSHERA PANNUAN",
+   "satellite": "S-NPP",
+   "lat": 31.40562,
+   "lon": 75.01779,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN NAUSHERA PANNUAN",
+   "satellite": "S-NPP",
+   "lat": 31.40623,
+   "lon": 75.02304,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN PATTI",
+   "satellite": "S-NPP",
+   "lat": 31.17404,
+   "lon": 74.78062,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN PATTI",
+   "satellite": "S-NPP",
+   "lat": 31.17773,
+   "lon": 74.78001,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN PATTI",
+   "satellite": "S-NPP",
+   "lat": 31.21048,
+   "lon": 74.86318,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN TARN TARAN",
+   "satellite": "S-NPP",
+   "lat": 31.44151,
+   "lon": 74.77905,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN TARN TARAN",
+   "satellite": "S-NPP",
+   "lat": 31.4441,
+   "lon": 74.83107,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN TARN TARAN",
+   "satellite": "S-NPP",
+   "lat": 31.44782,
+   "lon": 74.83047,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN TARN TARAN",
+   "satellite": "S-NPP",
+   "lat": 31.49069,
+   "lon": 75.02557,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN TARN TARAN",
+   "satellite": "S-NPP",
+   "lat": 31.4909,
+   "lon": 75.02806,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN VALTOHA",
+   "satellite": "S-NPP",
+   "lat": 31.11088,
+   "lon": 74.59368,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  },
+  {
+   "place": "TARN TARAN VALTOHA",
+   "satellite": "S-NPP",
+   "lat": 31.11151,
+   "lon": 74.59866,
+   "time_ist": "14:00:03",
+   "daynight": "D"
+  }
+ ],
+ "daily": {
+  "2026-09-15": {
+   "punjab": 2,
+   "haryana": 0
+  },
+  "2026-09-16": {
+   "punjab": 3,
+   "haryana": 0
+  },
+  "2026-09-17": {
+   "punjab": 0,
+   "haryana": 0
+  },
+  "2026-09-18": {
+   "punjab": 1,
+   "haryana": 0
+  },
+  "2026-09-19": {
+   "punjab": 1,
+   "haryana": 0
+  },
+  "2026-09-20": {
+   "punjab": 8,
+   "haryana": 0
+  },
+  "2026-09-21": {
+   "punjab": 5,
+   "haryana": 0
+  },
+  "2026-09-22": {
+   "punjab": 4,
+   "haryana": 0
+  },
+  "2026-09-23": {
+   "punjab": 1,
+   "haryana": 1
+  },
+  "2026-09-24": {
+   "punjab": 2,
+   "haryana": 1
+  },
+  "2026-09-25": {
+   "punjab": 5,
+   "haryana": 0
+  },
+  "2026-09-26": {
+   "punjab": 8,
+   "haryana": 0
+  },
+  "2026-09-27": {
+   "punjab": 9,
+   "haryana": 0
+  },
+  "2026-09-28": {
+   "punjab": 1,
+   "haryana": 0
+  },
+  "2026-09-29": {
+   "punjab": 2,
+   "haryana": 0
+  },
+  "2026-09-30": {
+   "punjab": 7,
+   "haryana": 1
+  },
+  "2026-10-01": {
+   "punjab": 4,
+   "haryana": 0
+  },
+  "2026-10-02": {
+   "punjab": 9,
+   "haryana": 1
+  },
+  "2026-10-03": {
+   "punjab": 1,
+   "haryana": 0
+  },
+  "2026-10-04": {
+   "punjab": 6,
+   "haryana": 0
+  },
+  "2026-10-05": {
+   "punjab": 5,
+   "haryana": 0
+  },
+  "2026-10-06": {
+   "punjab": 4,
+   "haryana": 0
+  },
+  "2026-10-07": {
+   "punjab": 15,
+   "haryana": 0
+  },
+  "2026-10-08": {
+   "punjab": 4,
+   "haryana": 1
+  },
+  "2026-10-09": {
+   "punjab": 2,
+   "haryana": 2
+  },
+  "2026-10-10": {
+   "punjab": 9,
+   "haryana": 0
+  },
+  "2026-10-11": {
+   "punjab": 0,
+   "haryana": 0
+  },
+  "2026-10-12": {
+   "punjab": 5,
+   "haryana": 0
+  },
+  "2026-10-13": {
+   "punjab": 51,
+   "haryana": 0
+  },
+  "2026-10-14": {
+   "punjab": 10,
+   "haryana": 1
+  },
+  "2026-10-15": {
+   "punjab": 1,
+   "haryana": 0
+  },
+  "2026-10-16": {
+   "punjab": 6,
+   "haryana": 0
+  },
+  "2026-10-17": {
+   "punjab": 29,
+   "haryana": 0
+  }
+ }
+}

@@ -1,0 +1,3 @@
+# shell scripts keep unix line endings and batch files windows ones, whatever the checkout settings
+*.sh  text eol=lf
+*.bat text eol=crlf

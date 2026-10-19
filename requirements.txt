@@ -1,0 +1,30 @@
+# core
+numpy
+scipy
+pandas
+pyarrow
+tqdm
+python-dotenv
+httpx
+tinyfish
+pymupdf
+pypdf
+
+# geo
+rasterio
+pyproj
+shapely
+geopandas
+pystac-client
+scikit-image
+
+# ml (install torch from the pytorch index for cuda, see readme)
+torch
+
+# viz
+matplotlib
+pillow
+
+# api
+fastapi
+uvicorn[standard]

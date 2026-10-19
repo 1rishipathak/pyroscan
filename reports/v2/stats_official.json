@@ -1,0 +1,209 @@
+{
+ "season": "2025",
+ "source": "unet",
+ "detections": "official",
+ "min_scar_ha": 0.4,
+ "geo_err_m": 150,
+ "window": {
+  "burnt_ha": 99013,
+  "seen_ha": 11319,
+  "unseen_ha": 87694,
+  "unseen_share": 0.8857,
+  "scars": 68309,
+  "unseen_scars": 62609,
+  "median_scar_ha": 0.88,
+  "firms_detections": 1447,
+  "firms_on_cropland": 1400,
+  "firms_matched_share": 0.8314
+ },
+ "districts": {
+  "Sangrur": {
+   "burnt_ha": 41273,
+   "seen_ha": 5674,
+   "unseen_ha": 35599,
+   "unseen_share": 0.8625,
+   "scars": 27468,
+   "unseen_scars": 24738,
+   "median_scar_ha": 0.92,
+   "firms_detections": 761,
+   "firms_on_cropland": 735,
+   "firms_matched_share": 0.8327
+  },
+  "Barnala": {
+   "burnt_ha": 16153,
+   "seen_ha": 744,
+   "unseen_ha": 15409,
+   "unseen_share": 0.9539,
+   "scars": 10919,
+   "unseen_scars": 10522,
+   "median_scar_ha": 0.92,
+   "firms_detections": 99,
+   "firms_on_cropland": 94,
+   "firms_matched_share": 0.8404
+  }
+ },
+ "study_area": {
+  "burnt_ha": 57426,
+  "seen_ha": 6418,
+  "unseen_ha": 51008,
+  "unseen_share": 0.8882,
+  "scars": 38387,
+  "unseen_scars": 35260,
+  "median_scar_ha": 0.92,
+  "firms_detections": 860,
+  "firms_on_cropland": 829,
+  "firms_matched_share": 0.8335
+ },
+ "by_scene_date": [
+  {
+   "date": "2025-10-08",
+   "burnt_ha": 4.4,
+   "unseen_ha": 4.4,
+   "scars": 6.0
+  },
+  {
+   "date": "2025-10-10",
+   "burnt_ha": 7.0,
+   "unseen_ha": 7.0,
+   "scars": 9.0
+  },
+  {
+   "date": "2025-10-13",
+   "burnt_ha": 256.4,
+   "unseen_ha": 256.4,
+   "scars": 321.0
+  },
+  {
+   "date": "2025-10-15",
+   "burnt_ha": 9.4,
+   "unseen_ha": 9.4,
+   "scars": 18.0
+  },
+  {
+   "date": "2025-10-17",
+   "burnt_ha": 36.8,
+   "unseen_ha": 36.2,
+   "scars": 51.0
+  },
+  {
+   "date": "2025-10-18",
+   "burnt_ha": 128.7,
+   "unseen_ha": 127.3,
+   "scars": 168.0
+  },
+  {
+   "date": "2025-10-20",
+   "burnt_ha": 208.8,
+   "unseen_ha": 208.8,
+   "scars": 255.0
+  },
+  {
+   "date": "2025-10-23",
+   "burnt_ha": 482.8,
+   "unseen_ha": 470.3,
+   "scars": 489.0
+  },
+  {
+   "date": "2025-10-25",
+   "burnt_ha": 126.0,
+   "unseen_ha": 124.6,
+   "scars": 113.0
+  },
+  {
+   "date": "2025-10-28",
+   "burnt_ha": 129.4,
+   "unseen_ha": 125.0,
+   "scars": 92.0
+  },
+  {
+   "date": "2025-10-30",
+   "burnt_ha": 1369.7,
+   "unseen_ha": 1115.3,
+   "scars": 787.0
+  },
+  {
+   "date": "2025-11-02",
+   "burnt_ha": 14843.5,
+   "unseen_ha": 11452.3,
+   "scars": 8543.0
+  },
+  {
+   "date": "2025-11-04",
+   "burnt_ha": 2000.8,
+   "unseen_ha": 1891.7,
+   "scars": 1283.0
+  },
+  {
+   "date": "2025-11-06",
+   "burnt_ha": 5011.4,
+   "unseen_ha": 4541.0,
+   "scars": 3371.0
+  },
+  {
+   "date": "2025-11-07",
+   "burnt_ha": 15074.8,
+   "unseen_ha": 14112.2,
+   "scars": 9294.0
+  },
+  {
+   "date": "2025-11-09",
+   "burnt_ha": 9067.3,
+   "unseen_ha": 8414.1,
+   "scars": 6024.0
+  },
+  {
+   "date": "2025-11-12",
+   "burnt_ha": 6068.1,
+   "unseen_ha": 5548.2,
+   "scars": 4335.0
+  },
+  {
+   "date": "2025-11-14",
+   "burnt_ha": 390.5,
+   "unseen_ha": 375.8,
+   "scars": 314.0
+  },
+  {
+   "date": "2025-11-17",
+   "burnt_ha": 855.6,
+   "unseen_ha": 836.0,
+   "scars": 826.0
+  },
+  {
+   "date": "2025-11-19",
+   "burnt_ha": 67.7,
+   "unseen_ha": 67.7,
+   "scars": 90.0
+  },
+  {
+   "date": "2025-11-22",
+   "burnt_ha": 719.0,
+   "unseen_ha": 719.0,
+   "scars": 1075.0
+  },
+  {
+   "date": "2025-11-24",
+   "burnt_ha": 23.0,
+   "unseen_ha": 23.0,
+   "scars": 31.0
+  },
+  {
+   "date": "2025-11-26",
+   "burnt_ha": 72.1,
+   "unseen_ha": 72.1,
+   "scars": 132.0
+  },
+  {
+   "date": "2025-11-27",
+   "burnt_ha": 233.2,
+   "unseen_ha": 232.8,
+   "scars": 354.0
+  },
+  {
+   "date": "2025-11-29",
+   "burnt_ha": 239.6,
+   "unseen_ha": 237.0,
+   "scars": 406.0
+  }
+ ]
+}

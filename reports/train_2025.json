@@ -1,0 +1,108 @@
+{
+ "note": "spatial hold-out: 20% of 5 km blocks never seen in training. scores are agreement with the automatic labels on confidently-labelled pixels, not accuracy against ground truth. run stopped after epoch 9 of a planned 24 (one-cycle lr) once held-out f1 plateaued; best checkpoint kept.",
+ "n_train_patches": 1980,
+ "n_val_patches": 519,
+ "params_m": 7.8,
+ "best": {
+  "epoch": 9,
+  "train_loss": 0.037,
+  "val_loss": 0.085,
+  "val_f1": 0.976,
+  "val_iou": 0.953,
+  "val_precision": 0.983,
+  "val_recall": 0.969,
+  "minutes": 11.8
+ },
+ "history": [
+  {
+   "epoch": 1,
+   "train_loss": 1.004,
+   "val_loss": 0.888,
+   "val_f1": 0.222,
+   "val_iou": 0.125,
+   "val_precision": 0.128,
+   "val_recall": 0.838,
+   "minutes": 1.9
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.657,
+   "val_loss": 0.519,
+   "val_f1": 0.801,
+   "val_iou": 0.668,
+   "val_precision": 0.731,
+   "val_recall": 0.885,
+   "minutes": 2.7
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.367,
+   "val_loss": 0.324,
+   "val_f1": 0.857,
+   "val_iou": 0.749,
+   "val_precision": 0.806,
+   "val_recall": 0.914,
+   "minutes": 3.6
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.129,
+   "val_loss": 0.222,
+   "val_f1": 0.922,
+   "val_iou": 0.855,
+   "val_precision": 0.953,
+   "val_recall": 0.893,
+   "minutes": 4.6
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.081,
+   "val_loss": 0.208,
+   "val_f1": 0.895,
+   "val_iou": 0.809,
+   "val_precision": 0.873,
+   "val_recall": 0.917,
+   "minutes": 5.5
+  },
+  {
+   "epoch": 6,
+   "train_loss": 0.06,
+   "val_loss": 0.133,
+   "val_f1": 0.957,
+   "val_iou": 0.918,
+   "val_precision": 0.987,
+   "val_recall": 0.929,
+   "minutes": 6.7
+  },
+  {
+   "epoch": 7,
+   "train_loss": 0.05,
+   "val_loss": 0.161,
+   "val_f1": 0.941,
+   "val_iou": 0.888,
+   "val_precision": 0.994,
+   "val_recall": 0.893,
+   "minutes": 8.3
+  },
+  {
+   "epoch": 8,
+   "train_loss": 0.048,
+   "val_loss": 0.096,
+   "val_f1": 0.971,
+   "val_iou": 0.944,
+   "val_precision": 0.973,
+   "val_recall": 0.97,
+   "minutes": 10.1
+  },
+  {
+   "epoch": 9,
+   "train_loss": 0.037,
+   "val_loss": 0.085,
+   "val_f1": 0.976,
+   "val_iou": 0.953,
+   "val_precision": 0.983,
+   "val_recall": 0.969,
+   "minutes": 11.8
+  }
+ ]
+}

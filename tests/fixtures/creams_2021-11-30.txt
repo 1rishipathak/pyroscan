@@ -1,0 +1,3140 @@
+Bulletin 
+No. 77 
+ 
+ 
+Events Date:  
+30-Nov-2021 
+ 
+ 
+Issued on: 
+30-Nov-2021 
+MONITORING PADDY RESIDUE BURNING IN INDIA USING 
+SATELLITE REMOTE SENSING DURING 2021 
+Prepared by: 
+Consortium for Research on Agroecosystem Monitoring and Modeling from Space (CREAMS) Laboratory, 
+Division of Agricultural Physics, ICAR – Indian Agricultural Research Institute, New Delhi – 110012 
+http://creams.iari.res.in
+
+Highlights for 30-November-2021 
+• The active fire events due to rice res idue burning were moni tored using satellite remote sensing, following the new "Standard 
+Protocol for Estimation of Crop Residue Burning Fire Events using Satellite Data". 
+• Satellites detected 72 residue burning events in the six study States on 30-Nov-2021. 
+• The state wise events detected on 30-Nov-21 were 08 in Punjab, 18 in Haryana, 26 in UP, 00 in Delhi, 09 in Raj and 14 in MP. 
+• The number of events has decreased from 225 on 29-Nov-2021 to 72 on 30-Nov-2021 in the six study states. 
+• Total 92047 burning events were detected in the six states between 15-Sept-2021 and 30-Nov-2021, which are distributed as 71304, 
+6987, 4242, 4, 1350 and 8160 in Punjab, Haryana, UP, Delhi, Rajasthan and MP, respectively. 
+• Overall, the total burning events recorded in the six states are 14.6% less than in 2020 till date. Punjab recorded 14.1% reduction, 
+Haryana recorded 66.3% increase, UP recorded 8.4% reduction, Delhi recorded 55.6% reduction, Rajasthan recor ded 23.1% 
+reduction and MP recorded 42.3% reduction, in the current season than in 2020. 
+Temporal distribution of rice residue burning events for the study States in 2021 
+ 
+0
+2
+0
+9
+5
+8
+0
+0
+0
+5
+11
+19
+37
+28
+64
+27
+13
+0
+9
+23
+18
+42
+72
+108
+114
+150
+64
+97
+132
+229
+660
+429
+14
+57
+496
+788
+597
+1111
+620
+0
+76
+329
+279
+906
+1353
+1373
+2895
+1796
+3001
+2512
+3032
+5327
+3942
+5199
+4397
+5079
+4008
+4156
+3403
+3742
+2541
+1761
+1757
+523
+680
+448
+283
+168
+66
+91
+34
+31
+21
+19
+5
+8
+5
+0
+500
+1000
+1500
+2000
+2500
+3000
+3500
+4000
+4500
+5000
+5500
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+No. of residue burning events
+Punjab
+Daily
+
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+4
+2
+4
+2
+6
+2
+3
+0
+11
+27
+39
+95
+51
+51
+91
+98
+363
+176
+0
+1
+55
+155
+131
+140
+218
+38
+71
+175
+93
+149
+161
+148
+353
+124
+203
+197
+228
+331
+219
+182
+138
+217
+184
+126
+127
+210
+195
+129
+269
+101
+111
+132
+127
+178
+91
+59
+37
+41
+48
+28
+9
+14
+18
+0
+50
+100
+150
+200
+250
+300
+350
+400
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+No. of residue burning events
+Haryana
+Daily
+0
+0
+0
+1
+1
+0
+0
+0
+0
+1
+0
+0
+1
+6
+10
+13
+13
+0
+3
+0
+2
+1
+13
+11
+20
+54
+28
+23
+42
+68
+149
+121
+39
+0
+5
+1
+5
+3
+8
+11
+18
+41
+58
+35
+32
+53
+170
+157
+87
+66
+123
+70
+208
+46
+21
+51
+77
+151
+120
+95
+49
+67
+138
+177
+14
+11
+20
+106
+276
+186
+87
+80
+74
+257
+241
+101
+26
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+220
+240
+260
+280
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+No. of residue burning events
+Uttar Pradesh
+Daily
+
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+1
+0
+0
+1
+7
+1
+5
+1
+8
+2
+0
+2
+5
+4
+2
+5
+7
+4
+2
+3
+1
+4
+23
+20
+15
+5
+19
+20
+19
+45
+32
+38
+44
+48
+40
+55
+40
+78
+88
+51
+81
+38
+77
+73
+53
+72
+21
+61
+26
+30
+11
+33
+12
+7
+9
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+No. of residue burning events
+Rajasthan
+Daily0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+4
+0
+0
+0
+1
+2
+1
+1
+1
+2
+4
+10
+2
+1
+2
+11
+27
+13
+1
+0
+1
+21
+30
+29
+32
+34
+60
+55
+62
+110
+97
+168
+299
+198
+214
+148
+123
+320
+248
+199
+170
+330
+380
+506
+185
+171
+346
+353
+660
+261
+126
+16
+6
+95
+188
+262
+224
+343
+318
+416
+163
+95
+14
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+550
+600
+650
+700
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+No. of residue burning events
+Madhya Pradesh
+Daily
+
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+1
+0
+1
+0
+2
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0
+1
+2
+3
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+No. of residue burning events
+Delhi
+Daily
+
+Comparison of residue burning events in current year (2021) with previous year (2020) for the study States 
+ 
+0
+4000
+8000
+12000
+16000
+20000
+24000
+28000
+32000
+36000
+40000
+44000
+48000
+52000
+56000
+60000
+64000
+68000
+72000
+76000
+80000
+84000
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+No. of residue burning events
+Punjab Cumulative
+2020
+2021
+83002
+71304
+0
+1000
+2000
+3000
+4000
+5000
+6000
+7000
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+No. of residue burning events
+Haryana Cumulative
+2020
+2021
+4202
+6987
+
+0
+400
+800
+1200
+1600
+2000
+2400
+2800
+3200
+3600
+4000
+4400
+4800
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+No. of residue burning events
+Uttar Pradesh Cumulative
+2020
+2021 4242
+4631
+0
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+1100
+1200
+1300
+1400
+1500
+1600
+1700
+1800
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+No. of residue burning events
+Rajasthan Cumulative
+2020
+2021
+1350
+1756
+
+0
+1000
+2000
+3000
+4000
+5000
+6000
+7000
+8000
+9000
+10000
+11000
+12000
+13000
+14000
+15000
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+No. of residue burning events
+Madhya Pradesh Cumulative
+2020
+2021
+8160
+14148
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+No. of residue burning events
+Delhi Cumulative
+2020
+2021
+04
+09
+
+Comparison of residue burning fire power in current year (2021) with previous year (2020) for the study States 
+ 
+0
+50000
+100000
+150000
+200000
+250000
+300000
+350000
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+Fire radiative power (MW)
+Punjab Cumulative
+2020
+2021
+0
+2000
+4000
+6000
+8000
+10000
+12000
+14000
+16000
+18000
+20000
+22000
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+Fire radiative power (MW)
+Haryana Cumulative
+2020
+2021
+
+0
+500
+1000
+1500
+2000
+2500
+3000
+3500
+4000
+4500
+5000
+5500
+6000
+6500
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+Fire radiative power (MW)
+Uttar Pradesh Cumulative
+2020
+2021
+0
+400
+800
+1200
+1600
+2000
+2400
+2800
+3200
+3600
+4000
+4400
+4800
+5200
+5600
+6000
+6400
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+Fire radiative power (MW)
+Rajasthan Cumulative
+2020
+2021
+
+0
+4000
+8000
+12000
+16000
+20000
+24000
+28000
+32000
+36000
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+Fire radiative power (MW)
+Madhya Pradesh Cumulative
+2020
+2021
+0
+5
+10
+15
+20
+25
+30
+15-Sep
+16-Sep
+17-Sep
+18-Sep
+19-Sep
+20-Sep
+21-Sep
+22-Sep
+23-Sep
+24-Sep
+25-Sep
+26-Sep
+27-Sep
+28-Sep
+29-Sep
+30-Sep
+01-Oct
+02-Oct
+03-Oct
+04-Oct
+05-Oct
+06-Oct
+07-Oct
+08-Oct
+09-Oct
+10-Oct
+11-Oct
+12-Oct
+13-Oct
+14-Oct
+15-Oct
+16-Oct
+17-Oct
+18-Oct
+19-Oct
+20-Oct
+21-Oct
+22-Oct
+23-Oct
+24-Oct
+25-Oct
+26-Oct
+27-Oct
+28-Oct
+29-Oct
+30-Oct
+31-Oct
+01-Nov
+02-Nov
+03-Nov
+04-Nov
+05-Nov
+06-Nov
+07-Nov
+08-Nov
+09-Nov
+10-Nov
+11-Nov
+12-Nov
+13-Nov
+14-Nov
+15-Nov
+16-Nov
+17-Nov
+18-Nov
+19-Nov
+20-Nov
+21-Nov
+22-Nov
+23-Nov
+24-Nov
+25-Nov
+26-Nov
+27-Nov
+28-Nov
+29-Nov
+30-Nov
+Fire radiative power (MW)
+Delhi Cumulative
+2020
+2021
+
+Punjab
+
+District-wise cumulative number of residues burning events in Punjab (15 Sep - 30 Nov-2021) 
+ 
+1 1 1
+2
+0
+1
+2
+3
+No. of Residue Burning Events
+Punjab Events on 30-Nov-2021
+2174
+4326 4481 3953
+1724
+2389
+6289
+1396
+331
+2548
+1798
+5817
+3217
+6515
+4598
+6
+5426
+307
+9389
+148 355
+4117
+0
+1000
+2000
+3000
+4000
+5000
+6000
+7000
+8000
+9000
+10000No. of residue burning events
+Punjab Cumulative Events (15Sep - 30Nov-2021)
+
+Haryana
+
+District-wise cumulative number of residues burning events in Haryana (15 Sep - 30 Nov-2021) 
+ 
+1
+2
+4 4
+2 2 2
+1
+0
+1
+2
+3
+4
+5
+No. of residue burning events
+Haryana Events on 30-Nov-2021
+308
+12 3
+1479
+245
+7
+919
+1157
+955
+538
+115
+254
+78
+551
+219 147
+0
+200
+400
+600
+800
+1000
+1200
+1400
+1600No. of residue burning events
+Haryana Cumulative Events (15Sep - 30Nov - 2021)
+
+Uttar Pradesh
+
+District-wise cumulative number of residues burning events in Uttar Pradesh (15 Sep - 30 Nov-2021) 
+ 
+1
+3
+2
+1
+2
+1
+2
+1
+3
+1 1 1 1
+2
+4
+0
+1
+2
+3
+4
+AGRA
+ALIGARH
+ALLAHABAD
+AMBEDKARNAGAR
+AMETHI
+AMROHA
+AURAIYA
+AZAMGARH
+BADAUN
+BAGHPAT
+BAHRAICH
+BALLIA
+BALRAMPUR
+BANDA
+BARABANKI
+BAREILLY
+BASTI
+BIJNOR
+BULANDSAHAR
+CHANDAULI
+CHITRAKOOT
+DEORIA
+ETAH
+ETAWAH
+FAIZABAD
+FARRUKHABAD
+FATEHPUR
+FIROZABAD
+GAUTAMBUDHNAGAR
+GAZIPUR
+GHAZIABAD
+GONDA
+GORAKHPUR
+HAMIRPUR
+HAPUR
+HARDOI
+HATHRAS
+JALAUN
+JAUNPUR
+JHANSI
+KANNAUJ
+KANPUR
+KANPUR DEHAT
+KASGANJ
+KAUSHAMBI
+KHERI
+KUSHINAGAR
+LALITPUR
+LUCKNOW
+MAHARAJGANJ
+MAHOBA
+MAINPURI
+MATHURA
+MAU
+MEERUT
+MIRZAPUR
+MORADABAD
+MUZAFARNAGAR
+PILHIBHIT
+PRATAPGARH
+RAIBEARELI
+RAMPUR
+SAMBHAL
+SANTKABIRNAGAR
+SANTRAVIDASNAGAR
+SHAHJAHANPUR
+SHAMLI
+SHARANPUR
+SHRAWASTI
+SIDDHARTHNAGAR
+SITAPUR
+SONBHADRA
+SULTANPUR
+UNNAO
+VARANASI
+No. of Residue Burning Events
+Uttar Pradesh Events on 30-Nov-2021
+40
+46
+40
+33
+10
+81
+43
+19
+24
+60
+88
+21
+15
+73
+69
+53
+55
+16
+26
+9
+41
+10
+108
+13
+4
+108
+17
+19
+30
+17
+13
+38
+22
+119
+44
+173
+6
+39
+53
+2
+92
+186
+61
+6
+34
+210
+52
+240
+23
+63
+18
+16
+41
+224
+43
+104
+193
+22
+24
+6
+423
+50
+92
+45
+140
+56
+2
+40
+34
+5
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+AGRA
+ALIGARH
+ALLAHABAD
+AMBEDKARNAGAR
+AMETHI
+AMROHA
+AURAIYA
+AZAMGARH
+BADAUN
+BAGHPAT
+BAHRAICH
+BALLIA
+BALRAMPUR
+BANDA
+BARABANKI
+BAREILLY
+BASTI
+BIJNOR
+BULANDSAHAR
+CHANDAULI
+CHITRAKOOT
+DEORIA
+ETAH
+ETAWAH
+FAIZABAD
+FARRUKHABAD
+FATEHPUR
+FIROZABAD
+GAUTAMBUDHNAGAR
+GAZIPUR
+GHAZIABAD
+GONDA
+GORAKHPUR
+HAMIRPUR
+HAPUR
+HARDOI
+HATHRAS
+JALAUN
+JAUNPUR
+JHANSI
+KANNAUJ
+KANPUR
+KANPUR DEHAT
+KASGANJ
+KAUSHAMBI
+KHERI
+KUSHINAGAR
+LALITPUR
+LUCKNOW
+MAHARAJGANJ
+MAHOBA
+MAINPURI
+MATHURA
+MAU
+MEERUT
+MIRZAPUR
+MORADABAD
+MUZAFARNAGAR
+PILHIBHIT
+PRATAPGARH
+RAIBEARELI
+RAMPUR
+SAMBHAL
+SANTKABIRNAGAR
+SANTRAVIDASNAGAR
+SHAHJAHANPUR
+SHAMLI
+SHARANPUR
+SHRAWASTI
+SIDDHARTHNAGAR
+SITAPUR
+SONBHADRA
+SULTANPUR
+UNNAO
+VARANASI
+No. of Residue Burning Events
+Uttar Pradesh Cumulative Events (15Sep - 30Nov-2021)
+
+Rajasthan
+
+District-wise cumulative number of residues burning events in Rajasthan (15 Sep - 30 Nov-2021) 
+ 
+4
+5
+0
+1
+2
+3
+4
+5
+6
+AJMER
+ALWAR
+BANSWARA
+BARAN
+BARMER
+BHARATPUR
+BHILWARA
+BIKANER
+BUNDI
+CHITTAURGARH
+CHURU
+DAUSA
+DHOLPUR
+DUNGARPUR
+GANGANAGAR
+HANUMANGARH
+JAIPUR
+JAISELMER
+JALOR
+JHALAWAR
+JHUNJHUNUN
+JODHPUR
+KARAULI
+KOTA
+NAGAUR
+PALI
+PRATAPGARH
+RAJSMAND
+SIKAR
+SIROHI
+SWAIMADHOPUR
+TONK
+UDAIPUR
+No. of Residue Burning Events
+Rajasthan Events on 30-Nov-2021
+13 3
+87
+13
+146
+995
+1 57 34 1
+0
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+AJMER
+ALWAR
+BANSWARA
+BARAN
+BARMER
+BHARATPUR
+BHILWARA
+BIKANER
+BUNDI
+CHITTAURGARH
+CHURU
+DAUSA
+DHOLPUR
+DUNGARPUR
+GANGANAGAR
+HANUMANGARH
+JAIPUR
+JAISELMER
+JALOR
+JHALAWAR
+JHUNJHUNUN
+JODHPUR
+KARAULI
+KOTA
+NAGAUR
+PALI
+PRATAPGARH
+RAJSMAND
+SIKAR
+SIROHI
+SWAIMADHOPUR
+TONK
+UDAIPUR
+No. of Residue Burning Events
+Rajasthan Cumulative Events (15Sep - 30Nov-2021)
+
+Madhya Pradesh
+
+District-wise cumulative number of residues burning events in Madhya Pradesh (15 Sep - 30 Nov-2021) 
+ 
+7
+1 1
+3
+2
+0
+1
+2
+3
+4
+5
+6
+7
+8
+ALIRAJPUR
+ANUPPUR
+ASHOKNAGAR
+BALAGHAT
+BARWANI
+BETUL
+BHIND
+BHOPAL
+BURHANPUR
+CHHATARPUR
+CHHINDWARA
+DAMOH
+DATIA
+DEWAS
+DHAR
+DINDORI
+EAST NIMAR
+GUNA
+GWALIOR
+HARDA
+HOSHANGABAD
+INDORE
+JABALPUR
+JHABUA
+KATNI
+MANDLA
+MANDSAUR
+MORENA
+NARSHIMAPURA
+NIMACH
+PANNA
+RAISEN
+RAJGARH
+RATLAM
+REWA
+SAGAR
+SATNA
+SEHORE
+SEONI
+SHAHDOL
+SHAJAPUR
+SHEOPUR
+SHIVPURI
+SIDHI
+SINGRAULI
+TIKAMGARH
+UJJAIN
+UMARIA
+VIDESHA
+WEST NIMAR
+No. of Residue Burning Events
+Madhya Pradesh Events on 30-Nov-2021
+2
+90
+6
+16
+159
+40
+3
+59
+53
+498
+7
+12
+848
+21
+1067
+1426
+119
+119
+37
+172
+23
+361
+3
+7
+120
+31
+526
+153
+897
+1
+1013
+112
+6
+7
+11
+123
+12
+0
+200
+400
+600
+800
+1000
+1200
+1400
+1600
+ALIRAJPUR
+ANUPPUR
+ASHOKNAGAR
+BALAGHAT
+BARWANI
+BETUL
+BHIND
+BHOPAL
+BURHANPUR
+CHHATARPUR
+CHHINDWARA
+DAMOH
+DATIA
+DEWAS
+DHAR
+DINDORI
+EAST NIMAR
+GUNA
+GWALIOR
+HARDA
+HOSHANGABAD
+INDORE
+JABALPUR
+JHABUA
+KATNI
+MANDLA
+MANDSAUR
+MORENA
+NARSHIMAPURA
+NIMACH
+PANNA
+RAISEN
+RAJGARH
+RATLAM
+REWA
+SAGAR
+SATNA
+SEHORE
+SEONI
+SHAHDOL
+SHAJAPUR
+SHEOPUR
+SHIVPURI
+SIDHI
+SINGRAULI
+TIKAMGARH
+UJJAIN
+UMARIA
+VIDESHA
+WEST NIMAR
+No. of Residue Burning Events
+Madhya Pradesh Cumulative Events(15Sep - 30Nov-2021)
+
+District-wise cumulative number of residues burning events detected in 2020 and 2021 
+(Period: 15 September - 30 November) 
+(a) Punjab          (b) Haryana 
+District 15 Sep – 30 Nov 
+2020 2021 
+AMBALA 346 308 
+BHIWANI 5 12 
+CHARKHI DADRI 0 0 
+FARIDABAD 1 3 
+FATEHABAD 880 1479 
+GURGAON 0 0 
+HISAR 56 245 
+JHAJJAR 6 7 
+JIND 347 919 
+KAITHAL 840 1157 
+KARNAL 592 955 
+KURUKSHETRA 406 538 
+MAHENDRAGARH 0 0 
+MEWAT 0 0 
+PALWAL 46 115 
+PANCHKULA 0 0 
+PANIPAT 55 254 
+REWARI 0 0 
+ROHTAK 50 78 
+SIRSA 357 551 
+SONIPAT 72 219 
+YAMUNANAGAR 143 147 
+Total 4202 6987 
+ 
+ District 15 Sep – 30 Nov 
+2020 2021 
+AMRITSAR 3067 2174 
+BARNALA 5342 4326 
+BATHINDA 5239 4481 
+FARIDKOT 4734 3953 
+FATEHGARH SAHIB 1536 1724 
+FAZILKA 2616 2389 
+FIROZPUR 8525 6289 
+GURDASPUR 2132 1396 
+HOSHIARPUR 388 331 
+JALANDHAR 1951 2548 
+KAPURTHALA 1886 1798 
+LUDHIANA 5065 5817 
+MANSA 3786 3217 
+MOGA 7421 6515 
+MUKTSAR 5072 4598 
+PATHANKOT 13 6 
+PATIALA 6433 5426 
+RUPNAGAR 205 307 
+SANGRUR 11727 9389 
+SAS NAGAR (MOHALI) 127 148 
+SBS NAGAR 132 355 
+TARN TARAN 5605 4117 
+Total 83002 71304
+
+(c) Uttar Pradesh 
+District 15 Sep – 30 Nov 
+2020 2021 GAUTAMBUDHNAGAR 16 19 MUZAFARNAGAR 66 41 
+AGRA 7 0 GAZIPUR 41 30 PILHIBHIT 36 224 
+ALIGARH 114 40 GHAZIABAD 29 17 PRATAPGARH 46 43 
+ALLAHABAD 56 46 GONDA 14 13 RAIBEARELI 49 104 
+AMBEDKARNAGAR 55 40 GORAKHPUR 47 38 RAMPUR 167 193 
+AMETHI 15 33 HAMIRPUR 7 0 SAMBHAL 22 22 
+AMROHA 24 10 HAPUR 42 22 SANTKABIRNAGAR 33 24 
+AURAIYA 105 81 HARDOI 112 119 SANTRAVIDASNAGAR 5 6 
+AZAMGARH 68 43 HATHRAS 0 0 SHAHJAHANPUR 161 423 
+BADAUN 15 19 JALAUN 51 0 SHAMLI 52 50 
+BAGHPAT 28 24 JAUNPUR 59 44 SHARANPUR 110 92 
+BAHRAICH 110 60 JHANSI 380 173 SHRAWASTI 48 45 
+BALLIA 174 88 KANNAUJ 34 6 SIDDHARTHNAGAR 77 140 
+BALRAMPUR 69 21 KANPUR 45 39 SITAPUR 84 56 
+BANDA 50 15 KANPUR DEHAT 102 53 SONBHADRA 1 2 
+BARABANKI 36 73 KASGANJ 3 2 SULTANPUR 15 40 
+BAREILLY 95 69 KAUSHAMBI 101 92 UNNAO 52 34 
+BASTI 58 53 KHERI 214 186 VARANASI 2 5 
+BIJNOR 57 55 KUSHINAGAR 88 61 Total 4631 4242 
+BULANDSAHAR 75 16 LALITPUR 3 6 
+CHANDAULI 53 26 LUCKNOW 35 34 
+CHITRAKOOT 19 9 MAHARAJGANJ 64 210 
+DEORIA 90 41 MAHOBA 27 0 
+ETAH 17 10 MAINPURI 69 52 
+ETAWAH 93 108 MATHURA 161 240 
+FAIZABAD 16 13 MAU 43 23 
+FARRUKHABAD 7 4 MEERUT 99 63 
+FATEHPUR 138 108 MIRZAPUR 14 18 
+FIROZABAD 27 17 MORADABAD 34 16
+
+(d) Delhi           (e) Rajasthan 
+District 15 Sep – 30 Nov 
+2020 2021 
+AJMER 3 0 
+ALWAR 10 0 
+BANSWARA 0 0 
+BARAN 167 13 
+BARMER 4 0 
+BHARATPUR 2 3 
+BHILWARA 11 0 
+BIKANER 1 0 
+BUNDI 128 87 
+CHITTAURGARH 5 13 
+CHURU 0 0 
+DAUSA 1 0 
+DHOLPUR 0 0 
+DUNGARPUR 0 0 
+GANGANAGAR 226 146 
+HANUMANGARH 952 995 
+JAIPUR 4 0 
+JAISELMER 5 0 
+JALOR 2 0 
+JHALAWAR 10 1 
+JHUNJHUNUN 1 0 
+JODHPUR 5 0 
+KARAULI 1 0 
+KOTA 116 57 
+NAGAUR 4 0 
+PALI 13 0 
+PRATAPGARH 8 0 
+RAJSMAND 1 0 
+SIKAR 1 0 
+SIROHI 3 0 
+SWAIMADHOPUR 65 34 
+TONK 5 0 
+UDAIPUR 2 1 
+Total 1756 1350 
+District 15 Sep – 30 Nov 
+2020 2021 
+CENTRAL 0 0 
+EAST 0 0 
+NEW DELHI 0 0 
+NORTH 3 3 
+NORTH EAST 0 0 
+NORTH WEST 
+DELHI 3 1 
+SHAHADRA 0 0 
+SOUTH 1 0 
+SOUTH EAST 0 0 
+SOUTH WEST 
+DELHI 0 0 
+WEST DELHI 2 0 
+Total 9 4
+
+(f) Madhya Pradesh 
+District 15 Sep – 30 Nov 
+2020 2021 PANNA 50 23 
+ALIRAJPUR 0 0 RAISEN 619 361 
+ANUPPUR 3 2 RAJGARH 13 3 
+ASHOKNAGAR 156 90 RATLAM 10 7 
+BALAGHAT 9 6 REWA 143 120 
+BARWANI 6 0 SAGAR 28 31 
+BETUL 37 16 SATNA 577 526 
+BHIND 269 159 SEHORE 164 153 
+BHOPAL 52 40 SEONI 1234 897 
+BURHANPUR 16 3 SHAHDOL 3 1 
+CHHATARPUR 9 0 SHAJAPUR 22 0 
+CHHINDWARA 136 59 SHEOPUR 1862 1013 
+DAMOH 75 53 SHIVPURI 396 112 
+DATIA 1188 498 SIDHI 4 6 
+DEWAS 8 0 SINGRAULI 0 7 
+DHAR 48 0 TIKAMGARH 5 0 
+DINDORI 0 0 UJJAIN 18 0 
+EAST NIMAR 23 7 UMARIA 9 11 
+GUNA 70 12 VIDESHA 145 123 
+GWALIOR 2058 848 WEST NIMAR 68 12 
+HARDA 14 21 Total 14148 8160 
+HOSHANGABAD 1060 1067 
+INDORE 4 0 
+JABALPUR 2671 1426 
+JHABUA 0 0 
+KATNI 326 119 
+MANDLA 152 119 
+MANDSAUR 15 0 
+MORENA 62 37 
+NARSHIMAPURA 309 172 
+NIMACH 2 0
+
+State-wise and date-wise number of paddy residue burning events detected in 2020 and 2021 
+(Period: 15 September – 30 November)   
+ 
+ Number of Paddy Residue Burning Events Detected 
+ Punjab Haryana Uttar Pradesh Delhi Rajasthan Madhya Pradesh 
+ 2020 2021 2020 2021 2020 2021 2020 2021 2020 2021 2020 2021 
+15-Sep 5 0 2 0 1 0 0 0 1 0 2 0 
+16-Sep 0 2 1 0 0 0 0 0 0 0 0 0 
+17-Sep 5 0 3 0 0 0 0 0 0 0 0 0 
+18-Sep 17 9 0 0 0 1 0 0 0 0 0 0 
+19-Sep 30 5 2 0 0 1 0 0 0 0 0 0 
+20-Sep 67 8 6 0 2 0 0 0 0 0 0 0 
+21-Sep 54 0 2 0 1 0 0 0 1 0 2 0 
+22-Sep 34 0 1 0 1 0 0 0 0 0 0 0 
+23-Sep 49 0 0 0 1 0 0 0 1 0 0 0 
+24-Sep 78 5 0 0 1 1 0 0 0 0 0 0 
+25-Sep 184 11 11 0 5 0 0 0 1 0 0 0 
+26-Sep 190 19 5 0 8 0 0 0 1 0 2 0 
+27-Sep 78 37 8 0 4 1 0 0 0 0 1 0 
+28-Sep 55 28 6 1 1 6 0 0 0 0 1 1 
+29-Sep 63 64 9 4 6 10 0 0 3 0 0 4 
+30-Sep 116 27 22 2 13 13 1 0 1 0 5 0 
+01-Oct 165 13 15 4 7 13 0 0 4 1 13 0 
+02-Oct 141 0 30 2 12 0 1 0 7 0 12 0 
+03-Oct 110 9 8 6 4 3 0 0 9 0 5 1 
+04-Oct 162 23 29 2 8 0 0 0 15 0 4 2 
+05-Oct 161 18 17 3 14 2 0 0 14 0 13 1 
+06-Oct 171 42 30 0 12 1 1 0 16 0 37 1 
+07-Oct 197 72 32 11 41 13 0 0 14 1 31 1 
+08-Oct 95 108 29 27 25 11 0 0 11 0 17 2 
+09-Oct 121 114 20 39 15 20 0 0 12 0 15 4 
+10-Oct 232 150 33 95 9 54 0 0 14 1 18 10 
+11-Oct 377 64 90 51 23 28 0 0 21 7 32 2
+
+12-Oct 388 97 69 51 46 23 0 0 24 1 44 1 
+13-Oct 266 132 47 91 36 42 0 0 7 5 21 2 
+14-Oct 605 229 69 98 9 68 0 0 16 1 15 11 
+15-Oct 449 660 106 363 15 149 0 0 9 8 8 27 
+16-Oct 654 429 80 176 21 121 1 0 12 2 23 13 
+17-Oct 1172 14 143 0 38 39 0 0 26 0 63 1 
+18-Oct 938 57 166 1 76 0 0 0 37 2 88 0 
+19-Oct 1080 496 72 55 43 5 0 0 27 5 49 1 
+20-Oct 890 788 62 155 31 1 0 0 26 4 9 21 
+21-Oct 1392 597 101 131 25 5 2 0 32 2 112 30 
+22-Oct 1665 1111 128 140 32 3 0 0 29 5 183 29 
+23-Oct 1438 620 106 218 84 8 1 0 23 7 204 32 
+24-Oct 911 0 57 38 63 11 0 0 20 4 150 34 
+25-Oct 1416 76 155 71 50 18 1 0 18 2 144 60 
+26-Oct 2126 329 77 175 33 41 0 0 34 3 178 55 
+27-Oct 2563 279 96 93 40 58 0 0 42 1 294 62 
+28-Oct 3232 906 139 149 87 35 0 0 45 4 537 110 
+29-Oct 1624 1353 52 161 139 32 0 0 29 23 349 97 
+30-Oct 3946 1373 100 148 50 53 0 0 17 20 428 168 
+31-Oct 3531 2895 108 353 49 170 0 0 37 15 455 299 
+01-Nov 3835 1796 151 124 74 157 0 0 51 5 709 198 
+02-Nov 4098 3001 111 203 82 87 0 0 55 19 820 214 
+03-Nov 2818 2512 93 197 197 66 1 0 34 20 771 148 
+04-Nov 4584 3032 72 228 152 123 0 0 46 19 618 123 
+05-Nov 4529 5327 66 331 52 70 0 0 46 45 474 320 
+06-Nov 5382 3942 151 219 43 208 0 0 40 32 678 248 
+07-Nov 5491 5199 150 182 86 46 0 0 57 38 848 199 
+08-Nov 3674 4397 115 138 169 21 0 0 33 44 981 170 
+09-Nov 1718 5079 21 217 115 51 0 1 34 48 495 330 
+10-Nov 3127 4008 80 184 101 77 0 0 48 40 346 380 
+11-Nov 2822 4156 93 126 71 151 0 1 75 55 418 506 
+12-Nov 1989 3403 83 127 108 120 0 0 31 40 422 185 
+13-Nov 2441 3742 105 210 172 95 0 2 54 78 670 171 
+14-Nov 307 2541 35 195 258 49 0 0 16 88 294 346 
+15-Nov 32 1761 31 129 29 67 0 0 6 51 35 353 
+16-Nov 8 1757 0 269 15 138 0 0 16 81 145 660
+
+17-Nov 248 523 9 101 38 177 0 0 60 38 191 261 
+18-Nov 670 680 60 111 62 14 0 0 75 77 352 126 
+19-Nov 454 448 37 132 129 11 0 0 27 73 124 16 
+20-Nov 677 283 77 127 134 20 0 0 59 53 106 6 
+21-Nov 457 168 65 178 135 106 0 0 57 72 159 95 
+22-Nov 46 66 15 91 120 276 0 0 9 21 165 188 
+23-Nov 43 91 52 59 106 186 0 0 66 61 150 262 
+24-Nov 9 34 20 37 167 87 0 0 13 26 258 224 
+25-Nov 0 31 1 41 127 80 0 0 2 30 106 343 
+26-Nov 16 21 0 48 83 74 0 0 0 11 48 318 
+27-Nov 124 19 26 28 54 257 0 0 16 33 39 416 
+28-Nov 84 5 57 9 118 241 0 0 24 12 38 163 
+29-Nov 55 8 65 14 247 101 0 0 44 7 83 95 
+30-Nov 21 5 17 18 206 26 0 0 6 9 41 14 
+Total 83002 71304 4202 6987 4631 4242 9 4 1756 1350 14148 8160
+
+Terra (MODIS) Satellite image (TCC) of North and Central India Acquired on 30-Nov-2021 at 10:36:00 IST by IARI Ground Station
+
+Details of residue burning events in Punjab on 30-Nov-2021 
+S. No. District Tehsil / Block Satellite Latitude Longitude ACQ_DATE ACQ_TIME Day / 
+Night 
+Fire Power 
+(W/m2) 
+1 FATEHGARH 
+SAHIB 
+BASSI 
+PATHANAN 
+S-NPP 30.70300 76.53030 11/30/2021 14:01:00 D 3.00 
+2 GURDASPUR KAHNUWAN S-NPP 31.88910 75.42410 11/30/2021 14:01:00 D 2.80 
+3 KAPURTHALA NADALA S-NPP 31.55230 75.53950 11/30/2021 14:01:00 D 2.40 
+4 LUDHIANA SIDHWAN 
+BET 
+S-NPP 30.84750 75.43360 11/30/2021 14:01:00 D 8.90 
+5 LUDHIANA SIDHWAN 
+BET 
+S-NPP 30.85000 75.43110 11/30/2021 14:01:00 D 4.40 
+ 
+Details of residue burning events in Haryana on 30-Nov-2021 
+S. No. District Tehsil / Block Satellite Latitude Longitude ACQ_DATE ACQ_TIME Day / 
+Night 
+Fire Power 
+(W/m2) 
+1 AMBALA BARARA S-NPP 30.19440 77.08230 11/30/2021 12:21:25 D 6.10 
+2 FATEHABAD FATEHABAD S-NPP 29.50980 75.30370 11/30/2021 14:01:00 D 7.10 
+3 FATEHABAD TOHANA AQUA 29.57200 75.91600 11/30/2021 13:56:54 D 8.10 
+4 HISAR HANSI-I S-NPP 29.12480 75.98210 11/30/2021 14:01:00 D 4.00 
+5 HISAR HANSI-I AQUA 29.12400 75.98300 11/30/2021 13:56:54 D 17.90 
+6 HISAR HANSI-II AQUA 29.09100 76.12500 11/30/2021 13:56:54 D 7.80 
+7 HISAR UKLANA AQUA 29.50400 75.83100 11/30/2021 13:56:54 D 10.60 
+8 JIND JULANA S-NPP 29.15590 76.44770 11/30/2021 14:01:00 D 5.40 
+9 JIND JULANA S-NPP 29.15850 76.45020 11/30/2021 14:01:00 D 6.40 
+10 JIND PILLUKHERA S-NPP 29.34590 76.56330 11/30/2021 14:01:00 D 4.00 
+11 JIND PILLUKHERA AQUA 29.34400 76.56200 11/30/2021 13:56:54 D 9.60 
+12 KAITHAL KALAYAT S-NPP 29.59140 76.25180 11/30/2021 14:01:00 D 2.80 
+13 KAITHAL KALAYAT AQUA 29.74300 76.24200 11/30/2021 13:56:54 D 8.10 
+14 PANIPAT MADLAUDA S-NPP 29.39480 76.83330 11/30/2021 14:01:00 D 4.70 
+15 PANIPAT MADLAUDA S-NPP 29.39480 76.83740 11/30/2021 14:01:00 D 6.20 
+16 SIRSA ELLENABAD S-NPP 29.52450 74.72280 11/30/2021 14:01:00 D 8.80 
+17 SIRSA ELLENABAD S-NPP 29.52470 74.72580 11/30/2021 14:01:00 D 8.40 
+18 SONIPAT GOHANA S-NPP 29.05840 76.70510 11/30/2021 12:21:25 D 2.20
+
+Details of residue burning events in Uttar Pradesh on 30-Nov-2021 
+S. No. District Tehsil / Block Satellite Latitude Longitude ACQ_DATE ACQ_TIME Day / 
+Night 
+Fire 
+Power 
+(W/m2) 
+1 BAGHPAT BARAUT S-NPP 29.14270 77.31390 11/30/2021 14:01:00 D 1.50 
+2 BALLIA BANSDIH S-NPP 25.94260 84.33000 11/30/2021 01:11:26 N 0.70 
+3 BALLIA RASRA S-NPP 25.98240 83.86740 11/30/2021 12:21:25 D 3.60 
+4 BALLIA SIKANDARPUR S-NPP 25.92430 83.96940 11/30/2021 12:21:25 D 1.50 
+5 BIJNOR AFZALGARH S-NPP 29.34850 78.77630 11/30/2021 14:01:00 D 3.30 
+6 BIJNOR AFZALGARH S-NPP 29.35130 78.77520 11/30/2021 14:01:00 D 3.90 
+7 BULANDSAHAR SIYANA S-NPP 28.69590 78.00450 11/30/2021 14:01:00 D 1.40 
+8 CHANDAULI CHANDAULI S-NPP 25.16390 83.34420 11/30/2021 12:21:25 D 2.30 
+9 CHANDAULI CHANDAULI S-NPP 25.34900 83.50110 11/30/2021 12:21:25 D 1.80 
+10 HAPUR GARHMUKTESAR S-NPP 28.83360 78.13200 11/30/2021 14:01:00 D 2.50 
+11 KHERI GOLA S-NPP 27.89650 80.29940 11/30/2021 12:21:25 D 2.80 
+12 KHERI GOLA S-NPP 28.13500 80.59610 11/30/2021 12:21:25 D 3.70 
+13 MAHARAJGANJ MAHARAJGANJ S-NPP 27.17820 83.58680 11/30/2021 12:21:25 D 3.00 
+14 MEERUT MAWANA S-NPP 29.07710 77.89110 11/30/2021 14:01:00 D 3.40 
+15 MEERUT MAWANA S-NPP 29.08240 77.89060 11/30/2021 14:01:00 D 1.60 
+16 MEERUT SARDHANA S-NPP 29.16270 77.77020 11/30/2021 14:01:00 D 1.10 
+17 MORADABAD THAKUR DWARA S-NPP 29.20630 78.87790 11/30/2021 01:11:26 N 0.60 
+18 MUZAFARNAGAR MUZAFFARNAGAR S-NPP 29.40610 77.64640 11/30/2021 14:01:00 D 1.70 
+19 PILHIBHIT PURANPUR S-NPP 28.39660 80.15880 11/30/2021 12:21:25 D 2.70 
+20 SAMBHAL SAMBHAL S-NPP 28.76080 78.63280 11/30/2021 14:01:00 D 2.30 
+21 SHAMLI KAIRANA S-NPP 29.47830 77.17240 11/30/2021 14:01:00 D 2.50 
+22 SHAMLI SHAMLI S-NPP 29.48060 77.32850 11/30/2021 14:01:00 D 1.90 
+23 SHARANPUR DEOBAND S-NPP 29.73460 77.67370 11/30/2021 14:01:00 D 2.30 
+24 SHARANPUR NAKUR S-NPP 29.75650 77.20620 11/30/2021 14:01:00 D 2.50 
+25 SHARANPUR RAMPUR 
+MANIHARRAN 
+S-NPP 29.76900 77.50850 11/30/2021 14:01:00 D 2.70 
+26 SHARANPUR RAMPUR 
+MANIHARRAN 
+S-NPP 29.76940 77.50790 11/30/2021 14:01:00 D 2.40
+
+Details of residue burning events in Rajasthan on 30-Nov-2021 
+S. No. District Tehsil / Block Satellite Latitude Longitude ACQ_DATE ACQ_TIME Day / 
+Night 
+Fire 
+Power 
+(W/m2) 
+1 GANGANAGAR SURATGARH S-NPP 29.33370 73.80410 11/30/2021 14:01:00 D 4.00 
+2 GANGANAGAR SURATGARH S-NPP 29.33420 73.80840 11/30/2021 14:01:00 D 3.80 
+3 GANGANAGAR SURATGARH S-NPP 29.33850 73.89030 11/30/2021 14:01:00 D 4.50 
+4 GANGANAGAR SURATGARH S-NPP 29.33900 73.89460 11/30/2021 14:01:00 D 6.30 
+5 HANUMANGARH HANUMANGARH S-NPP 29.55680 74.22040 11/30/2021 14:01:00 D 8.30 
+6 HANUMANGARH HANUMANGARH AQUA 29.62400 74.36700 11/30/2021 13:56:54 D 6.40 
+7 HANUMANGARH TIBI S-NPP 29.59810 74.40580 11/30/2021 14:01:00 D 4.40 
+8 HANUMANGARH TIBI AQUA 29.57600 74.55200 11/30/2021 13:56:54 D 7.40 
+9 HANUMANGARH TIBI AQUA 29.59000 74.40900 11/30/2021 13:56:54 D 14.80 
+ 
+Details of residue burning events in Madhya Pradesh on 30-Nov-2021 
+S. No. District Tehsil / Block Satellite Latitude Longitude ACQ_DATE ACQ_TIME Day / 
+Night 
+Fire 
+Power 
+(W/m2) 
+1 JABALPUR PATAN S-NPP 23.21760 79.70290 11/30/2021 14:01:00 D 3.90 
+2 JABALPUR PATAN S-NPP 23.27000 79.78660 11/30/2021 14:01:00 D 3.90 
+3 JABALPUR PATAN TERRA 23.21400 79.83200 11/30/2021 10:44:49 D 6.50 
+4 JABALPUR SAHPURA S-NPP 23.18340 79.63050 11/30/2021 14:01:00 D 5.10 
+5 JABALPUR SAHPURA S-NPP 23.18380 79.63440 11/30/2021 14:01:00 D 5.60 
+6 JABALPUR SAHPURA S-NPP 23.18430 79.63040 11/30/2021 14:01:00 D 4.60 
+7 JABALPUR SAHPURA S-NPP 23.18460 79.63430 11/30/2021 14:01:00 D 5.70 
+8 MANDLA MANDLA TERRA 22.55500 80.47000 11/30/2021 10:44:49 D 5.00 
+9 NARSHIMAPURA GADARWARA S-NPP 22.86320 78.91650 11/30/2021 14:01:00 D 2.70 
+10 SEONI GHANSAUR S-NPP 22.63130 80.10840 11/30/2021 14:01:00 D 7.00 
+11 SEONI SEONI TERRA 22.21600 79.40600 11/30/2021 10:44:49 D 5.10 
+12 SEONI SEONI TERRA 22.31600 79.68100 11/30/2021 10:44:49 D 6.20 
+13 SHEOPUR SHEOPUR S-NPP 25.44250 76.60410 11/30/2021 14:01:00 D 6.50 
+14 SHEOPUR SHEOPUR S-NPP 25.44450 76.60150 11/30/2021 14:01:00 D 6.90
+
+The study used data received from following Satellites at NRSC Ground Station 
+S. No. Satellite Name Sensor Resolution 
+(meter) 
+Day / Night 
+Passes 
+1. Suomi NPP VIIRS 375 / 750 Both 
+2. Terra MODIS 1000 Both 
+3. Aqua MODIS 1000 Both 
+ 
+The rice mask for the Punjab and Haryana were provided by MNCFC, MoA&FW, Govt of India 
+The kharif crop mask for Delhi, Uttar Pradesh, Rajasthan and Madhya Pradesh were provided by NRSC 
+ 
+Study Team 
+ICAR – HQ Dr S.K. Chaudhari DDG (AG. ENGG.) ddgengg@icar.org.in  
+ Dr S. Bhasker ADG (NRM) adgagroandaf@gmail.com 
+ Dr K.K. Singh ADG (AG. ENGG) kanchansingh044@gmail.com 
+ICAR - IARI Dr V.K. Sehgal Professor & Nodal Scientist iaricreams@gmail.com 
+ Dr Rajkumar Dhakar Scientist rajdhakar.iari@gmail.com  
+ Mr Mohd Jahangir Lab Assistant (KRISHI) mjahangir198@gmail.com  
+ICAR - ATARI Dr Rajbir Singh Director ATARI (Zone-I) Ludhiana rajbirsingh.zpd@gmail.com 
+ Dr S.K. Singh Director ATARI (Zone-II) Jodhpur sushilsinghiipr@yahoo.co.in 
+ Dr Atar Singh Director ATARI (Zone-III) Kanpur zpdicarkanpur@gmail.com  
+ICAR - IASRI Dr Rajender Parsad Director rajender.parsad@icar.gov.in  
+ 
+ 
+GIS Maps of fire events can be visualized online on ICAR KRISHI Geoportal website: http://geoportal.icar.gov.in:8080/geoexplorer/composer/ 
+(Part of KRISHI Portal: https://krishi.icar.gov.in initiative) 
+***

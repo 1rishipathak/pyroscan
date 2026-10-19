@@ -1,0 +1,103 @@
+{
+ "season": "2026",
+ "live": true,
+ "detections": "official",
+ "official_date": "2026-10-17",
+ "districts": {
+  "Sangrur": {
+   "burnt_ha": 265,
+   "seen_ha": 0,
+   "unseen_ha": 265,
+   "unseen_share": 1.0,
+   "scars": 321,
+   "unseen_scars": 321,
+   "median_scar_ha": 0.64,
+   "firms_detections": 3,
+   "firms_on_cropland": 3,
+   "firms_matched_share": 0.0,
+   "official_events": 3,
+   "ha_per_official_event": 88.3,
+   "rule_burnt_ha": 140
+  },
+  "Barnala": {
+   "burnt_ha": 75,
+   "seen_ha": 0,
+   "unseen_ha": 75,
+   "unseen_share": 1.0,
+   "scars": 94,
+   "unseen_scars": 94,
+   "median_scar_ha": 0.6,
+   "firms_detections": 0,
+   "firms_on_cropland": 0,
+   "firms_matched_share": null,
+   "official_events": 0,
+   "ha_per_official_event": null,
+   "rule_burnt_ha": 20
+  }
+ },
+ "study_area": {
+  "burnt_ha": 340,
+  "seen_ha": 0,
+  "unseen_ha": 340,
+  "unseen_share": 1.0,
+  "scars": 415,
+  "unseen_scars": 415,
+  "median_scar_ha": 0.64,
+  "firms_detections": 3,
+  "firms_on_cropland": 3,
+  "firms_matched_share": 0.0,
+  "official_events": 3,
+  "ha_per_official_event": 113.3,
+  "rule_burnt_ha": 160,
+  "rule_unseen_share": 1.0
+ },
+ "official_source": "CREAMS, ICAR-IARI daily paddy residue burning bulletin",
+ "official_bulletin": {
+  "date": "2026-10-17",
+  "year": 2026,
+  "url": "https://creams.iari.res.in/Creams_website_bulletin/Fire_bulletin_2026/Fire_bulletin_2026r/33.RiceResidueFireBulletin_17Oct_2026_ICAR.pdf"
+ },
+ "official_via": "tinyfish",
+ "years": {
+  "2020": {
+   "Sangrur": 147,
+   "Barnala": 22,
+   "Punjab": 6491
+  },
+  "2021": {
+   "Sangrur": 45,
+   "Barnala": 13,
+   "Punjab": 2389
+  },
+  "2022": {
+   "Sangrur": 41,
+   "Barnala": 10,
+   "Punjab": 1847
+  },
+  "2023": {
+   "Sangrur": 81,
+   "Barnala": 7,
+   "Punjab": 1389
+  },
+  "2024": {
+   "Sangrur": 139,
+   "Barnala": 6,
+   "Punjab": 1289
+  },
+  "2025": {
+   "Sangrur": 11,
+   "Barnala": 5,
+   "Punjab": 208
+  },
+  "2026": {
+   "Sangrur": 3,
+   "Barnala": 0,
+   "Punjab": 220
+  }
+ },
+ "punjab_official_season": 220,
+ "method": {
+  "min_scar_ha": 0.4,
+  "geo_err_m": 150
+ }
+}

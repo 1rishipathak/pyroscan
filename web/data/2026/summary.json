@@ -1,0 +1,200 @@
+{
+ "season": "2026",
+ "live": true,
+ "detections": "official",
+ "official_date": "2026-10-17",
+ "districts": {
+  "Sangrur": {
+   "burnt_ha": 362,
+   "seen_ha": 0,
+   "unseen_ha": 362,
+   "unseen_share": 1.0,
+   "scars": 390,
+   "unseen_scars": 390,
+   "median_scar_ha": 0.7,
+   "firms_detections": 3,
+   "firms_on_cropland": 3,
+   "firms_matched_share": 0.0,
+   "official_events": 3,
+   "ha_per_official_event": 120.7,
+   "rule_burnt_ha": 140
+  },
+  "Barnala": {
+   "burnt_ha": 79,
+   "seen_ha": 0,
+   "unseen_ha": 79,
+   "unseen_share": 1.0,
+   "scars": 95,
+   "unseen_scars": 95,
+   "median_scar_ha": 0.6,
+   "firms_detections": 0,
+   "firms_on_cropland": 0,
+   "firms_matched_share": null,
+   "official_events": 0,
+   "ha_per_official_event": null,
+   "rule_burnt_ha": 20
+  }
+ },
+ "study_area": {
+  "burnt_ha": 441,
+  "seen_ha": 0,
+  "unseen_ha": 441,
+  "unseen_share": 1.0,
+  "scars": 485,
+  "unseen_scars": 485,
+  "median_scar_ha": 0.68,
+  "firms_detections": 3,
+  "firms_on_cropland": 3,
+  "firms_matched_share": 0.0,
+  "official_events": 3,
+  "ha_per_official_event": 147.0,
+  "rule_burnt_ha": 160,
+  "rule_unseen_share": 1.0
+ },
+ "official_source": "CREAMS, ICAR-IARI daily paddy residue burning bulletin",
+ "official_bulletin": {
+  "date": "2026-10-17",
+  "year": 2026,
+  "url": "https://creams.iari.res.in/Creams_website_bulletin/Fire_bulletin_2026/Fire_bulletin_2026r/33.RiceResidueFireBulletin_17Oct_2026_ICAR.pdf"
+ },
+ "official_via": "tinyfish",
+ "years": {
+  "2020": {
+   "Sangrur": 147,
+   "Barnala": 22,
+   "Punjab": 6491
+  },
+  "2021": {
+   "Sangrur": 45,
+   "Barnala": 13,
+   "Punjab": 2389
+  },
+  "2022": {
+   "Sangrur": 41,
+   "Barnala": 10,
+   "Punjab": 1847
+  },
+  "2023": {
+   "Sangrur": 81,
+   "Barnala": 7,
+   "Punjab": 1389
+  },
+  "2024": {
+   "Sangrur": 139,
+   "Barnala": 6,
+   "Punjab": 1289
+  },
+  "2025": {
+   "Sangrur": 11,
+   "Barnala": 5,
+   "Punjab": 208
+  },
+  "2026": {
+   "Sangrur": 3,
+   "Barnala": 0,
+   "Punjab": 220
+  }
+ },
+ "punjab_official_season": 220,
+ "method": {
+  "min_scar_ha": 0.4,
+  "geo_err_m": 150
+ },
+ "provenance": [
+  {
+   "numbers": "official fire counts, district totals since 2020, daily punjab counts",
+   "source": "creams (icar-iari) bulletin, 2026-10-17",
+   "url": "https://creams.iari.res.in/Creams_website_bulletin/Fire_bulletin_2026/Fire_bulletin_2026r/33.RiceResidueFireBulletin_17Oct_2026_ICAR.pdf",
+   "via": "tinyfish",
+   "at": "2026-10-18T17:40:20+00:00"
+  },
+  {
+   "numbers": "gps of every official fire event (219 events)",
+   "source": "all 33 daily creams bulletins of the season",
+   "url": "https://creams.iari.res.in/?page_id=1123",
+   "via": "tinyfish (33)",
+   "at": null
+  },
+  {
+   "numbers": "delhi aqi, every day of the season",
+   "source": "18 cpcb daily aqi bulletins (pdf)",
+   "url": "https://cpcb.gov.in/AQI_Bulletin.php",
+   "via": "tinyfish (18)",
+   "at": null
+  },
+  {
+   "numbers": "enforcement and court stories",
+   "source": "22 news stories",
+   "url": null,
+   "via": "tinyfish search",
+   "at": null
+  },
+  {
+   "numbers": "firs, red entries, fines, notices to officials",
+   "source": "6 enforcement stories, read one by one",
+   "url": null,
+   "via": "tinyfish web agent (structured output)",
+   "at": null
+  },
+  {
+   "numbers": "burnt farmland, burn dates",
+   "source": "9 sentinel-2 l2a passes, tile 43REP",
+   "url": "https://earth-search.aws.element84.com/v1",
+   "via": "cloud-optimised geotiff reads",
+   "at": null
+  },
+  {
+   "numbers": "fire detections (viirs s-npp, noaa-20, modis)",
+   "source": "official gps events (above)",
+   "url": null,
+   "via": "download",
+   "at": null
+  }
+ ],
+ "smoke": {
+  "study_area": {
+   "pm25_t": {
+    "low": 8.0,
+    "mid": 19.0,
+    "high": 44.0
+   },
+   "pm25_unseen_t": {
+    "low": 8.0,
+    "mid": 19.0,
+    "high": 44.0
+   }
+  },
+  "districts": {
+   "Sangrur": {
+    "pm25_t": {
+     "low": 7.0,
+     "mid": 16.0,
+     "high": 36.0
+    },
+    "pm25_unseen_t": {
+     "low": 7.0,
+     "mid": 16.0,
+     "high": 36.0
+    }
+   },
+   "Barnala": {
+    "pm25_t": {
+     "low": 2.0,
+     "mid": 3.0,
+     "high": 8.0
+    },
+    "pm25_unseen_t": {
+     "low": 2.0,
+     "mid": 3.0,
+     "high": 8.0
+    }
+   }
+  },
+  "kg_per_ha": {
+   "low": 19.2,
+   "mid": 43.2,
+   "high": 99.5
+  }
+ },
+ "burnt_by_year": {}
+}

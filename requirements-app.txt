@@ -1,0 +1,11 @@
+# just the dashboard + api (no pytorch): pip install -r requirements-app.txt
+fastapi
+uvicorn[standard]
+numpy
+rasterio
+pyproj
+python-dotenv
+httpx
+tinyfish
+pymupdf
+pypdf

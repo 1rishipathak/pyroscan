@@ -1,0 +1,52 @@
+{
+ "n_val": 672,
+ "n_late": 207,
+ "results": {
+  "unet_2025_v1": {
+   "all": {
+    "precision": 0.9837,
+    "recall": 0.9691,
+    "f1": 0.9764,
+    "iou": 0.9538,
+    "false_burn_px": 3494
+   },
+   "to_15_nov": {
+    "precision": 0.9868,
+    "recall": 0.9878,
+    "f1": 0.9873,
+    "iou": 0.9749,
+    "false_burn_px": 2490
+   },
+   "from_16_nov": {
+    "precision": 0.9607,
+    "recall": 0.8474,
+    "f1": 0.9005,
+    "iou": 0.819,
+    "false_burn_px": 1004
+   }
+  },
+  "unet_2025_v2": {
+   "all": {
+    "precision": 0.9977,
+    "recall": 0.9969,
+    "f1": 0.9973,
+    "iou": 0.9946,
+    "false_burn_px": 508
+   },
+   "to_15_nov": {
+    "precision": 0.998,
+    "recall": 0.9981,
+    "f1": 0.998,
+    "iou": 0.9961,
+    "false_burn_px": 380
+   },
+   "from_16_nov": {
+    "precision": 0.9956,
+    "recall": 0.9892,
+    "f1": 0.9924,
+    "iou": 0.9849,
+    "false_burn_px": 128
+   }
+  }
+ }
+}

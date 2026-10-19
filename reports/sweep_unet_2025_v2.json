@@ -1,0 +1,37 @@
+[
+ {
+  "thr": 0.5,
+  "burnt_ha": 57382,
+  "unseen_share": 0.7885,
+  "seen_fires_on_a_scar": 0.8352,
+  "scars": 38361
+ },
+ {
+  "thr": 0.6,
+  "burnt_ha": 56470,
+  "unseen_share": 0.7885,
+  "seen_fires_on_a_scar": 0.8319,
+  "scars": 37842
+ },
+ {
+  "thr": 0.7,
+  "burnt_ha": 55571,
+  "unseen_share": 0.7885,
+  "seen_fires_on_a_scar": 0.8319,
+  "scars": 37346
+ },
+ {
+  "thr": 0.8,
+  "burnt_ha": 54369,
+  "unseen_share": 0.7879,
+  "seen_fires_on_a_scar": 0.8286,
+  "scars": 36655
+ },
+ {
+  "thr": 0.9,
+  "burnt_ha": 53078,
+  "unseen_share": 0.7876,
+  "seen_fires_on_a_scar": 0.8227,
+  "scars": 35895
+ }
+]

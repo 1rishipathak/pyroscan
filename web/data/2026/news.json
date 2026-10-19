@@ -1,0 +1,352 @@
+{
+ "source": "TinyFish Search (news)",
+ "after": "2026-10-01",
+ "before": "2026-11-02",
+ "items": [
+  {
+   "title": "Why drones for stubble? Farmers question Punjab govt in Sangrur protest",
+   "url": "https://www.indiatoday.in/india/punjab/story/sangrur-farmers-protest-bku-ugrahan-blocks-dc-office-over-13-demands-3011258-2026-10-07",
+   "snippet": "Farmers led by BKU Ekta Ugrahan continued their Sangrur protest in Punjab, blocking all three DC office gates over 13 demands.",
+   "date": "1 week ago",
+   "source": "India Today",
+   "query": "stubble burning Sangrur",
+   "tags": [],
+   "districts": [
+    "Sangrur"
+   ]
+  },
+  {
+   "title": "MP gains ground, Punjab accounts for 41% of farm fires",
+   "url": "https://timesofindia.indiatimes.com/city/chandigarh/mp-gains-ground-punjab-accounts-for-41-of-farm-fires/articleshow/134645907.cms",
+   "snippet": "Madhya Pradesh overtakes Uttar Pradesh as No.2 in stubble burning; Punjab still leads with 72 of 175 cases (41%). FIRs, fines, and land record entries...",
+   "date": "2 weeks ago",
+   "source": "The Times of India",
+   "query": "Punjab farm fires red entries FIR",
+   "tags": [
+    "enforcement"
+   ],
+   "districts": [],
+   "facts": {
+    "districts": [
+     "Punjab",
+     "Madhya Pradesh",
+     "Uttar Pradesh"
+    ],
+    "farm_fires_reported": 175,
+    "summary": "Authorities have begun penal action against stubble-burning violators, including filing FIRs, imposing environmental compensation, and making red entries in land records."
+   },
+   "facts_steps": 7
+  },
+  {
+   "title": "MP starts catching up as Punjab still accounts for 46% of farm fires",
+   "url": "https://timesofindia.indiatimes.com/city/chandigarh/mp-starts-catching-up-as-punjab-still-accounts-for-46-of-farm-fires/articleshow/134626318.cms",
+   "snippet": "Punjab still leads stubble-burning with 63 of 137 farm-fire cases since Sept 15 (46%), while Madhya Pradesh narrows the gap with 31 cases; penalties begin.",
+   "date": "2 weeks ago",
+   "source": "The Times of India",
+   "query": "farm fire FIR Sangrur",
+   "tags": [
+    "enforcement"
+   ],
+   "districts": [],
+   "facts": {
+    "districts": [
+     "Amritsar",
+     "Tarn Taran",
+     "Ferozepur",
+     "Gurdaspur",
+     "Moga",
+     "Faridkot",
+     "Fazilka",
+     "Hoshiarpur",
+     "SAS Nagar",
+     "SBS Nagar",
+     "Patiala"
+    ],
+    "farm_fires_reported": 137,
+    "firs_registered": 1,
+    "fines_rs": 60000,
+    "red_entries": 9,
+    "officials_acted_against": 4,
+    "summary": "Penal actions include one FIR registered under Section 223 BNS, Rs 60,000 in environmental compensation imposed (Rs 30,000 recovered), nine red entries in land records, and show-cause notices issued to four nodal or supervisory officers."
+   },
+   "facts_steps": 3
+  },
+  {
+   "title": "One new case, Punjab now accounts for nearly 36% of total farm fires",
+   "url": "https://timesofindia.indiatimes.com/city/chandigarh/one-new-case-punjab-now-accounts-for-nearly-36-of-total-farm-fires/articleshow/134664876.cms",
+   "snippet": "Punjab reports 73 stubble burning cases, nearly 36% of 203 farm fires across six states; MP at 66. FIR filed and Rs 1.15 lakh penalties imposed.",
+   "date": "2 weeks ago",
+   "source": "The Times of India",
+   "query": "Punjab farm fires red entries FIR",
+   "tags": [
+    "enforcement"
+   ],
+   "districts": [],
+   "facts": {
+    "districts": [
+     "Amritsar",
+     "Tarn Taran",
+     "Ferozepur",
+     "Gurdaspur",
+     "Moga",
+     "Faridkot",
+     "Fazilka",
+     "Hoshiarpur",
+     "SAS Nagar",
+     "SBS Nagar",
+     "Patiala"
+    ],
+    "farm_fires_reported": 73,
+    "firs_registered": 1,
+    "fines_rs": 115000,
+    "red_entries": 11,
+    "summary": "One FIR was registered and Rs 1.15 lakh in environmental compensation was imposed (Rs 45,000 recovered across 23 cases) with 11 red entries in land records, while warning and show-cause notices were issued to nodal and supervisory officers."
+   },
+   "facts_steps": 5
+  },
+  {
+   "title": "Punjab accounts for 31% of farm fires as MP crosses 100",
+   "url": "https://timesofindia.indiatimes.com/city/chandigarh/punjab-accounts-for-31-of-farm-fires-as-mp-crosses-100/articleshow/134749776.cms",
+   "snippet": "Punjab logged 88 stubble-burning cases (30.6% of 287 across 7 states) by Oct 6; MP hit 118. FIR filed, Rs 1.40 lakh fines, 13 red entries, notices to 36...",
+   "date": "1 week ago",
+   "source": "The Times of India",
+   "query": "Punjab farm fires red entries FIR",
+   "tags": [
+    "enforcement"
+   ],
+   "districts": [],
+   "facts": {
+    "districts": [
+     "Amritsar",
+     "Patiala"
+    ],
+    "farm_fires_reported": 88,
+    "firs_registered": 1,
+    "fines_rs": 140000,
+    "red_entries": 13,
+    "officials_acted_against": 36,
+    "summary": "Punjab has imposed environmental compensation of Rs 1.40 lakh in 28 cases, registered 1 FIR in Patiala, made 13 red entries in land records, and issued warning/show-cause notices to 36 nodal and supervisory officers."
+   },
+   "facts_steps": 3
+  },
+  {
+   "title": "Punjab paddy harvest kicks off under farm fire cloud | Hindustan Times",
+   "url": "https://www.hindustantimes.com/cities/chandigarh-news/punjab-paddy-harvest-kicks-off-under-farm-fire-cloud-101790881818843.html",
+   "snippet": "59 stubble-burning cases recorded so far, 1 FIR registered; max incidents in Amritsar, Tarn Taran where early harvest varieties are sown.",
+   "date": "2 weeks ago",
+   "source": "Hindustan Times",
+   "query": "farm fire FIR Sangrur",
+   "tags": [
+    "enforcement"
+   ],
+   "districts": [],
+   "facts": {
+    "districts": [
+     "Amritsar",
+     "Tarn Taran",
+     "Gurdaspur",
+     "Ferozepur",
+     "Moga",
+     "Faridkot",
+     "Fazilka",
+     "Hoshiarpur",
+     "SBS Nagar",
+     "Patiala",
+     "Sangrur",
+     "Bathinda",
+     "Muktsar",
+     "Mansa"
+    ],
+    "farm_fires_reported": 59,
+    "firs_registered": 1,
+    "fines_rs": 60000,
+    "red_entries": 9,
+    "summary": "Officials inspected 46 of 59 reported fires, confirming 16 cases of stubble burning; environmental compensation of Rs 60,000 was imposed in 12 verified cases, an FIR was registered in Patiala's Samana block, nine red entries were made in farmers' land records, warning notices were issued to supervisory personnel, and drones are planned for deployment in identified hotspot districts to capture evidence during non-satellite observation windows."
+   },
+   "facts_steps": 3
+  },
+  {
+   "title": "Why stubble fires keep coming back?",
+   "url": "https://www.insightsonindia.com/2026/10/09/why-stubble-fires-keep-coming-back/",
+   "snippet": "Stubble burning in India: Explore its causes, air pollution impacts and structural reforms beyond penalties for UPSC Mains answer writing practice.",
+   "date": "1 week ago",
+   "source": "INSIGHTS IAS",
+   "query": "Supreme Court stubble burning satellite data",
+   "tags": [
+    "enforcement",
+    "air"
+   ],
+   "districts": [],
+   "facts": {
+    "districts": [],
+    "summary": "Stubble burning persists due to compressed statutory harvest windows and paddy procurement policies, with enforcement relying on 31 CPCB flying squads across sensitive districts and CAQM directions to prosecute non-compliant monitoring officials rather than on FIRs, fines, red entries, or suspended officials."
+   },
+   "facts_steps": 4
+  },
+  {
+   "title": "CAQM deploys Flying Squads in 34 districts to prevent paddy stubble burning in Punjab and Haryana",
+   "url": "https://thenewsmill.com/2026/10/caqm-deploys-flying-squads-in-34-districts-to-prevent-paddy-stubble-burning-in-punjab-and-haryana/",
+   "snippet": "CAQM has deployed Flying Squads across 34 districts in Punjab and Haryana from October 1 to November 30 to monitor and prevent paddy stubble burning.",
+   "date": "2 weeks ago",
+   "source": "The News Mill",
+   "query": "stubble burning Barnala",
+   "tags": [],
+   "districts": []
+  },
+  {
+   "title": "CAQM team pays field visits in Punjab to curb stubble burning incidents",
+   "url": "https://timesofindia.indiatimes.com/city/chandigarh/caqm-team-pays-field-visits-in-punjab-to-curb-stubble-burning-incidents/articleshow/134876097.cms",
+   "snippet": "CAQM team visits stubble-burning hotspots in Amritsar, Tarn Taran; reviews Punjab's prevention steps, CRM machine availability, farmer outreach and...",
+   "date": "6 days ago",
+   "source": "The Times of India",
+   "query": "stubble burning Sangrur",
+   "tags": [],
+   "districts": []
+  },
+  {
+   "title": "CAQM turns to drones to spot farm fires missed by satellites",
+   "url": "https://timesofindia.indiatimes.com/city/delhi/caqm-turns-to-drones-to-spot-farm-fires-missed-by-satellites/articleshow/134860037.cms",
+   "snippet": "CAQM reviews deploying 80-90 drones in Punjab to detect stubble burning missed by satellites, focusing on 3–9 pm monitoring and enforcement during harvest.",
+   "date": "1 week ago",
+   "source": "The Times of India",
+   "query": "stubble burning satellite timing Punjab",
+   "tags": [
+    "satellite"
+   ],
+   "districts": []
+  },
+  {
+   "title": "Centre asks states to go into ‘mission mode’ to curb stubble burning as farm fires rise in MP, Rajasthan",
+   "url": "https://timesofindia.indiatimes.com/india/centre-asks-states-to-go-into-mission-mode-to-curb-stubble-burning-as-farm-fires-rise-in-mp-rajasthan/articleshow/134921556.cms",
+   "snippet": "NEW DELHI: The Centre on Tuesday asked Madhya Pradesh, Rajasthan, Punjab, Haryana and Delhi-NCR authorities to work in “mission mode” to prevent stubble.",
+   "date": "4 days ago",
+   "source": "The Times of India",
+   "query": "Supreme Court stubble burning satellite data",
+   "tags": [],
+   "districts": []
+  },
+  {
+   "title": "Delhi's pollution battle could face another challenge: Punjab records more stubble fires than last year as",
+   "url": "https://m.economictimes.com/news/new-updates/delhis-pollution-battle-could-face-another-challenge-punjab-records-more-stubble-fires-than-last-year-as-paddy-harvesting-gathers-pace/articleshow/134968741.cms",
+   "snippet": "Punjab recorded 174 stubble-burning incidents between September 15 and October 13, 2026, up from 134 during the same period last year. Satellite monitoring...",
+   "date": "3 days ago",
+   "source": "The Economic Times",
+   "query": "stubble burning satellite timing Punjab",
+   "tags": [
+    "satellite",
+    "air"
+   ],
+   "districts": []
+  },
+  {
+   "title": "Farm Fires After 3 PM: Centre Orders Drone Checks as Punjab Records 174 Cases",
+   "url": "https://www.theunitedindian.com/news/farm-fires-satellite-blind-spot-delhi-ncr-pollution-2",
+   "snippet": "Farm fires in Punjab reach 174 as the Centre targets stubble burning after 3 PM with drones and ground patrols. Here's why satellites can miss these fires.",
+   "date": "3 days ago",
+   "source": "The United Indian",
+   "query": "stubble burning satellite timing Punjab",
+   "tags": [
+    "satellite"
+   ],
+   "districts": []
+  },
+  {
+   "title": "Madhya Pradesh: As farm fire hotspot shifts central, a worry for east and west",
+   "url": "https://timesofindia.indiatimes.com/city/bhopal/madhya-pradesh-as-farm-fire-hotspot-shifts-central-a-worry-for-east-and-west/articleshow/134611907.cms",
+   "snippet": "BHOPAL: For years, stubble burning in Punjab and Haryana has been closely linked to the autumn pollution crisis in Delhi-NCR.",
+   "date": "2 weeks ago",
+   "source": "The Times of India",
+   "query": "Supreme Court stubble burning satellite data",
+   "tags": [
+    "air"
+   ],
+   "districts": []
+  },
+  {
+   "title": "Northern India Braces For Toxic Winter Pollution, Despite Improved Delhi Plan",
+   "url": "https://healthpolicy-watch.news/north-india-braces-for-toxic-winter-pollution-despite-improved-delhi-plan/",
+   "snippet": "Rural farm fires and Diwali fireworks likely to trigger pollution emergencies in northern India during late autumn and early winter, despite the rollout of...",
+   "date": "2 weeks ago",
+   "source": "Health Policy Watch",
+   "query": "Punjab farm fires red entries FIR",
+   "tags": [
+    "air"
+   ],
+   "districts": []
+  },
+  {
+   "title": "Punjab farm fire count crosses 100 mark, 8 more than last year | Hindustan Times",
+   "url": "https://www.hindustantimes.com/cities/chandigarh-news/punjab-farm-fire-count-crosses-100-mark-8-more-than-last-year-101791486613256.html",
+   "snippet": "The farm-fire tracking period begins September 15 every year, with paddy procurement starting on October 1.",
+   "date": "1 week ago",
+   "source": "Hindustan Times",
+   "query": "Punjab farm fires red entries FIR",
+   "tags": [],
+   "districts": []
+  },
+  {
+   "title": "Punjab logs nearly 70% farm fire spike in a week | Hindustan Times",
+   "url": "https://www.hindustantimes.com/cities/chandigarh-news/punjab-logs-nearly-70-farm-fire-spike-in-a-week-101792002181689.html",
+   "snippet": "The cumulative count of 174 incidents is 48 higher than the count during the corresponding period last year, according to the figures provided by the Punjab...",
+   "date": "3 days ago",
+   "source": "Hindustan Times",
+   "query": "Punjab farm fires red entries FIR",
+   "tags": [],
+   "districts": []
+  },
+  {
+   "title": "Punjab records season's worst day as 51 stubble fires",
+   "url": "https://www.newsbytesapp.com/news/india/punjab-records-seasons-worst-day-as-51-stubble-fires/tldr",
+   "snippet": "Punjab witnessed a significant rise in stubble-burning incidents, with 51 cases recorded in a single day, marking nearly a 70% increase over the previous...",
+   "date": "3 days ago",
+   "source": "NewsBytes",
+   "query": "stubble burning Barnala",
+   "tags": [],
+   "districts": []
+  },
+  {
+   "title": "Punjab’s farm-fire count crosses 200 as paddy harvesting picks up | Hindustan Times",
+   "url": "https://www.hindustantimes.com/cities/chandigarh-news/punjabs-farm-fire-count-crosses-200-as-paddy-harvesting-picks-up-101792262810251.html",
+   "snippet": "With paddy harvesting gaining pace, Punjab has recorded 220 farm-fire incidents so far this kharif season, surpassing the 208 cases reported during the...",
+   "date": "12 hours ago",
+   "source": "Hindustan Times",
+   "query": "farm fire FIR Sangrur",
+   "tags": [],
+   "districts": []
+  },
+  {
+   "title": "Stubble burning: CAQM deploys flying squads in 34 districts across Punjab, Haryana",
+   "url": "https://www.socialnews.xyz/2026/10/05/stubble-burning-caqm-deploys-flying-squads-in-34-districts-across-punjab-haryana/",
+   "snippet": "New Delhi, Oct 5 (SocialNews.XYZ) The CAQM intensified its field-level monitoring mechanism for prevention and control of paddy stubble burning with the...",
+   "date": "2 weeks ago",
+   "source": "Social News XYZ",
+   "query": "stubble burning Barnala",
+   "tags": [],
+   "districts": []
+  },
+  {
+   "title": "Why stubble fires keep coming back",
+   "url": "https://www.thehindu.com/news/national/why-stubble-fires-keep-coming-back/article71559694.ece",
+   "snippet": "It is that time of the year when air pollution in North India, and in Delhi in particular, takes centre stage in public discourse. One oft-cited reason for...",
+   "date": "1 week ago",
+   "source": "The Hindu",
+   "query": "stubble burning satellite timing Punjab",
+   "tags": [
+    "air"
+   ],
+   "districts": []
+  },
+  {
+   "title": "Winter Is Coming, So Is Bad Air",
+   "url": "https://openthemagazine.com/india/winter-is-coming-so-is-bad-air",
+   "snippet": "As winter approaches, Delhi braces for its infamous pollution season, worsened by stubble burning and Deepavali firecrackers. Despite a proactive plan,...",
+   "date": "1 week ago",
+   "source": "Open Magazine",
+   "query": "Supreme Court stubble burning satellite data",
+   "tags": [
+    "air"
+   ],
+   "districts": []
+  }
+ ]
+}

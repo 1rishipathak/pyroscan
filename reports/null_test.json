@@ -1,0 +1,15 @@
+{
+ "method": "detections shifted by +12 and -12 days; the share of burnt area still matched is chance. corrected = (seen - chance) / (1 - chance)",
+ "results": {
+  "2021": {
+   "seen_share": 0.8814,
+   "chance_seen_share": 0.1814,
+   "never_detected_chance_corrected": 0.1449
+  },
+  "2025": {
+   "seen_share": 0.2115,
+   "chance_seen_share": 0.0443,
+   "never_detected_chance_corrected": 0.825
+  }
+ }
+}

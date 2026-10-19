@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PyroScan · Crop Residue Burn Monitoring</title>
+<meta name="description" content="PyroScan maps burnt cropland in Punjab from Sentinel-2 imagery and checks every burn scar against the satellites behind India's official farm-fire count.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23101827'/><circle cx='16' cy='16' r='9' fill='none' stroke='%23d95926' stroke-width='3'/><circle cx='16' cy='16' r='3' fill='%23e8edf5'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="appbar">
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="16" cy="16" r="3.5" fill="#202124"/><path d="M16 1v6M16 25v6M1 16h6M25 16h6" stroke="#202124" stroke-width="1.5"/></svg>
+    <div>
+      <div class="name">PyroScan</div>
+      <div class="sub">Crop residue burn monitoring · Sentinel-2 L2A</div>
+    </div>
+  </div>
+  <nav class="seasons" aria-label="Season">
+    <a class="season-tab" data-s="2021" href="?season=2021">2021 control</a>
+    <a class="season-tab" data-s="2025" href="?season=2025">2025 season</a>
+    <a class="season-tab" data-s="2026" href="?season=2026"><i class="live-dot" aria-hidden="true"></i>2026 live</a>
+  </nav>
+  <div class="appbar-meta">
+    <span class="utc mono" id="utc">UTC --:--:--</span>
+    <a class="ghost" href="https://github.com/1rishipathak/pyroscan" id="gh-link" target="_blank" rel="noopener">Source</a>
+  </div>
+</header>
+
+<div class="statusbar" id="statusbar"></div>
+
+<main>
+  <section class="finding" id="finding" aria-live="polite"></section>
+
+  <section class="kpis" id="kpis" aria-label="Key indicators"></section>
+
+  <section class="row map-row">
+    <div class="panel map-panel">
+      <div class="panel-head">
+        <h2>Burn scar map</h2>
+        <span class="panel-note">Click any field for its burn history. Rings mark the largest scars (zoom in).</span>
+      </div>
+      <div class="map-body">
+        <div id="map"></div>
+        <div class="map-legend" id="map-legend">
+          <div class="lg-title">Legend</div>
+          <div class="lg-row"><i class="sw sw-undetected"></i>Burnt, undetected</div>
+          <div class="lg-row"><i class="sw sw-detected"></i>Burnt, detected</div>
+          <div class="lg-row"><i class="pt"></i>Satellite fire detection</div>
+          <div class="lg-row"><i class="ring"></i>Largest scars</div>
+          <div class="lg-row insat-map" hidden><i class="sq"></i>INSAT-3DR fire pixel (≈4 km)</div>
+          <div class="lg-title lg-gap">Layers</div>
+          <label class="tog"><input type="checkbox" id="t-firms" checked> Fire detections</label>
+          <label class="tog"><input type="checkbox" id="t-scars" checked> Largest scars</label>
+          <label class="tog insat-map" hidden><input type="checkbox" id="t-insat"> ISRO INSAT-3DR fires</label>
+          <label class="tog"><input type="checkbox" id="t-grid"> Hotspot grid (2 km)</label>
+          <label class="tog"><input type="checkbox" id="t-sat" checked> Satellite basemap</label>
+        </div>
+      </div>
+      <div class="timebar">
+        <button id="play" class="icon-btn" aria-label="Play season">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path id="play-icon" d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg>
+        </button>
+        <input type="range" id="slider" min="1" max="29" value="29" aria-label="Sentinel-2 pass">
+        <div class="tb-date">
+          <span class="mono" id="tb-date">--</span>
+          <span class="tb-sub" id="tb-sub"></span>
+        </div>
+      </div>
+    </div>
+
+    <aside class="panel side">
+      <div class="panel-head">
+        <h2>District summary</h2>
+        <div class="seg" role="tablist" aria-label="District">
+          <button class="seg-btn on" data-d="study_area">All</button>
+          <button class="seg-btn" data-d="Sangrur">Sangrur</button>
+          <button class="seg-btn" data-d="Barnala">Barnala</button>
+        </div>
+      </div>
+      <table class="kv" id="dstats"></table>
+      <div class="panel-head sub-head"><h2>Selected burn scar</h2></div>
+      <div class="inspect" id="inspect">
+        <p class="hint">Select a ring on the map to compare the field before and after it burnt (Sentinel-2 true colour, 10 m).</p>
+      </div>
+      <a class="btn" id="export" href="#">Export undetected burns (CSV)</a>
+    </aside>
+  </section>
+
+  <section class="panel fig" id="fig1">
+    <div class="panel-head">
+      <h2><span class="fig-no">Fig. 1</span> Daily burnt cropland, satellite detections and Delhi air quality</h2>
+      <span class="panel-note" id="fig1-note">Sangrur + Barnala. Burnt area is spread evenly across each scar's detection window.</span>
+    </div>
+    <div class="legend-row">
+      <span><i class="sw sw-undetected"></i>Burnt, undetected (ha/day)</span>
+      <span><i class="sw sw-detected"></i>Burnt, detected (ha/day)</span>
+    </div>
+    <div class="sm"><div class="sm-label">A · Burnt cropland (ha/day)</div><div class="cbox h-a"><canvas id="ch-burn"></canvas></div></div>
+    <div class="sm"><div class="sm-label">B · Satellite fire detections per day (VIIRS S-NPP, NOAA-20, MODIS)</div><div class="cbox h-b"><canvas id="ch-det"></canvas></div></div>
+    <div class="sm"><div class="sm-label">C · Delhi AQI, 24 h average at 16:00 IST (CPCB)</div><div class="cbox h-b"><canvas id="ch-aqi"></canvas></div></div>
+    <details class="table-view"><summary>Data table</summary><div class="tv-wrap"><table class="t-table" id="tv-daily"></table></div></details>
+  </section>
+
+  <section class="row two">
+    <div class="panel fig">
+      <div class="panel-head">
+        <h2><span class="fig-no">Fig. 2</span> Official fire count vs measured burnt area</h2>
+      </div>
+      <p class="panel-note block">Both indexed to 2021 = 100. Official counts: CREAMS, 15 Sep – 30 Nov. Burnt area: PyroScan, same method each year.</p>
+      <div class="legend-row">
+        <span><i class="key key-detected"></i>Official fire events (index)</span>
+        <span><i class="key key-ink"></i>Burnt cropland, PyroScan (index)</span>
+      </div>
+      <div class="cbox h-c"><canvas id="ch-years"></canvas></div>
+      <p class="caption" id="years-note"></p>
+      <details class="table-view"><summary>Data table</summary><div class="tv-wrap"><table class="t-table" id="tv-years"></table></div></details>
+    </div>
+    <div class="panel fig">
+      <div class="panel-head">
+        <h2><span class="fig-no">Fig. 3</span> When fires burn vs when satellites look</h2>
+      </div>
+      <p class="panel-note block" id="hours-sub">Hour of day (IST), study area. Shaded: 16:00 to midnight, when no polar-orbiting satellite passes.</p>
+      <div class="sm"><div class="sm-label">A · Detections by the official-count satellites (VIIRS, MODIS), by hour</div><div class="cbox h-d"><canvas id="ch-hours"></canvas></div></div>
+      <div class="sm insat-only" hidden><div class="sm-label">B · What ISRO's geostationary INSAT-3DR flagged: its fire product, a scan every 30 minutes, day and night</div>
+        <div class="t-wrap sm-table"><table class="t-table" id="tv-insat"></table></div></div>
+      <p class="caption" id="hours-note"></p>
+      <details class="table-view"><summary>Data table</summary><div class="tv-wrap"><table class="t-table" id="tv-hours"></table></div></details>
+    </div>
+  </section>
+
+  <section class="panel" id="teams">
+    <div class="panel-head">
+      <h2>Priority villages for field inspection</h2>
+      <a class="btn small" id="t-csv" href="#">Download all villages (CSV)</a>
+    </div>
+    <p class="panel-note block">Ranked by burnt cropland with no detection from the official-count satellites. Each burnt field is assigned to its nearest village (OpenStreetMap points, not revenue boundaries). <span id="t-zero"></span></p>
+    <div class="t-wrap"><table class="t-table" id="t-table"></table></div>
+  </section>
+
+  <section class="panel" id="response">
+    <div class="panel-head">
+      <h2>Enforcement records</h2>
+      <span class="panel-note">Found with TinyFish Search · figures extracted by the TinyFish Web Agent</span>
+    </div>
+    <div class="resp-grid" id="resp-grid"></div>
+    <details class="table-view"><summary id="resp-more">More coverage</summary><div id="resp-list"></div></details>
+  </section>
+
+  <section class="panel" id="live">
+    <div class="panel-head">
+      <h2>Live data feeds</h2>
+      <div class="live-actions">
+        <span class="status" id="tf-status"></span>
+        <button class="btn primary" id="refresh">Refresh via TinyFish</button>
+      </div>
+    </div>
+    <p class="panel-note block">CREAMS, CPCB and the news have no API: TinyFish Fetch renders the bulletin pages and PDFs, TinyFish Search finds enforcement news. ISRO's INSAT fire product comes from MOSDAC's download API (scripts/10_live_update.py).</p>
+    <div class="live-grid">
+      <div class="lcard" id="l-creams"><h3>Official fire count · CREAMS, ICAR-IARI</h3><div class="lbody">--</div></div>
+      <div class="lcard" id="l-insat"><h3>Fire pixels today · ISRO INSAT-3DR via MOSDAC</h3><div class="lbody">--</div></div>
+      <div class="lcard" id="l-aqi"><h3>Delhi air quality · CPCB</h3><div class="lbody">--</div></div>
+      <div class="lcard" id="l-news"><h3>Enforcement and court news · TinyFish Search</h3><div class="lbody scroll">--</div></div>
+      <div class="lcard wide" id="l-log"><h3>TinyFish call log</h3><div class="lbody scroll">--</div></div>
+    </div>
+  </section>
+
+  <section class="panel" id="method">
+    <div class="panel-head"><h2>Methodology</h2></div>
+    <div class="method-grid">
+      <ol class="steps">
+        <li><b>Imagery.</b> Every Sentinel-2 L2A pass over tile 43REP in the season, read from Element84's public cloud-optimised GeoTIFFs at 20 m. Clouds masked with the scene classification layer.</li>
+        <li><b>Automatic labels.</b> A pixel is a confident burn when it turns charcoal-dark in visible and short-wave infrared light, keeps the flat SWIR signature of char, and changed since its last clear look. Bright straw, soil and green crop are confident non-burns. Everything else is left unlabelled.</li>
+        <li><b>U-Net.</b> A 7.8 M-parameter U-Net reads the before and after images (11 channels) and labels the uncertain fields from shape and context. 20% of 5 km blocks are held out. Every detection must also pass a loose char test.</li>
+        <li><b>Matching.</b> Each burn scar (≥ 0.4 ha) is checked against VIIRS S-NPP, NOAA-20 and MODIS Terra/Aqua detections inside each detection's own pixel footprint plus 150 m, within the burn window. A scar with no match is <i>undetected</i>.</li>
+        <li><b>Geostationary check.</b> ISRO's INSAT-3DR active-fire product (MOSDAC, <span class="mono">3RIMG_L2P_FIR</span>) flags fire pixels from the 3.9 µm and 10.8 µm brightness temperatures of every 30-minute scan, day and night, so it covers the hours the polar satellites miss. We count its fire pixels over Punjab and the study districts in every season.</li>
+        <li><b>Official records.</b> TinyFish reads the CREAMS daily bulletins (counts, district tables, GPS of every counted event), the CPCB AQI bulletins and enforcement news.</li>
+      </ol>
+      <div class="limits">
+        <h3>Limitations</h3>
+        <ul>
+          <li>An undetected scar is not proof of evening burning: a fire can also be small, short-lived or hidden by smoke at overpass time.</li>
+          <li>Burnt area is a lower bound. A field burnt and tilled between two clear passes leaves no char to detect.</li>
+          <li>INSAT-3DR pixels are about 4 km (≈1,600 ha), and its fire product was built for forest fires: a pixel is flagged only when enough of it burns hot. A fire burning for an hour appears in two scans.</li>
+          <li>District borders are the pre-2021 geoBoundaries version; "Sangrur" includes Malerkotla. Official counts are summed the same way.</li>
+          <li>PM2.5 is an order-of-magnitude estimate: 6.5 t straw/ha (PPCB), 80% combusted (IPCC), 8.3 g PM2.5/kg (Kim Oanh et al., 2011).</li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="sub-title">Data provenance</h3>
+    <div class="t-wrap"><table class="t-table prov" id="prov"></table></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span>Data: Copernicus Sentinel-2 (ESA) via Element84 Earth Search · NASA FIRMS · INSAT-3DR, MOSDAC (SAC/ISRO) · CREAMS, ICAR-IARI · CPCB · ESA WorldCover · geoBoundaries · OpenStreetMap contributors</span>
+  <span>PyroScan · built for Kritical Hacks '26</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

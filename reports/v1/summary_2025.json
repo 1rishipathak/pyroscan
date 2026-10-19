@@ -1,0 +1,102 @@
+{
+ "season": "2025",
+ "live": false,
+ "detections": "firms",
+ "official_date": "2025-11-30",
+ "districts": {
+  "Sangrur": {
+   "burnt_ha": 35654,
+   "seen_ha": 7622,
+   "unseen_ha": 28031,
+   "unseen_share": 0.7862,
+   "scars": 24421,
+   "unseen_scars": 20296,
+   "median_scar_ha": 0.92,
+   "firms_detections": 1430,
+   "firms_on_cropland": 1366,
+   "firms_matched_share": 0.7687,
+   "official_events": 787,
+   "ha_per_official_event": 45.3,
+   "rule_burnt_ha": 23004,
+   "unseen_share_vs_official_list": 0.8811
+  },
+  "Barnala": {
+   "burnt_ha": 14347,
+   "seen_ha": 1087,
+   "unseen_ha": 13259,
+   "unseen_share": 0.9242,
+   "scars": 10024,
+   "unseen_scars": 9370,
+   "median_scar_ha": 0.92,
+   "firms_detections": 165,
+   "firms_on_cropland": 157,
+   "firms_matched_share": 0.7898,
+   "official_events": 105,
+   "ha_per_official_event": 136.6,
+   "rule_burnt_ha": 8786,
+   "unseen_share_vs_official_list": 0.9637
+  }
+ },
+ "study_area": {
+  "burnt_ha": 50000,
+  "seen_ha": 8710,
+  "unseen_ha": 41291,
+  "unseen_share": 0.8258,
+  "scars": 34445,
+  "unseen_scars": 29666,
+  "median_scar_ha": 0.92,
+  "firms_detections": 1595,
+  "firms_on_cropland": 1523,
+  "firms_matched_share": 0.7708,
+  "official_events": 892,
+  "ha_per_official_event": 56.1,
+  "rule_burnt_ha": 31790,
+  "rule_unseen_share": 0.8307,
+  "unseen_share_vs_official_list": 0.9048,
+  "unseen_ha_vs_official_list": 45240
+ },
+ "official_source": "CREAMS, ICAR-IARI daily paddy residue burning bulletin",
+ "official_bulletin": {
+  "date": "2025-11-30",
+  "year": 2025,
+  "url": "https://creams.iari.res.in/Creams_website_bulletin/Fire_bulletin_2025/Fire_bulletin_2025r/77.RiceResidueFireBulletin_30Nov_2025_ICAR.pdf"
+ },
+ "official_via": "tinyfish",
+ "years": {
+  "2020": {
+   "Sangrur": 11727,
+   "Barnala": 5342,
+   "Punjab": 83002
+  },
+  "2021": {
+   "Sangrur": 9389,
+   "Barnala": 4326,
+   "Punjab": 71304
+  },
+  "2022": {
+   "Sangrur": 5916,
+   "Barnala": 2910,
+   "Punjab": 49922
+  },
+  "2023": {
+   "Sangrur": 6031,
+   "Barnala": 2316,
+   "Punjab": 36663
+  },
+  "2024": {
+   "Sangrur": 1928,
+   "Barnala": 262,
+   "Punjab": 10909
+  },
+  "2025": {
+   "Sangrur": 787,
+   "Barnala": 105,
+   "Punjab": 5114
+  }
+ },
+ "punjab_official_season": 5114,
+ "method": {
+  "min_scar_ha": 0.4,
+  "geo_err_m": 150
+ }
+}

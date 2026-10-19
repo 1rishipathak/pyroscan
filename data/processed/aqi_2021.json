@@ -1,0 +1,494 @@
+{
+ "source": "CPCB daily AQI bulletin (4 pm, 24 h average)",
+ "city": "Delhi",
+ "days": {
+  "2021-10-01": {
+   "category": "Moderate",
+   "aqi": 108,
+   "pollutant": "PM10",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAwMS5wZGY="
+  },
+  "2021-10-02": {
+   "category": "Moderate",
+   "aqi": 125,
+   "pollutant": "PM10, PM2.5",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAwMi5wZGY="
+  },
+  "2021-10-03": {
+   "category": "Moderate",
+   "aqi": 105,
+   "pollutant": "PM10",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAwMy5wZGY="
+  },
+  "2021-10-04": {
+   "category": "Satisfactory",
+   "aqi": 91,
+   "pollutant": "PM10, CO, O3",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAwNC5wZGY="
+  },
+  "2021-10-05": {
+   "category": "Moderate",
+   "aqi": 115,
+   "pollutant": "O3, PM10, CO",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAwNS5wZGY="
+  },
+  "2021-10-06": {
+   "category": "Moderate",
+   "aqi": 114,
+   "pollutant": "PM10, PM2.5",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAwNi5wZGY="
+  },
+  "2021-10-07": {
+   "category": "Moderate",
+   "aqi": 127,
+   "pollutant": "PM10, PM2.5, O3",
+   "stations": "38",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAwNy5wZGY="
+  },
+  "2021-10-08": {
+   "category": "Moderate",
+   "aqi": 167,
+   "pollutant": "PM2.5, PM10, O3",
+   "stations": "25",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAwOC5wZGY="
+  },
+  "2021-10-09": {
+   "category": "Moderate",
+   "aqi": 171,
+   "pollutant": "PM10, PM2.5",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAwOS5wZGY="
+  },
+  "2021-10-10": {
+   "category": "Moderate",
+   "aqi": 168,
+   "pollutant": "PM10",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAxMC5wZGY="
+  },
+  "2021-10-11": {
+   "category": "Moderate",
+   "aqi": 166,
+   "pollutant": "PM10, PM2.5",
+   "stations": "35",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAxMS5wZGY="
+  },
+  "2021-10-12": {
+   "category": "Moderate",
+   "aqi": 179,
+   "pollutant": "PM10, PM2.5",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAxMi5wZGY="
+  },
+  "2021-10-13": {
+   "category": "Moderate",
+   "aqi": 171,
+   "pollutant": "PM10, PM2.5",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAxMy5wZGY="
+  },
+  "2021-10-14": {
+   "category": "Moderate",
+   "aqi": 182,
+   "pollutant": "PM10, PM2.5",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAxNC5wZGY="
+  },
+  "2021-10-15": {
+   "category": "Moderate",
+   "aqi": 198,
+   "pollutant": "PM2.5, PM10, O3",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAxNS5wZGY="
+  },
+  "2021-10-16": {
+   "category": "Poor",
+   "aqi": 284,
+   "pollutant": "PM10, PM2.5",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAxNi5wZGY="
+  },
+  "2021-10-17": {
+   "category": "Poor",
+   "aqi": 298,
+   "pollutant": "PM2.5",
+   "stations": "31",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAxNy5wZGY="
+  },
+  "2021-10-18": {
+   "category": "Good",
+   "aqi": 46,
+   "pollutant": "CO, PM10",
+   "stations": "30",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAxOC5wZGY="
+  },
+  "2021-10-19": {
+   "category": "Satisfactory",
+   "aqi": 69,
+   "pollutant": "PM2.5, PM10, CO",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAxOS5wZGY="
+  },
+  "2021-10-20": {
+   "category": "Poor",
+   "aqi": 221,
+   "pollutant": "PM10, PM2.5",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAyMC5wZGY="
+  },
+  "2021-10-21": {
+   "category": "Moderate",
+   "aqi": 199,
+   "pollutant": "PM10, PM2.5",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAyMS5wZGY="
+  },
+  "2021-10-22": {
+   "category": "Moderate",
+   "aqi": 170,
+   "pollutant": "PM10, PM2.5",
+   "stations": "35",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAyMi5wZGY="
+  },
+  "2021-10-23": {
+   "category": "Moderate",
+   "aqi": 173,
+   "pollutant": "PM10",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAyMy5wZGY="
+  },
+  "2021-10-24": {
+   "category": "Moderate",
+   "aqi": 160,
+   "pollutant": "PM2.5, PM10",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAyNC5wZGY="
+  },
+  "2021-10-25": {
+   "category": "Satisfactory",
+   "aqi": 82,
+   "pollutant": "O3, PM10, PM2.5",
+   "stations": "27",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAyNS5wZGY="
+  },
+  "2021-10-26": {
+   "category": "Moderate",
+   "aqi": 139,
+   "pollutant": "PM10, PM2.5",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAyNi5wZGY="
+  },
+  "2021-10-27": {
+   "category": "Poor",
+   "aqi": 232,
+   "pollutant": "PM10",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAyNy5wZGY="
+  },
+  "2021-10-28": {
+   "category": "Poor",
+   "aqi": 268,
+   "pollutant": "PM2.5, PM10",
+   "stations": "34",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAyOC5wZGY="
+  },
+  "2021-10-29": {
+   "category": "Poor",
+   "aqi": 283,
+   "pollutant": "PM10, PM2.5",
+   "stations": "35",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAyOS5wZGY="
+  },
+  "2021-10-30": {
+   "category": "Poor",
+   "aqi": 268,
+   "pollutant": "PM10, PM2.5",
+   "stations": "35",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAzMC5wZGY="
+  },
+  "2021-10-31": {
+   "category": "Poor",
+   "aqi": 289,
+   "pollutant": "PM10",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTAzMS5wZGY="
+  },
+  "2021-11-01": {
+   "category": "Poor",
+   "aqi": 281,
+   "pollutant": "PM10, PM2.5",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEwMS5wZGY="
+  },
+  "2021-11-02": {
+   "category": "Very Poor",
+   "aqi": 303,
+   "pollutant": "PM10, PM2.5",
+   "stations": "38",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEwMi5wZGY="
+  },
+  "2021-11-03": {
+   "category": "Very Poor",
+   "aqi": 314,
+   "pollutant": "PM10, PM2.5",
+   "stations": "31",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEwMy5wZGY="
+  },
+  "2021-11-04": {
+   "category": "Very Poor",
+   "aqi": 382,
+   "pollutant": "PM2.5, PM10",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEwNC5wZGY="
+  },
+  "2021-11-05": {
+   "category": "Severe",
+   "aqi": 462,
+   "pollutant": "PM2.5",
+   "stations": "35",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEwNS5wZGY="
+  },
+  "2021-11-06": {
+   "category": "Severe",
+   "aqi": 437,
+   "pollutant": "PM2.5, PM10",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEwNi5wZGY="
+  },
+  "2021-11-07": {
+   "category": "Severe",
+   "aqi": 428,
+   "pollutant": "PM2.5",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEwNy5wZGY="
+  },
+  "2021-11-08": {
+   "category": "Very Poor",
+   "aqi": 390,
+   "pollutant": "PM2.5, PM10",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEwOC5wZGY="
+  },
+  "2021-11-09": {
+   "category": "Severe",
+   "aqi": 404,
+   "pollutant": "PM2.5, PM10",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEwOS5wZGY="
+  },
+  "2021-11-10": {
+   "category": "Very Poor",
+   "aqi": 372,
+   "pollutant": "PM10, PM2.5",
+   "stations": "35",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTExMC5wZGY="
+  },
+  "2021-11-11": {
+   "category": "Severe",
+   "aqi": 411,
+   "pollutant": "PM2.5, PM10",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTExMS5wZGY="
+  },
+  "2021-11-12": {
+   "category": "Severe",
+   "aqi": 471,
+   "pollutant": "PM2.5, PM10",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTExMi5wZGY="
+  },
+  "2021-11-13": {
+   "category": "Severe",
+   "aqi": 437,
+   "pollutant": "PM2.5, PM10",
+   "stations": "32",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTExMy5wZGY="
+  },
+  "2021-11-14": {
+   "category": "Very Poor",
+   "aqi": 330,
+   "pollutant": "PM2.5, PM10",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTExNC5wZGY="
+  },
+  "2021-11-15": {
+   "category": "Very Poor",
+   "aqi": 353,
+   "pollutant": "PM10, PM2.5",
+   "stations": "33",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTExNS5wZGY="
+  },
+  "2021-11-16": {
+   "category": "Severe",
+   "aqi": 403,
+   "pollutant": "PM2.5, PM10",
+   "stations": "38",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTExNi5wZGY="
+  },
+  "2021-11-17": {
+   "category": "Very Poor",
+   "aqi": 375,
+   "pollutant": "PM2.5, PM10",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTExNy5wZGY="
+  },
+  "2021-11-18": {
+   "category": "Very Poor",
+   "aqi": 347,
+   "pollutant": "PM2.5, PM10",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTExOC5wZGY="
+  },
+  "2021-11-19": {
+   "category": "Very Poor",
+   "aqi": 380,
+   "pollutant": "PM2.5, PM10",
+   "stations": "35",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTExOS5wZGY="
+  },
+  "2021-11-20": {
+   "category": "Very Poor",
+   "aqi": 374,
+   "pollutant": "PM2.5",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEyMC5wZGY="
+  },
+  "2021-11-21": {
+   "category": "Very Poor",
+   "aqi": 349,
+   "pollutant": "PM2.5, PM10",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEyMS5wZGY="
+  },
+  "2021-11-22": {
+   "category": "Very Poor",
+   "aqi": 311,
+   "pollutant": "PM10, PM2.5",
+   "stations": "32",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEyMi5wZGY="
+  },
+  "2021-11-23": {
+   "category": "Poor",
+   "aqi": 290,
+   "pollutant": "PM2.5",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEyMy5wZGY="
+  },
+  "2021-11-24": {
+   "category": "Very Poor",
+   "aqi": 361,
+   "pollutant": "PM2.5, PM10",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEyNC5wZGY="
+  },
+  "2021-11-25": {
+   "category": "Very Poor",
+   "aqi": 400,
+   "pollutant": "PM2.5, PM10",
+   "stations": "37",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEyNS5wZGY="
+  },
+  "2021-11-26": {
+   "category": "Severe",
+   "aqi": 406,
+   "pollutant": "PM2.5, PM10",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEyNi5wZGY="
+  },
+  "2021-11-27": {
+   "category": "Severe",
+   "aqi": 402,
+   "pollutant": "PM2.5, PM10",
+   "stations": "36",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEyNy5wZGY="
+  },
+  "2021-11-28": {
+   "category": "Severe",
+   "aqi": 405,
+   "pollutant": "PM2.5, PM10",
+   "stations": "33",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEyOC5wZGY="
+  },
+  "2021-11-29": {
+   "category": "Very Poor",
+   "aqi": 389,
+   "pollutant": "PM2.5",
+   "stations": "30",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEyOS5wZGY="
+  },
+  "2021-11-30": {
+   "category": "Very Poor",
+   "aqi": 328,
+   "pollutant": "PM2.5, PM10",
+   "stations": "34",
+   "via": "tinyfish",
+   "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDIxMTEzMC5wZGY="
+  }
+ }
+}

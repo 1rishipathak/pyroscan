@@ -1,0 +1,183 @@
+{
+ "season": "2021",
+ "live": false,
+ "detections": "firms",
+ "official_date": null,
+ "districts": {
+  "Sangrur": {
+   "burnt_ha": 103800,
+   "seen_ha": 90300,
+   "unseen_ha": 13500,
+   "unseen_share": 0.1301,
+   "scars": 46506,
+   "unseen_scars": 10627,
+   "median_scar_ha": 1.12,
+   "firms_detections": 19680,
+   "firms_on_cropland": 18752,
+   "firms_matched_share": 0.9411,
+   "official_events": 9389,
+   "ha_per_official_event": 11.1,
+   "rule_burnt_ha": 62965
+  },
+  "Barnala": {
+   "burnt_ha": 36946,
+   "seen_ha": 33751,
+   "unseen_ha": 3194,
+   "unseen_share": 0.0865,
+   "scars": 17652,
+   "unseen_scars": 2891,
+   "median_scar_ha": 1.08,
+   "firms_detections": 9225,
+   "firms_on_cropland": 8762,
+   "firms_matched_share": 0.9612,
+   "official_events": 4326,
+   "ha_per_official_event": 8.5,
+   "rule_burnt_ha": 21513
+  }
+ },
+ "study_area": {
+  "burnt_ha": 140746,
+  "seen_ha": 124051,
+  "unseen_ha": 16695,
+  "unseen_share": 0.1186,
+  "scars": 64158,
+  "unseen_scars": 13518,
+  "median_scar_ha": 1.12,
+  "firms_detections": 28905,
+  "firms_on_cropland": 27514,
+  "firms_matched_share": 0.9475,
+  "official_events": 13715,
+  "ha_per_official_event": 10.3,
+  "rule_burnt_ha": 84477,
+  "rule_unseen_share": 0.1165
+ },
+ "official_source": "CREAMS, ICAR-IARI daily paddy residue burning bulletin",
+ "official_bulletin": {
+  "date": "2021-11-30",
+  "year": 2021,
+  "url": "https://creams.iari.res.in/Creams_website_bulletin/Fire_bulletin_2021/77.RiceResidueFireBulletin_30Nov_2021_ICAR.pdf"
+ },
+ "official_via": "tinyfish",
+ "years": {
+  "2020": {
+   "Sangrur": 11727,
+   "Barnala": 5342,
+   "Punjab": 83002
+  },
+  "2021": {
+   "Sangrur": 9389,
+   "Barnala": 4326,
+   "Punjab": 71304
+  },
+  "2022": {
+   "Sangrur": 5916,
+   "Barnala": 2910,
+   "Punjab": 49922
+  },
+  "2023": {
+   "Sangrur": 6031,
+   "Barnala": 2316,
+   "Punjab": 36663
+  },
+  "2024": {
+   "Sangrur": 1928,
+   "Barnala": 262,
+   "Punjab": 10909
+  },
+  "2025": {
+   "Sangrur": 787,
+   "Barnala": 105,
+   "Punjab": 5114
+  }
+ },
+ "punjab_official_season": 71304,
+ "method": {
+  "min_scar_ha": 0.4,
+  "geo_err_m": 150
+ },
+ "provenance": [
+  {
+   "numbers": "official fire counts, district totals since 2020, daily punjab counts",
+   "source": "creams (icar-iari) bulletin, 2021-11-30",
+   "url": "https://creams.iari.res.in/Creams_website_bulletin/Fire_bulletin_2021/77.RiceResidueFireBulletin_30Nov_2021_ICAR.pdf",
+   "via": "tinyfish",
+   "at": "2026-10-18T20:40:47+00:00"
+  },
+  {
+   "numbers": "delhi aqi, every day of the season",
+   "source": "61 cpcb daily aqi bulletins (pdf)",
+   "url": "https://cpcb.gov.in/AQI_Bulletin.php",
+   "via": "tinyfish (61)",
+   "at": null
+  },
+  {
+   "numbers": "burnt farmland, burn dates",
+   "source": "25 sentinel-2 l2a passes, tile 43REP",
+   "url": "https://earth-search.aws.element84.com/v1",
+   "via": "cloud-optimised geotiff reads",
+   "at": null
+  },
+  {
+   "numbers": "fire detections (viirs s-npp, noaa-20, modis)",
+   "source": "nasa firms yearly country files",
+   "url": "https://firms.modaps.eosdis.nasa.gov/country/",
+   "via": "download",
+   "at": null
+  }
+ ],
+ "smoke": {
+  "study_area": {
+   "pm25_t": {
+    "low": 2709.0,
+    "mid": 6075.0,
+    "high": 13997.0
+   },
+   "pm25_unseen_t": {
+    "low": 321.0,
+    "mid": 721.0,
+    "high": 1660.0
+   }
+  },
+  "districts": {
+   "Sangrur": {
+    "pm25_t": {
+     "low": 1998.0,
+     "mid": 4480.0,
+     "high": 10323.0
+    },
+    "pm25_unseen_t": {
+     "low": 260.0,
+     "mid": 583.0,
+     "high": 1343.0
+    }
+   },
+   "Barnala": {
+    "pm25_t": {
+     "low": 711.0,
+     "mid": 1595.0,
+     "high": 3674.0
+    },
+    "pm25_unseen_t": {
+     "low": 61.0,
+     "mid": 138.0,
+     "high": 318.0
+    }
+   }
+  },
+  "kg_per_ha": {
+   "low": 19.2,
+   "mid": 43.2,
+   "high": 99.5
+  }
+ },
+ "burnt_by_year": {
+  "2021": {
+   "burnt_ha": 140746,
+   "unseen_share": 0.1186
+  },
+  "2025": {
+   "burnt_ha": 55574,
+   "unseen_share": 0.7885
+  }
+ }
+}

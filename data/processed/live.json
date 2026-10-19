@@ -1,0 +1,719 @@
+{
+ "fetched_at": "2026-10-18T17:40:19+00:00",
+ "creams": {
+  "bulletin": {
+   "date": "2026-10-17",
+   "year": 2026,
+   "url": "https://creams.iari.res.in/Creams_website_bulletin/Fire_bulletin_2026/Fire_bulletin_2026r/33.RiceResidueFireBulletin_17Oct_2026_ICAR.pdf"
+  },
+  "via": "tinyfish",
+  "date": "2026-10-17",
+  "day_punjab": 29,
+  "day_haryana": 0,
+  "season_punjab": 220,
+  "season_haryana": 8,
+  "district_cumulative": {
+   "Sangrur": {
+    "2020": 142,
+    "2021": 36,
+    "2022": 34,
+    "2023": 78,
+    "2024": 116,
+    "2025": 7,
+    "2026": 3
+   },
+   "Barnala": {
+    "2020": 22,
+    "2021": 13,
+    "2022": 10,
+    "2023": 7,
+    "2024": 6,
+    "2025": 5,
+    "2026": 0
+   },
+   "Malerkotla": {
+    "2020": 5,
+    "2021": 9,
+    "2022": 7,
+    "2023": 3,
+    "2024": 23,
+    "2025": 4,
+    "2026": 0
+   },
+   "Patiala": {
+    "2020": 549,
+    "2021": 252,
+    "2022": 67,
+    "2023": 145,
+    "2024": 142,
+    "2025": 11,
+    "2026": 3
+   },
+   "Mansa": {
+    "2020": 51,
+    "2021": 2,
+    "2022": 9,
+    "2023": 29,
+    "2024": 21,
+    "2025": 1,
+    "2026": 0
+   },
+   "Bathinda": {
+    "2020": 69,
+    "2021": 8,
+    "2022": 3,
+    "2023": 2,
+    "2024": 5,
+    "2025": 2,
+    "2026": 0
+   },
+   "Ludhiana": {
+    "2020": 158,
+    "2021": 148,
+    "2022": 38,
+    "2023": 24,
+    "2024": 25,
+    "2025": 2,
+    "2026": 1
+   },
+   "Punjab total": {
+    "2020": 6491,
+    "2021": 2389,
+    "2022": 1847,
+    "2023": 1389,
+    "2024": 1289,
+    "2025": 208,
+    "2026": 220
+   }
+  },
+  "years": [
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "punjab_events": [
+   {
+    "place": "AMRITSAR ATTARI",
+    "satellite": "S-NPP",
+    "lat": 31.57367,
+    "lon": 74.68921,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "AMRITSAR MAJITHA",
+    "satellite": "S-NPP",
+    "lat": 31.73535,
+    "lon": 75.08764,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "AMRITSAR TARSIKKA",
+    "satellite": "S-NPP",
+    "lat": 31.6626,
+    "lon": 75.1833,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "FIROZPUR FIROZPUR",
+    "satellite": "S-NPP",
+    "lat": 31.00721,
+    "lon": 74.56339,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "LUDHIANA JAGRAON",
+    "satellite": "S-NPP",
+    "lat": 30.76353,
+    "lon": 75.44992,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "SAS NAGAR KHARAR",
+    "satellite": "S-NPP",
+    "lat": 30.57348,
+    "lon": 76.69672,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN BHIKHIWIND",
+    "satellite": "S-NPP",
+    "lat": 31.32878,
+    "lon": 74.73764,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN BHIKHIWIND",
+    "satellite": "S-NPP",
+    "lat": 31.37732,
+    "lon": 74.68552,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN CHOHLA SAHIB",
+    "satellite": "S-NPP",
+    "lat": 31.281,
+    "lon": 75.00485,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN CHOHLA SAHIB",
+    "satellite": "S-NPP",
+    "lat": 31.28113,
+    "lon": 75.00294,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN CHOHLA SAHIB",
+    "satellite": "S-NPP",
+    "lat": 31.32981,
+    "lon": 75.09152,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN GANDIWIND TATLA",
+    "satellite": "S-NPP",
+    "lat": 31.42351,
+    "lon": 74.72461,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN GANDIWIND TATLA",
+    "satellite": "S-NPP",
+    "lat": 31.48631,
+    "lon": 74.73214,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN KHADUR SAHIB",
+    "satellite": "S-NPP",
+    "lat": 31.45005,
+    "lon": 75.06979,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN KHADUR SAHIB",
+    "satellite": "S-NPP",
+    "lat": 31.45698,
+    "lon": 75.0957,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN KHADUR SAHIB",
+    "satellite": "AQUA",
+    "lat": 31.457,
+    "lon": 75.185,
+    "time_ist": "15:08:09",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN NAUSHERA PANNUAN",
+    "satellite": "S-NPP",
+    "lat": 31.405,
+    "lon": 75.01254,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN NAUSHERA PANNUAN",
+    "satellite": "S-NPP",
+    "lat": 31.40562,
+    "lon": 75.01779,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN NAUSHERA PANNUAN",
+    "satellite": "S-NPP",
+    "lat": 31.40623,
+    "lon": 75.02304,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN PATTI",
+    "satellite": "S-NPP",
+    "lat": 31.17404,
+    "lon": 74.78062,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN PATTI",
+    "satellite": "S-NPP",
+    "lat": 31.17773,
+    "lon": 74.78001,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN PATTI",
+    "satellite": "S-NPP",
+    "lat": 31.21048,
+    "lon": 74.86318,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN TARN TARAN",
+    "satellite": "S-NPP",
+    "lat": 31.44151,
+    "lon": 74.77905,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN TARN TARAN",
+    "satellite": "S-NPP",
+    "lat": 31.4441,
+    "lon": 74.83107,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN TARN TARAN",
+    "satellite": "S-NPP",
+    "lat": 31.44782,
+    "lon": 74.83047,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN TARN TARAN",
+    "satellite": "S-NPP",
+    "lat": 31.49069,
+    "lon": 75.02557,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN TARN TARAN",
+    "satellite": "S-NPP",
+    "lat": 31.4909,
+    "lon": 75.02806,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN VALTOHA",
+    "satellite": "S-NPP",
+    "lat": 31.11088,
+    "lon": 74.59368,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   },
+   {
+    "place": "TARN TARAN VALTOHA",
+    "satellite": "S-NPP",
+    "lat": 31.11151,
+    "lon": 74.59866,
+    "time_ist": "14:00:03",
+    "daynight": "D"
+   }
+  ],
+  "daily": {
+   "2026-09-15": {
+    "punjab": 2,
+    "haryana": 0
+   },
+   "2026-09-16": {
+    "punjab": 3,
+    "haryana": 0
+   },
+   "2026-09-17": {
+    "punjab": 0,
+    "haryana": 0
+   },
+   "2026-09-18": {
+    "punjab": 1,
+    "haryana": 0
+   },
+   "2026-09-19": {
+    "punjab": 1,
+    "haryana": 0
+   },
+   "2026-09-20": {
+    "punjab": 8,
+    "haryana": 0
+   },
+   "2026-09-21": {
+    "punjab": 5,
+    "haryana": 0
+   },
+   "2026-09-22": {
+    "punjab": 4,
+    "haryana": 0
+   },
+   "2026-09-23": {
+    "punjab": 1,
+    "haryana": 1
+   },
+   "2026-09-24": {
+    "punjab": 2,
+    "haryana": 1
+   },
+   "2026-09-25": {
+    "punjab": 5,
+    "haryana": 0
+   },
+   "2026-09-26": {
+    "punjab": 8,
+    "haryana": 0
+   },
+   "2026-09-27": {
+    "punjab": 9,
+    "haryana": 0
+   },
+   "2026-09-28": {
+    "punjab": 1,
+    "haryana": 0
+   },
+   "2026-09-29": {
+    "punjab": 2,
+    "haryana": 0
+   },
+   "2026-09-30": {
+    "punjab": 7,
+    "haryana": 1
+   },
+   "2026-10-01": {
+    "punjab": 4,
+    "haryana": 0
+   },
+   "2026-10-02": {
+    "punjab": 9,
+    "haryana": 1
+   },
+   "2026-10-03": {
+    "punjab": 1,
+    "haryana": 0
+   },
+   "2026-10-04": {
+    "punjab": 6,
+    "haryana": 0
+   },
+   "2026-10-05": {
+    "punjab": 5,
+    "haryana": 0
+   },
+   "2026-10-06": {
+    "punjab": 4,
+    "haryana": 0
+   },
+   "2026-10-07": {
+    "punjab": 15,
+    "haryana": 0
+   },
+   "2026-10-08": {
+    "punjab": 4,
+    "haryana": 1
+   },
+   "2026-10-09": {
+    "punjab": 2,
+    "haryana": 2
+   },
+   "2026-10-10": {
+    "punjab": 9,
+    "haryana": 0
+   },
+   "2026-10-11": {
+    "punjab": 0,
+    "haryana": 0
+   },
+   "2026-10-12": {
+    "punjab": 5,
+    "haryana": 0
+   },
+   "2026-10-13": {
+    "punjab": 51,
+    "haryana": 0
+   },
+   "2026-10-14": {
+    "punjab": 10,
+    "haryana": 1
+   },
+   "2026-10-15": {
+    "punjab": 1,
+    "haryana": 0
+   },
+   "2026-10-16": {
+    "punjab": 6,
+    "haryana": 0
+   },
+   "2026-10-17": {
+    "punjab": 29,
+    "haryana": 0
+   }
+  }
+ },
+ "aqi": {
+  "date": "2026-10-18",
+  "via": "tinyfish",
+  "url": "https://cpcb.gov.in/displaypdf.php?id=RG93bmxvYWRzL0FRSV9CdWxsZXRpbl8yMDI2MTAxOC5wZGY=",
+  "category": "Moderate",
+  "aqi": 187,
+  "pollutant": "PM2.5",
+  "stations": "58/59"
+ },
+ "news": [
+  {
+   "title": "After a day of respite, Punjab logs 5 farm fires",
+   "url": "https://timesofindia.indiatimes.com/city/chandigarh/after-a-day-of-respite-punjab-logs-5-farm-fires/articleshow/134900590.cms",
+   "snippet": "Punjab logs 5 stubble-burning cases after a respite; MP leads with 333 season cases. Punjab files 14 FIRs, levies Rs 2.3 lakh compensation,...",
+   "date": "5 days ago",
+   "source": "The Times of India",
+   "query": "Punjab farm fires red entries FIR",
+   "tags": [
+    "enforcement"
+   ],
+   "districts": []
+  },
+  {
+   "title": "Farm fires: Punjab equals UP at 118 cases, MP tops chart with 233 cases",
+   "url": "https://timesofindia.indiatimes.com/city/chandigarh/farm-fires-punjab-equals-up-at-118-cases-mp-tops-chart-with-233-cases/articleshow/134860357.cms",
+   "snippet": "Punjab and Uttar Pradesh recorded 118 farm fire cases each till Oct 10; Madhya Pradesh led with 233. Punjab filed 5 FIRs and imposed Rs 2.05 lakh in...",
+   "date": "1 week ago",
+   "source": "The Times of India",
+   "query": "Punjab farm fires red entries FIR",
+   "tags": [
+    "enforcement"
+   ],
+   "districts": []
+  },
+  {
+   "title": "MP races ahead of Punjab in farm fires, UP close behind",
+   "url": "https://timesofindia.indiatimes.com/city/chandigarh/mp-races-ahead-of-punjab-in-farm-fires-up-close-behind/articleshow/134840754.cms",
+   "snippet": "Madhya Pradesh leads farm fire cases with 194 till Oct 9, ahead of Punjab (109) as Uttar Pradesh nears (108); Punjab steps up FIRs, fines, red entries.",
+   "date": "1 week ago",
+   "source": "The Times of India",
+   "query": "Punjab farm fires red entries FIR",
+   "tags": [
+    "enforcement"
+   ],
+   "districts": []
+  },
+  {
+   "title": "Punjab records 51 stubble-burning cases in a day; tally rises to 174",
+   "url": "https://timesofindia.indiatimes.com/city/chandigarh/punjab-records-51-stubble-burning-cases-in-a-day-tally-rises-to-174/articleshow/134926248.cms",
+   "snippet": "Punjab logged 51 stubble-burning cases in a day, raising the season tally to 174; 16 FIRs filed, Rs 2.30 lakh penalty imposed, 28 red entries made.",
+   "date": "4 days ago",
+   "source": "The Times of India",
+   "query": "Punjab farm fires red entries FIR",
+   "tags": [
+    "enforcement"
+   ],
+   "districts": []
+  },
+  {
+   "title": "Punjab stubble fires persist despite checks, 18 FIRs registered",
+   "url": "https://timesofindia.indiatimes.com/city/chandigarh/punjab-stubble-fires-persist-despite-checks-18-firs-registered/articleshow/135019870.cms",
+   "snippet": "Bathinda: Punjab reported 29 farm fire incidents on Saturday, taking the tally to 220 during the ongoing paddy harvesting season.",
+   "date": "22 hours ago",
+   "source": "The Times of India",
+   "query": "Punjab farm fires red entries FIR",
+   "tags": [
+    "enforcement"
+   ],
+   "districts": []
+  },
+  {
+   "title": "Rain brings stubble fires to zero in Punjab; UP moves ahead",
+   "url": "https://timesofindia.indiatimes.com/city/chandigarh/rain-brings-stubble-fires-to-zero-in-punjab-up-moves-ahead/articleshow/134876043.cms",
+   "snippet": "Rain cuts Punjab stubble burning to zero; UP overtakes Punjab as MP leads with 277 cases. Punjab files 11 FIRs and imposes Rs 2.2 lakh penalties.",
+   "date": "6 days ago",
+   "source": "The Times of India",
+   "query": "Punjab farm fires red entries FIR",
+   "tags": [
+    "enforcement"
+   ],
+   "districts": []
+  },
+  {
+   "title": "Why stubble fires keep coming back?",
+   "url": "https://www.insightsonindia.com/2026/10/09/why-stubble-fires-keep-coming-back/",
+   "snippet": "Stubble burning in India: Explore its causes, air pollution impacts and structural reforms beyond penalties for UPSC Mains answer writing practice.",
+   "date": "1 week ago",
+   "source": "INSIGHTS IAS",
+   "query": "Supreme Court stubble burning satellite data",
+   "tags": [
+    "enforcement",
+    "air"
+   ],
+   "districts": []
+  },
+  {
+   "title": "CAQM team pays field visits in Punjab to curb stubble burning incidents",
+   "url": "https://timesofindia.indiatimes.com/city/chandigarh/caqm-team-pays-field-visits-in-punjab-to-curb-stubble-burning-incidents/articleshow/134876097.cms",
+   "snippet": "CAQM team visits stubble-burning hotspots in Amritsar, Tarn Taran; reviews Punjab's prevention steps, CRM machine availability, farmer outreach and...",
+   "date": "6 days ago",
+   "source": "The Times of India",
+   "query": "stubble burning Sangrur",
+   "tags": [],
+   "districts": []
+  },
+  {
+   "title": "CAQM turns to drones to spot farm fires missed by satellites",
+   "url": "https://timesofindia.indiatimes.com/city/delhi/caqm-turns-to-drones-to-spot-farm-fires-missed-by-satellites/articleshow/134860037.cms",
+   "snippet": "CAQM reviews deploying 80-90 drones in Punjab to detect stubble burning missed by satellites, focusing on 3–9 pm monitoring and enforcement during harvest.",
+   "date": "1 week ago",
+   "source": "The Times of India",
+   "query": "stubble burning satellite timing Punjab",
+   "tags": [
+    "satellite"
+   ],
+   "districts": []
+  },
+  {
+   "title": "Centre asks states to go into ‘mission mode’ to curb stubble burning as farm fires rise in MP, Rajasthan",
+   "url": "https://timesofindia.indiatimes.com/india/centre-asks-states-to-go-into-mission-mode-to-curb-stubble-burning-as-farm-fires-rise-in-mp-rajasthan/articleshow/134921556.cms",
+   "snippet": "NEW DELHI: The Centre on Tuesday asked Madhya Pradesh, Rajasthan, Punjab, Haryana and Delhi-NCR authorities to work in “mission mode” to prevent stubble.",
+   "date": "5 days ago",
+   "source": "The Times of India",
+   "query": "Supreme Court stubble burning satellite data",
+   "tags": [],
+   "districts": []
+  },
+  {
+   "title": "Centre issues instructions for states to monitor stubble burning after 3pm | India News",
+   "url": "https://www.hindustantimes.com/india-news/centre-issues-instructions-for-states-to-monitor-stubble-burning-after-3pm-101791946097816.html",
+   "snippet": "Union ministers Bhupender Yadav and Shivraj Singh Chouhan jointly held a high-level review meeting on stubble burning at Krishi Bhawan on Tuesday,...",
+   "date": "4 days ago",
+   "source": "Hindustan Times",
+   "query": "stubble burning Sangrur",
+   "tags": [
+    "satellite"
+   ],
+   "districts": []
+  },
+  {
+   "title": "Delhi Pollution: Why Centre Directed Ground Monitoring For Stubble Burning After 3 PM Despite Satellite Tracking Success",
+   "url": "https://www.thedailyjagran.com/india/news/delhi-air-pollution-why-center-has-directed-ground-monitoring-of-stubble-burning-after-3-pm-despite-satellite-tracking-success-10332664",
+   "snippet": "The Centre has mandated ground monitoring of stubble burning after 3 PM in key states, as farmers burn residue post-satellite detection times.",
+   "date": "4 days ago",
+   "source": "The Daily Jagran",
+   "query": "stubble burning Sangrur",
+   "tags": [
+    "satellite",
+    "air"
+   ],
+   "districts": []
+  },
+  {
+   "title": "Delhi's pollution battle could face another challenge: Punjab records more stubble fires than last year as",
+   "url": "https://m.economictimes.com/news/new-updates/delhis-pollution-battle-could-face-another-challenge-punjab-records-more-stubble-fires-than-last-year-as-paddy-harvesting-gathers-pace/articleshow/134968741.cms",
+   "snippet": "Punjab recorded 174 stubble-burning incidents between September 15 and October 13, 2026, up from 134 during the same period last year. Satellite monitoring...",
+   "date": "3 days ago",
+   "source": "The Economic Times",
+   "query": "stubble burning satellite timing Punjab",
+   "tags": [
+    "satellite",
+    "air"
+   ],
+   "districts": []
+  },
+  {
+   "title": "Farm Fires After 3 PM: Centre Orders Drone Checks as Punjab Records 174 Cases",
+   "url": "https://www.theunitedindian.com/news/farm-fires-satellite-blind-spot-delhi-ncr-pollution-2",
+   "snippet": "Farm fires in Punjab reach 174 as the Centre targets stubble burning after 3 PM with drones and ground patrols. Here's why satellites can miss these fires.",
+   "date": "3 days ago",
+   "source": "The United Indian",
+   "query": "stubble burning satellite timing Punjab",
+   "tags": [
+    "satellite"
+   ],
+   "districts": []
+  },
+  {
+   "title": "Punjab farm fire count crosses 100 mark, 8 more than last year | Hindustan Times",
+   "url": "https://www.hindustantimes.com/cities/chandigarh-news/punjab-farm-fire-count-crosses-100-mark-8-more-than-last-year-101791486613256.html",
+   "snippet": "The farm-fire tracking period begins September 15 every year, with paddy procurement starting on October 1.",
+   "date": "1 week ago",
+   "source": "Hindustan Times",
+   "query": "Punjab farm fires red entries FIR",
+   "tags": [],
+   "districts": []
+  },
+  {
+   "title": "Punjab logs nearly 70% farm fire spike in a week | Hindustan Times",
+   "url": "https://www.hindustantimes.com/cities/chandigarh-news/punjab-logs-nearly-70-farm-fire-spike-in-a-week-101792002181689.html",
+   "snippet": "The cumulative count of 174 incidents is 48 higher than the count during the corresponding period last year, according to the figures provided by the Punjab...",
+   "date": "3 days ago",
+   "source": "Hindustan Times",
+   "query": "Punjab farm fires red entries FIR",
+   "tags": [],
+   "districts": []
+  },
+  {
+   "title": "Punjab records season's worst day as 51 stubble fires",
+   "url": "https://www.newsbytesapp.com/news/india/punjab-records-seasons-worst-day-as-51-stubble-fires/tldr",
+   "snippet": "Punjab witnessed a significant rise in stubble-burning incidents, with 51 cases recorded in a single day, marking nearly a 70% increase over the previous...",
+   "date": "3 days ago",
+   "source": "NewsBytes",
+   "query": "stubble burning Barnala",
+   "tags": [],
+   "districts": []
+  },
+  {
+   "title": "Punjab’s farm-fire count crosses 200 as paddy harvesting picks up | Hindustan Times",
+   "url": "https://www.hindustantimes.com/cities/chandigarh-news/punjabs-farm-fire-count-crosses-200-as-paddy-harvesting-picks-up-101792262810251.html",
+   "snippet": "With paddy harvesting gaining pace, Punjab has recorded 220 farm-fire incidents so far this kharif season, surpassing the 208 cases reported during the...",
+   "date": "15 hours ago",
+   "source": "Hindustan Times",
+   "query": "farm fire FIR Sangrur",
+   "tags": [],
+   "districts": []
+  },
+  {
+   "title": "Why stubble fires keep coming back",
+   "url": "https://www.thehindu.com/news/national/why-stubble-fires-keep-coming-back/article71559694.ece",
+   "snippet": "It is that time of the year when air pollution in North India, and in Delhi in particular, takes centre stage in public discourse. One oft-cited reason for...",
+   "date": "1 week ago",
+   "source": "The Hindu",
+   "query": "stubble burning satellite timing Punjab",
+   "tags": [
+    "air"
+   ],
+   "districts": []
+  },
+  {
+   "title": "Why stubble fires keep coming back",
+   "url": "https://www.pressreader.com/india/the-hindu-kolkata-9ww9/20261009/281835765653113",
+   "snippet": "Stubble burning is the result of a combination of legal, technological and economic factors, including the paddywheat cycle, assured procurement and a...",
+   "date": "1 week ago",
+   "source": "PressReader",
+   "query": "Supreme Court stubble burning satellite data",
+   "tags": [],
+   "districts": []
+  },
+  {
+   "title": "Winter Is Coming, So Is Bad Air",
+   "url": "https://openthemagazine.com/india/winter-is-coming-so-is-bad-air",
+   "snippet": "As winter approaches, Delhi braces for its infamous pollution season, worsened by stubble burning and Deepavali firecrackers. Despite a proactive plan,...",
+   "date": "1 week ago",
+   "source": "Open Magazine",
+   "query": "stubble burning satellite timing Punjab",
+   "tags": [
+    "air"
+   ],
+   "districts": []
+  }
+ ]
+}
