@@ -4,7 +4,7 @@
 
 **the farm fires satellites miss.**
 
-india counts stubble fires with satellites that pass over punjab between 10:30 am and 1:30 pm. farmers now burn in the late afternoon. so the official fire count fell 93% in punjab between 2021 and 2025, while the fields kept burning.
+in india we count stubble fires with satellites that pass over punjab between 10:30 am and 1:30 pm. farmers now burn in the late afternoon. so the official fire count fell 93% in punjab between 2021 and 2025, while the fields kept burning.
 
 PyroScan doesn't look for fire. it looks for what fire leaves behind, the black char on a harvested field, in every sentinel-2 image of the season. then it checks every burnt field against the same satellites the official count uses, and tells you which burns nobody counted.
 
@@ -13,9 +13,6 @@ PyroScan doesn't look for fire. it looks for what fire leaves behind, the black 
 <img src="docs/pyroscan_2025_timelapse.gif" width="420" alt="kharif 2025, pass by pass: orange = burnt, no satellite detected it" align="right">
 
 *kharif 2025, every sentinel-2 pass: orange = burnt and never detected, blue = a satellite saw it, green dots = fire detections. a 1080 × 1080 mp4 for social posts is in `docs/pyroscan_2025_timelapse.mp4` (`scripts/11_timelapse.py`).*
-
-> built in 48 hours for **kritical hacks '26** (assetmerkle, igdtuw). study area: sangrur + barnala, 2 of punjab's 23 districts (about a tenth of the state), kharif 2025.
-
 ---
 
 ## results (sangrur + barnala, 3 oct – 29 nov 2025)
