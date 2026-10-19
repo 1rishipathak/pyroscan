@@ -8,13 +8,6 @@ in india we count stubble fires with satellites that pass over punjab between 10
 
 PyroScan doesn't look for fire. it looks for what fire leaves behind, the black char on a harvested field, in every sentinel-2 image of the season. then it checks every burnt field against the same satellites the official count uses, and tells you which burns nobody counted.
 
-![PyroScan dashboard](docs/screenshot.jpg)
-
-<img src="docs/pyroscan_2025_timelapse.gif" width="420" alt="kharif 2025, pass by pass: orange = burnt, no satellite detected it" align="right">
-
-*kharif 2025, every sentinel-2 pass: orange = burnt and never detected, blue = seen by satellite , green dots = fire detections.*
----
-
 
 
 ## Mermaid Diagram
